@@ -1,0 +1,1035 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{25A7E05E-AC49-4415-BC17-F784787163D6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DFE.GITIS.CRM.Solutions</RootNamespace>
+    <AssemblyName>DFE.GITIS.CRM.Solutions</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!--<Target Name="MyDistClean" AfterTargets="Clean">
+    <Exec Command="echo &quot; Cleaning CRM..." />
+    <Exec Command="&quot;C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe&quot; -file &quot;$(SolutionDir)\DevOps\Scripts\export.ps1&quot;" />
+    <Exec Command="echo &quot; Cleaned CRM..." />
+  </Target>-->
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GITIS\AppModuleSiteMaps\dfe_adviser\AppModuleSiteMap.xml" />
+    <Content Include="GITIS\AppModuleSiteMaps\dfe_adviser\AppModuleSiteMap_managed.xml" />
+    <Content Include="GITIS\AppModuleSiteMaps\dfe_callagent\AppModuleSiteMap.xml" />
+    <Content Include="GITIS\AppModuleSiteMaps\dfe_callagent\AppModuleSiteMap_managed.xml" />
+    <Content Include="GITIS\AppModuleSiteMaps\dfe_callcentremanagement\AppModuleSiteMap.xml" />
+    <Content Include="GITIS\AppModuleSiteMaps\dfe_callcentremanagement\AppModuleSiteMap_managed.xml" />
+    <Content Include="GITIS\AppModuleSiteMaps\dfe_outbound\AppModuleSiteMap.xml" />
+    <Content Include="GITIS\AppModuleSiteMaps\dfe_outbound\AppModuleSiteMap_managed.xml" />
+    <Content Include="GITIS\AppModules\dfe_adviser\AppModule.xml" />
+    <Content Include="GITIS\AppModules\dfe_adviser\AppModule_managed.xml" />
+    <Content Include="GITIS\AppModules\dfe_callagent\AppModule.xml" />
+    <Content Include="GITIS\AppModules\dfe_callagent\AppModule_managed.xml" />
+    <Content Include="GITIS\AppModules\dfe_callcentremanagement\AppModule.xml" />
+    <Content Include="GITIS\AppModules\dfe_callcentremanagement\AppModule_managed.xml" />
+    <Content Include="GITIS\AppModules\dfe_outbound\AppModule.xml" />
+    <Content Include="GITIS\AppModules\dfe_outbound\AppModule_managed.xml" />
+    <Content Include="GITIS\Dashboards\{1872b642-7a03-e911-a974-000d3a20838a}.xml" />
+    <Content Include="GITIS\Dashboards\{3f978ba9-cfb1-e811-a84e-000d3a2a3148}.xml" />
+    <Content Include="GITIS\Dashboards\{5300e01b-7da5-ea11-a812-000d3a44afcc}.xml" />
+    <Content Include="GITIS\Dashboards\{8997bf36-ceb4-e811-a84c-000d3a2a343e}.xml" />
+    <Content Include="GITIS\Dashboards\{ab95b05a-d9b1-e811-a84e-000d3a2a3148}.xml" />
+    <Content Include="GITIS\Entities\Account\Entity.xml" />
+    <Content Include="GITIS\Entities\Account\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\ActivityPointer\Entity.xml" />
+    <Content Include="GITIS\Entities\ActivityPointer\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\ActivityPointer\SavedQueries\{18140303-1805-e911-a972-000d3a206976}.xml" />
+    <Content Include="GITIS\Entities\Appointment\Entity.xml" />
+    <Content Include="GITIS\Entities\Appointment\FormXml\main\{549a8aa3-c349-4ab9-8bac-4873fa9a7a5c}.xml" />
+    <Content Include="GITIS\Entities\Appointment\FormXml\main\{549a8aa3-c349-4ab9-8bac-4873fa9a7a5c}_managed.xml" />
+    <Content Include="GITIS\Entities\Appointment\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\Appointment\SavedQueries\{2f3ff1f6-1d2a-e911-a976-000d3a206976}.xml" />
+    <Content Include="GITIS\Entities\Contact\Entity.xml" />
+    <Content Include="GITIS\Entities\Contact\FormXml\card\{bc0f68dd-a4b1-4a8f-bed3-c8f5db2f89cf}.xml" />
+    <Content Include="GITIS\Entities\Contact\FormXml\main\{1fed44d1-ae68-4a41-bd2b-f13acac4acfa}.xml" />
+    <Content Include="GITIS\Entities\Contact\FormXml\main\{1fed44d1-ae68-4a41-bd2b-f13acac4acfa}_managed.xml" />
+    <Content Include="GITIS\Entities\Contact\FormXml\main\{293c878f-f068-40a0-ae48-4297e060871c}.xml" />
+    <Content Include="GITIS\Entities\Contact\FormXml\main\{293c878f-f068-40a0-ae48-4297e060871c}_managed.xml" />
+    <Content Include="GITIS\Entities\Contact\FormXml\main\{cc760212-3eab-4009-b5c3-ea9cf6f3e141}.xml" />
+    <Content Include="GITIS\Entities\Contact\FormXml\main\{cc760212-3eab-4009-b5c3-ea9cf6f3e141}_managed.xml" />
+    <Content Include="GITIS\Entities\Contact\FormXml\quickCreate\{661157fe-2fc9-4eaa-835f-5bfa2f7b64f7}.xml" />
+    <Content Include="GITIS\Entities\Contact\FormXml\quickCreate\{661157fe-2fc9-4eaa-835f-5bfa2f7b64f7}_managed.xml" />
+    <Content Include="GITIS\Entities\Contact\FormXml\quick\{156cdde2-ef19-4861-994f-d578ccabda23}.xml" />
+    <Content Include="GITIS\Entities\Contact\FormXml\quick\{156cdde2-ef19-4861-994f-d578ccabda23}_managed.xml" />
+    <Content Include="GITIS\Entities\Contact\FormXml\quick\{29de27bc-a257-4f29-99cf-bab4a84e688f}.xml" />
+    <Content Include="GITIS\Entities\Contact\FormXml\quick\{3d22ab88-96c8-4b3f-a533-d4827e2925c9}.xml" />
+    <Content Include="GITIS\Entities\Contact\FormXml\quick\{707fc57b-c5e6-471b-a180-e37ed28a38e2}.xml" />
+    <Content Include="GITIS\Entities\Contact\FormXml\quick\{7bb87dfd-ec3e-4ed9-8e3e-5725d3067295}.xml" />
+    <Content Include="GITIS\Entities\Contact\FormXml\quick\{bdb0ae1c-32fa-4374-b637-8dafe107bc44}.xml" />
+    <Content Include="GITIS\Entities\Contact\FormXml\quick\{cdbb9298-3b2e-41f3-8f4a-0168d6b09fc4}.xml" />
+    <Content Include="GITIS\Entities\Contact\FormXml\quick\{d880c3cf-80e2-42f3-82f9-24d040d09f17}.xml" />
+    <Content Include="GITIS\Entities\Contact\FormXml\quick\{f3b707fb-3b5f-45f9-9c6b-5e573bb5d19e}.xml" />
+    <Content Include="GITIS\Entities\Contact\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\Contact\SavedQueries\{00000000-0000-0000-00aa-000010001003}.xml" />
+    <Content Include="GITIS\Entities\Contact\SavedQueries\{00000000-0000-0000-00aa-000010001004}.xml" />
+    <Content Include="GITIS\Entities\Contact\SavedQueries\{20b851ae-d4b1-e811-a84e-000d3a2a3148}.xml" />
+    <Content Include="GITIS\Entities\Contact\SavedQueries\{32cb5198-d5b1-e811-a84e-000d3a2a3148}.xml" />
+    <Content Include="GITIS\Entities\Contact\SavedQueries\{34466466-c72a-e911-a977-000d3a23443b}.xml" />
+    <Content Include="GITIS\Entities\Contact\SavedQueries\{6b400db1-cab4-e811-a84c-000d3a2a343e}.xml" />
+    <Content Include="GITIS\Entities\Contact\SavedQueries\{701743ee-4467-e911-a984-000d3a233e06}.xml" />
+    <Content Include="GITIS\Entities\Contact\SavedQueries\{8df19b44-a073-40c3-9d6d-ee1355d8c4ba}.xml" />
+    <Content Include="GITIS\Entities\Contact\SavedQueries\{949150b6-d0b1-e811-a84e-000d3a2a3148}.xml" />
+    <Content Include="GITIS\Entities\Contact\SavedQueries\{a2d479c5-53e3-4c69-addd-802327e67a0d}.xml" />
+    <Content Include="GITIS\Entities\Contact\SavedQueries\{a3c5a0d7-b739-e911-a978-000d3a23443b}.xml" />
+    <Content Include="GITIS\Entities\Contact\SavedQueries\{b284d5d3-c4b1-e811-a84e-000d3a2a3148}.xml" />
+    <Content Include="GITIS\Entities\Contact\SavedQueries\{fb16ccfd-a802-e911-a971-000d3a206976}.xml" />
+    <Content Include="GITIS\Entities\dfe_adminjourneystep\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_adminjourneystep\FormXml\card\{23c75be3-80e3-4734-88ef-f77c7ca6696b}.xml" />
+    <Content Include="GITIS\Entities\dfe_adminjourneystep\FormXml\card\{23c75be3-80e3-4734-88ef-f77c7ca6696b}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_adminjourneystep\FormXml\main\{6aafa966-c330-45e4-887f-52efeb3f6b53}.xml" />
+    <Content Include="GITIS\Entities\dfe_adminjourneystep\FormXml\main\{6aafa966-c330-45e4-887f-52efeb3f6b53}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_adminjourneystep\FormXml\quick\{318e855d-8178-4336-98cf-6a248af5ce00}.xml" />
+    <Content Include="GITIS\Entities\dfe_adminjourneystep\FormXml\quick\{318e855d-8178-4336-98cf-6a248af5ce00}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_adminjourneystep\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_adminjourneystep\SavedQueries\{0d30c6ca-85b2-4878-b75e-af51a302ffbe}.xml" />
+    <Content Include="GITIS\Entities\dfe_adminjourneystep\SavedQueries\{4101e34f-a6cc-478a-bfda-379bee0c0236}.xml" />
+    <Content Include="GITIS\Entities\dfe_adminjourneystep\SavedQueries\{5551537a-e447-42bf-a574-be9fe928df17}.xml" />
+    <Content Include="GITIS\Entities\dfe_adminjourneystep\SavedQueries\{8e7c8a55-b3f2-45d8-9f02-35236f343ecf}.xml" />
+    <Content Include="GITIS\Entities\dfe_adminjourneystep\SavedQueries\{acc59291-2a53-4929-b1d4-86179c1f59ba}.xml" />
+    <Content Include="GITIS\Entities\dfe_adminjourneystep\SavedQueries\{bb890643-db42-4bf0-b5bc-e4b5abb4cc91}.xml" />
+    <Content Include="GITIS\Entities\dfe_adminjourneystep\SavedQueries\{e4423fca-17ef-e811-a97a-000d3a233e06}.xml" />
+    <Content Include="GITIS\Entities\dfe_AdviserToDoItem\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_AdviserToDoItem\FormXml\card\{12dd1a90-976e-43aa-8934-5cadba6d4cf4}.xml" />
+    <Content Include="GITIS\Entities\dfe_AdviserToDoItem\FormXml\card\{12dd1a90-976e-43aa-8934-5cadba6d4cf4}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_AdviserToDoItem\FormXml\main\{1c6ae5eb-359e-43ce-a5c2-69a8c6dce3bf}.xml" />
+    <Content Include="GITIS\Entities\dfe_AdviserToDoItem\FormXml\main\{1c6ae5eb-359e-43ce-a5c2-69a8c6dce3bf}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_AdviserToDoItem\FormXml\quick\{bceed59c-2f91-4ab8-b8c1-e6364cc3c071}.xml" />
+    <Content Include="GITIS\Entities\dfe_AdviserToDoItem\FormXml\quick\{bceed59c-2f91-4ab8-b8c1-e6364cc3c071}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_AdviserToDoItem\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_AdviserToDoItem\SavedQueries\{0443020a-b636-e911-a976-000d3a233b72}.xml" />
+    <Content Include="GITIS\Entities\dfe_AdviserToDoItem\SavedQueries\{08f74cce-3efa-47cb-b233-e6e94e08acc6}.xml" />
+    <Content Include="GITIS\Entities\dfe_AdviserToDoItem\SavedQueries\{1cea5896-69ac-4c27-8ee5-fc03134f7aba}.xml" />
+    <Content Include="GITIS\Entities\dfe_AdviserToDoItem\SavedQueries\{2d70e00b-248f-40f4-941e-f1635e898c28}.xml" />
+    <Content Include="GITIS\Entities\dfe_AdviserToDoItem\SavedQueries\{4143bdac-1736-4bc3-b7e6-0eb869876e93}.xml" />
+    <Content Include="GITIS\Entities\dfe_AdviserToDoItem\SavedQueries\{67830101-7129-4d85-b8b9-1745941e3fed}.xml" />
+    <Content Include="GITIS\Entities\dfe_AdviserToDoItem\SavedQueries\{7468b1b2-c336-e911-a976-000d3a233b72}.xml" />
+    <Content Include="GITIS\Entities\dfe_AdviserToDoItem\SavedQueries\{ad4b5e99-cebc-49ca-877d-6073ba71b5b9}.xml" />
+    <Content Include="GITIS\Entities\dfe_AdviserToDoItem\SavedQueries\{cd5e133c-c336-e911-a976-000d3a233b72}.xml" />
+    <Content Include="GITIS\Entities\dfe_AdviserToDoItem\SavedQueries\{f9779219-c436-e911-a976-000d3a233b72}.xml" />
+    <Content Include="GITIS\Entities\dfe_BarrierOrConcern\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_BarrierOrConcern\FormXml\card\{d11fc53b-6766-47a0-ab58-9eb546ff9620}.xml" />
+    <Content Include="GITIS\Entities\dfe_BarrierOrConcern\FormXml\card\{d11fc53b-6766-47a0-ab58-9eb546ff9620}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_BarrierOrConcern\FormXml\main\{f2a0aa3a-7a69-403e-9167-3166c17abf2a}.xml" />
+    <Content Include="GITIS\Entities\dfe_BarrierOrConcern\FormXml\main\{f2a0aa3a-7a69-403e-9167-3166c17abf2a}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_BarrierOrConcern\FormXml\quick\{9e7d4ac5-bd47-4bd3-a733-0f3db084bbc8}.xml" />
+    <Content Include="GITIS\Entities\dfe_BarrierOrConcern\FormXml\quick\{9e7d4ac5-bd47-4bd3-a733-0f3db084bbc8}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_BarrierOrConcern\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_BarrierOrConcern\SavedQueries\{17b045f8-fd83-4877-b9d0-1a29a03da537}.xml" />
+    <Content Include="GITIS\Entities\dfe_BarrierOrConcern\SavedQueries\{20064cf8-5538-4a84-81a6-944504170396}.xml" />
+    <Content Include="GITIS\Entities\dfe_BarrierOrConcern\SavedQueries\{55a65ba5-07eb-40f0-b58e-d4fc7d6a138b}.xml" />
+    <Content Include="GITIS\Entities\dfe_BarrierOrConcern\SavedQueries\{72204e57-e07a-4530-b6b9-651e0bf5fc50}.xml" />
+    <Content Include="GITIS\Entities\dfe_BarrierOrConcern\SavedQueries\{9196814a-3ae7-e811-a97a-000d3a233e06}.xml" />
+    <Content Include="GITIS\Entities\dfe_BarrierOrConcern\SavedQueries\{a50cd14c-3b27-4113-bd4a-223a9f9bf3b3}.xml" />
+    <Content Include="GITIS\Entities\dfe_BarrierOrConcern\SavedQueries\{b5509866-adcd-45a7-92ff-81a2165f25a3}.xml" />
+    <Content Include="GITIS\Entities\dfe_callbackbookingquota\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_callbackbookingquota\FormXml\card\{3dbcbffc-3ce9-4cb5-9f2c-1ff0dd3d717d}.xml" />
+    <Content Include="GITIS\Entities\dfe_callbackbookingquota\FormXml\card\{3dbcbffc-3ce9-4cb5-9f2c-1ff0dd3d717d}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_callbackbookingquota\FormXml\main\{0ef7c664-2482-4faa-b5ba-36d19f337301}.xml" />
+    <Content Include="GITIS\Entities\dfe_callbackbookingquota\FormXml\main\{0ef7c664-2482-4faa-b5ba-36d19f337301}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_callbackbookingquota\FormXml\main\{91ae615e-46ce-49c4-9cb9-46f00f1ce58c}.xml" />
+    <Content Include="GITIS\Entities\dfe_callbackbookingquota\FormXml\main\{91ae615e-46ce-49c4-9cb9-46f00f1ce58c}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_callbackbookingquota\FormXml\quick\{45678b06-261c-4042-afcc-ea247cf4f263}.xml" />
+    <Content Include="GITIS\Entities\dfe_callbackbookingquota\FormXml\quick\{45678b06-261c-4042-afcc-ea247cf4f263}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_callbackbookingquota\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_callbackbookingquota\SavedQueries\{11268f7c-0c13-42c4-8f09-5a80f20d3862}.xml" />
+    <Content Include="GITIS\Entities\dfe_callbackbookingquota\SavedQueries\{11b97f87-4200-4ad6-90be-dfbb12cd3d32}.xml" />
+    <Content Include="GITIS\Entities\dfe_callbackbookingquota\SavedQueries\{16ffc6bf-8df6-ea11-a815-000d3a44afcc}.xml" />
+    <Content Include="GITIS\Entities\dfe_callbackbookingquota\SavedQueries\{2294f1a2-a12e-e911-a977-000d3a23443b}.xml" />
+    <Content Include="GITIS\Entities\dfe_callbackbookingquota\SavedQueries\{6678029c-7c69-4c68-bc4c-e266adf2d197}.xml" />
+    <Content Include="GITIS\Entities\dfe_callbackbookingquota\SavedQueries\{8e98e73d-a62e-e911-a977-000d3a23443b}.xml" />
+    <Content Include="GITIS\Entities\dfe_callbackbookingquota\SavedQueries\{9bcccf8e-2617-45dd-946e-31aab52cbcce}.xml" />
+    <Content Include="GITIS\Entities\dfe_callbackbookingquota\SavedQueries\{c4115d5c-955a-4115-a4fe-c18a193226eb}.xml" />
+    <Content Include="GITIS\Entities\dfe_callbackbookingquota\SavedQueries\{de79cb6a-8df6-ea11-a815-000d3a44afcc}.xml" />
+    <Content Include="GITIS\Entities\dfe_callbackbookingquota\SavedQueries\{f38552b5-9507-4857-b381-7d68ce1702c6}.xml" />
+    <Content Include="GITIS\Entities\dfe_calltopics\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_calltopics\FormXml\card\{a117923a-4aa6-4cc9-8f6f-f425715b9517}.xml" />
+    <Content Include="GITIS\Entities\dfe_calltopics\FormXml\card\{a117923a-4aa6-4cc9-8f6f-f425715b9517}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_calltopics\FormXml\main\{edc77445-fe23-4378-a8af-a513fb41f95b}.xml" />
+    <Content Include="GITIS\Entities\dfe_calltopics\FormXml\main\{edc77445-fe23-4378-a8af-a513fb41f95b}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_calltopics\FormXml\quick\{34d159c6-e52e-44bd-8f2e-190a6c1203fa}.xml" />
+    <Content Include="GITIS\Entities\dfe_calltopics\FormXml\quick\{34d159c6-e52e-44bd-8f2e-190a6c1203fa}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_calltopics\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_calltopics\SavedQueries\{00adf461-cff5-4949-91c7-b50841fa6cdf}.xml" />
+    <Content Include="GITIS\Entities\dfe_calltopics\SavedQueries\{1d2a9490-6925-e911-a976-000d3a206976}.xml" />
+    <Content Include="GITIS\Entities\dfe_calltopics\SavedQueries\{2aa09d58-9015-e911-a974-000d3a233b72}.xml" />
+    <Content Include="GITIS\Entities\dfe_calltopics\SavedQueries\{510c8797-ff40-4f23-b69f-d0f2fb599b85}.xml" />
+    <Content Include="GITIS\Entities\dfe_calltopics\SavedQueries\{72bab6fa-b354-4caf-833a-592c737d2215}.xml" />
+    <Content Include="GITIS\Entities\dfe_calltopics\SavedQueries\{7b0aef12-48f8-43c5-8c27-5878db2afc0d}.xml" />
+    <Content Include="GITIS\Entities\dfe_calltopics\SavedQueries\{cd9a8104-1128-4bca-881a-53ad37edfba5}.xml" />
+    <Content Include="GITIS\Entities\dfe_calltopics\SavedQueries\{dd631077-e174-43ac-b176-d469b38bea0b}.xml" />
+    <Content Include="GITIS\Entities\dfe_candidatejourneystep\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_candidatejourneystep\FormXml\card\{14566029-80b3-4e20-921d-224bd7b27ed6}.xml" />
+    <Content Include="GITIS\Entities\dfe_candidatejourneystep\FormXml\card\{14566029-80b3-4e20-921d-224bd7b27ed6}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_candidatejourneystep\FormXml\main\{6068534b-677c-471b-af6e-10b7e2fc05e6}.xml" />
+    <Content Include="GITIS\Entities\dfe_candidatejourneystep\FormXml\main\{6068534b-677c-471b-af6e-10b7e2fc05e6}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_candidatejourneystep\FormXml\quick\{56f80640-00a1-4201-9f79-52ce6e18d7ce}.xml" />
+    <Content Include="GITIS\Entities\dfe_candidatejourneystep\FormXml\quick\{56f80640-00a1-4201-9f79-52ce6e18d7ce}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_candidatejourneystep\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_candidatejourneystep\SavedQueries\{19c3acba-c1cf-419c-9530-67b2f74267aa}.xml" />
+    <Content Include="GITIS\Entities\dfe_candidatejourneystep\SavedQueries\{365c3ea6-4017-4933-8dc5-81529429d72d}.xml" />
+    <Content Include="GITIS\Entities\dfe_candidatejourneystep\SavedQueries\{5dae5410-ca3e-42c7-aafb-4709d4498a58}.xml" />
+    <Content Include="GITIS\Entities\dfe_candidatejourneystep\SavedQueries\{700fef2d-1eef-e811-a97a-000d3a233e06}.xml" />
+    <Content Include="GITIS\Entities\dfe_candidatejourneystep\SavedQueries\{7f4aa9b0-f8e3-40ea-aedd-d120cc335deb}.xml" />
+    <Content Include="GITIS\Entities\dfe_candidatejourneystep\SavedQueries\{90ddce9f-5477-4c04-8c9e-6797537fbaad}.xml" />
+    <Content Include="GITIS\Entities\dfe_candidatejourneystep\SavedQueries\{fcfb17fd-8a88-465e-9210-cdcea01bb281}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateLanguageSkills\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateLanguageSkills\FormXml\card\{3bc89310-d0f8-43f4-a1e5-fe763142bd13}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateLanguageSkills\FormXml\card\{3bc89310-d0f8-43f4-a1e5-fe763142bd13}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateLanguageSkills\FormXml\main\{2c3c9567-6976-4200-b573-9172d2afd2fe}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateLanguageSkills\FormXml\main\{2c3c9567-6976-4200-b573-9172d2afd2fe}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateLanguageSkills\FormXml\quick\{b45b1ac7-5577-4338-850f-a1d9c2825f5e}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateLanguageSkills\FormXml\quick\{b45b1ac7-5577-4338-850f-a1d9c2825f5e}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateLanguageSkills\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateLanguageSkills\SavedQueries\{4f252cda-3fe1-4c8c-a168-c8a481efabef}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateLanguageSkills\SavedQueries\{904126f7-9332-47c2-88de-9d8ff68d4a8c}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateLanguageSkills\SavedQueries\{9727ceec-5652-4012-8605-7fd749974411}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateLanguageSkills\SavedQueries\{a2009420-9696-4ada-a54d-78fe2313e790}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateLanguageSkills\SavedQueries\{badd6d9d-ff83-45be-ab2a-e863eeb62af1}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateLanguageSkills\SavedQueries\{c6169bdf-a7ef-4e69-a4cc-9d752ef2f88f}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateLanguageSkills\SavedQueries\{eaeef4e8-6fee-e811-a96e-000d3a206976}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePastTeachingPosition\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePastTeachingPosition\FormXml\card\{5b3a7d13-0f21-4a9b-ae6a-561e1a2f5f8e}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePastTeachingPosition\FormXml\card\{5b3a7d13-0f21-4a9b-ae6a-561e1a2f5f8e}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePastTeachingPosition\FormXml\main\{e6c41e70-6ce2-45fd-a250-9ab823c8eb23}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePastTeachingPosition\FormXml\main\{e6c41e70-6ce2-45fd-a250-9ab823c8eb23}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePastTeachingPosition\FormXml\quick\{152d4ed4-f378-4cba-98a5-ac0937417807}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePastTeachingPosition\FormXml\quick\{152d4ed4-f378-4cba-98a5-ac0937417807}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePastTeachingPosition\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePastTeachingPosition\SavedQueries\{1676781e-9d43-43ac-a490-ea02006b0fcd}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePastTeachingPosition\SavedQueries\{209bc9cf-290d-4b7a-8bf3-6cc497496fc3}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePastTeachingPosition\SavedQueries\{5d462da1-2827-421d-81d1-31fc1645f968}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePastTeachingPosition\SavedQueries\{9331aefe-bc8b-43e5-97bc-396db59167e7}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePastTeachingPosition\SavedQueries\{d159b9bf-a615-4a6c-93b8-be9b7c5cdcca}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePastTeachingPosition\SavedQueries\{e1965e71-42ee-e811-a96e-000d3a206976}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePastTeachingPosition\SavedQueries\{f204a8f7-1827-4153-93c6-7ca4727ed5be}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePreferredContactTime\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePreferredContactTime\FormXml\card\{61925f6d-207b-4666-8c92-4188cc286fb2}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePreferredContactTime\FormXml\card\{61925f6d-207b-4666-8c92-4188cc286fb2}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePreferredContactTime\FormXml\main\{06489e7c-9b44-4f88-9c56-0d3e0398389e}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePreferredContactTime\FormXml\main\{06489e7c-9b44-4f88-9c56-0d3e0398389e}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePreferredContactTime\FormXml\quick\{8fe246d0-a56f-4dbe-80d5-e75a4a6476c3}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePreferredContactTime\FormXml\quick\{8fe246d0-a56f-4dbe-80d5-e75a4a6476c3}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePreferredContactTime\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePreferredContactTime\SavedQueries\{05897d72-63ee-e811-a96e-000d3a206976}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePreferredContactTime\SavedQueries\{12a57131-24a6-4ce3-beb1-2966f3d61543}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePreferredContactTime\SavedQueries\{366fe41a-f3d4-4523-91bd-828e9b1e5bb9}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePreferredContactTime\SavedQueries\{7f4897e5-767e-4847-8b0e-af7e910a3a9c}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePreferredContactTime\SavedQueries\{7fc319c0-e0a5-4cb3-86a3-903eddb24872}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePreferredContactTime\SavedQueries\{b921b27f-e62f-4f5c-b62f-ea729660936c}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidatePreferredContactTime\SavedQueries\{e19bdf37-c926-4b48-9286-1fb5d82870da}.xml" />
+    <Content Include="GITIS\Entities\dfe_candidateprivacypolicy\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_candidateprivacypolicy\FormXml\card\{c71c91ed-bb53-4d84-8a1d-1163076d7693}.xml" />
+    <Content Include="GITIS\Entities\dfe_candidateprivacypolicy\FormXml\card\{c71c91ed-bb53-4d84-8a1d-1163076d7693}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_candidateprivacypolicy\FormXml\main\{c9e390af-e15f-4889-a017-8b7ab0a73280}.xml" />
+    <Content Include="GITIS\Entities\dfe_candidateprivacypolicy\FormXml\main\{c9e390af-e15f-4889-a017-8b7ab0a73280}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_candidateprivacypolicy\FormXml\quick\{03eae11f-069d-42d1-84b1-83d39b3c3479}.xml" />
+    <Content Include="GITIS\Entities\dfe_candidateprivacypolicy\FormXml\quick\{03eae11f-069d-42d1-84b1-83d39b3c3479}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_candidateprivacypolicy\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_candidateprivacypolicy\SavedQueries\{0c80d764-a7ba-4865-aa4b-9b3547012cb9}.xml" />
+    <Content Include="GITIS\Entities\dfe_candidateprivacypolicy\SavedQueries\{3a1333b2-503a-4ef5-b4ef-7d7d2ef6de4b}.xml" />
+    <Content Include="GITIS\Entities\dfe_candidateprivacypolicy\SavedQueries\{4603f44e-2e31-4c0c-849f-ce2d0e231c83}.xml" />
+    <Content Include="GITIS\Entities\dfe_candidateprivacypolicy\SavedQueries\{4da7c3a4-925c-4b51-9c26-0291feea73d3}.xml" />
+    <Content Include="GITIS\Entities\dfe_candidateprivacypolicy\SavedQueries\{5311a2d7-871d-e911-a97f-000d3a233e06}.xml" />
+    <Content Include="GITIS\Entities\dfe_candidateprivacypolicy\SavedQueries\{cc889088-0a5d-4623-86f3-804e193f5c9d}.xml" />
+    <Content Include="GITIS\Entities\dfe_candidateprivacypolicy\SavedQueries\{e20c65ca-43f8-42d2-a235-65fc4d13c27e}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateQualification\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateQualification\FormXml\card\{59668cb6-fb1c-4b2d-b9f4-ea5604b5c390}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateQualification\FormXml\card\{59668cb6-fb1c-4b2d-b9f4-ea5604b5c390}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateQualification\FormXml\main\{179c5f59-4cf9-4817-86b4-ef9eb6d9b605}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateQualification\FormXml\main\{179c5f59-4cf9-4817-86b4-ef9eb6d9b605}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateQualification\FormXml\main\{f26ccbc4-adbc-4801-a8f3-d011dba98650}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateQualification\FormXml\main\{f26ccbc4-adbc-4801-a8f3-d011dba98650}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateQualification\FormXml\quick\{43f3e8e6-3103-4818-859b-d61254bb14a8}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateQualification\FormXml\quick\{43f3e8e6-3103-4818-859b-d61254bb14a8}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateQualification\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateQualification\SavedQueries\{2d1ac727-2e32-4170-aa5e-e9ccfc78c6e5}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateQualification\SavedQueries\{342465ba-a7ed-e811-a972-000d3a20838a}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateQualification\SavedQueries\{3f2a65dc-f246-4ad0-aafe-f486a156e2fb}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateQualification\SavedQueries\{51d80e49-f6c1-477b-81b5-f63cfc92e1bd}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateQualification\SavedQueries\{727c74c0-9e12-4f73-af49-49c95367ef3c}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateQualification\SavedQueries\{74e48ab4-0a7f-4aec-84d8-7b3fa8613859}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateQualification\SavedQueries\{c4176ceb-aded-e811-a972-000d3a20838a}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateQualification\SavedQueries\{f75dc027-1102-e911-a971-000d3a206976}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateQualification\SavedQueries\{fb204a6d-0fd7-4393-ab3c-05b248fe6652}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateSchoolExperience\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateSchoolExperience\FormXml\card\{6c8fe788-a5c3-4f65-9a7f-3468086b597d}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateSchoolExperience\FormXml\card\{6c8fe788-a5c3-4f65-9a7f-3468086b597d}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateSchoolExperience\FormXml\main\{01b34580-2d68-49c5-9fdc-89b8b3f0094b}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateSchoolExperience\FormXml\main\{01b34580-2d68-49c5-9fdc-89b8b3f0094b}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateSchoolExperience\FormXml\quick\{d0c60b43-b3be-4cf9-ba00-83d78e43a81d}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateSchoolExperience\FormXml\quick\{d0c60b43-b3be-4cf9-ba00-83d78e43a81d}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateSchoolExperience\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateSchoolExperience\SavedQueries\{09e0641e-6fbb-48c5-8722-37c18685add3}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateSchoolExperience\SavedQueries\{46d73a69-e5b4-4e3a-991f-19a2556913f5}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateSchoolExperience\SavedQueries\{5e048dde-7199-4fce-9d24-ec80347ebc0c}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateSchoolExperience\SavedQueries\{76d49ef3-5416-4011-9a8c-537dc726fed1}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateSchoolExperience\SavedQueries\{7ffef216-e0c2-47aa-8b11-4c031e1ace86}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateSchoolExperience\SavedQueries\{dd66a956-6f74-4ea2-97e5-7fce28fabccf}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateSchoolExperience\SavedQueries\{e4a1f629-4cee-e811-a96e-000d3a206976}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingLeavingReason\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingLeavingReason\FormXml\card\{6ebd685f-8176-4cf2-b926-9188c897791f}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingLeavingReason\FormXml\card\{6ebd685f-8176-4cf2-b926-9188c897791f}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingLeavingReason\FormXml\main\{64919702-f265-4201-87be-0d5e782e7d30}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingLeavingReason\FormXml\main\{64919702-f265-4201-87be-0d5e782e7d30}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingLeavingReason\FormXml\quick\{3188017a-454b-422d-ba14-d051ecdd7675}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingLeavingReason\FormXml\quick\{3188017a-454b-422d-ba14-d051ecdd7675}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingLeavingReason\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingLeavingReason\SavedQueries\{24a863ab-f461-4c4a-83bd-b9f008a45e7a}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingLeavingReason\SavedQueries\{43c14a98-0d38-4feb-a9dc-c348318df6ec}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingLeavingReason\SavedQueries\{4a7131b7-b221-4f79-995b-c2c224235494}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingLeavingReason\SavedQueries\{549f8f32-e0de-433f-8948-392fb261e274}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingLeavingReason\SavedQueries\{7b709d10-61ee-e811-a96e-000d3a206976}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingLeavingReason\SavedQueries\{99ae1652-72f5-4e61-a579-c68bbe4b8f9d}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingLeavingReason\SavedQueries\{dcb87d7e-45ca-484a-b7f1-87b8504c485d}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingPostAppliedFor\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingPostAppliedFor\FormXml\card\{e5fd9c2a-8fce-49a7-800a-e1b0e9f83ed3}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingPostAppliedFor\FormXml\card\{e5fd9c2a-8fce-49a7-800a-e1b0e9f83ed3}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingPostAppliedFor\FormXml\main\{a19a2efa-05c5-4186-bf6e-300165ecd89a}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingPostAppliedFor\FormXml\main\{a19a2efa-05c5-4186-bf6e-300165ecd89a}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingPostAppliedFor\FormXml\quick\{f2aa2a41-e82d-4db5-b875-b09b57e0d219}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingPostAppliedFor\FormXml\quick\{f2aa2a41-e82d-4db5-b875-b09b57e0d219}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingPostAppliedFor\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingPostAppliedFor\SavedQueries\{165889bd-61eb-43f3-b379-72f5beefe776}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingPostAppliedFor\SavedQueries\{275fa5a6-4200-458e-b0a3-ff1cb31fb55a}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingPostAppliedFor\SavedQueries\{49eb3c8e-8b2c-4ba4-806a-66744bcc5319}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingPostAppliedFor\SavedQueries\{9747d67e-5eee-e811-a96e-000d3a206976}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingPostAppliedFor\SavedQueries\{a3fddd29-04a5-46e9-9176-eee20b8c3e6d}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingPostAppliedFor\SavedQueries\{e2d82432-76e5-49cf-be8a-ef5020031dcf}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTeachingPostAppliedFor\SavedQueries\{f7f0de6d-0e32-478c-9f51-e1103c9f4bd2}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTrainedTaughtTeachingSubject\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTrainedTaughtTeachingSubject\FormXml\card\{d414d68d-afd7-4a0e-8caf-93a72557f3e4}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTrainedTaughtTeachingSubject\FormXml\card\{d414d68d-afd7-4a0e-8caf-93a72557f3e4}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTrainedTaughtTeachingSubject\FormXml\main\{07636f73-786d-4a32-8af3-d137b220f6fa}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTrainedTaughtTeachingSubject\FormXml\main\{07636f73-786d-4a32-8af3-d137b220f6fa}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTrainedTaughtTeachingSubject\FormXml\quick\{97b34f35-6c68-431c-967c-9dd43f96f3c7}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTrainedTaughtTeachingSubject\FormXml\quick\{97b34f35-6c68-431c-967c-9dd43f96f3c7}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTrainedTaughtTeachingSubject\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTrainedTaughtTeachingSubject\SavedQueries\{1b0c71c4-51ff-4f8d-89d5-8e2071e773da}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTrainedTaughtTeachingSubject\SavedQueries\{3ae4ad72-822b-4d0b-aa25-39e26153fe59}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTrainedTaughtTeachingSubject\SavedQueries\{6e8d09ca-9ced-e811-a972-000d3a20838a}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTrainedTaughtTeachingSubject\SavedQueries\{8cfcbd70-13dd-4fc7-9892-13670b523dbb}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTrainedTaughtTeachingSubject\SavedQueries\{9b9d12bd-1114-4588-bc78-48c63add574c}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTrainedTaughtTeachingSubject\SavedQueries\{a06f0232-e018-4c22-9d40-2a2d9924be72}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateTrainedTaughtTeachingSubject\SavedQueries\{fa03be50-600e-49d9-a6d1-c98dce059226}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateWorkExperience\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateWorkExperience\FormXml\card\{313ead72-fa07-4c3c-9740-1378a1e3ae90}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateWorkExperience\FormXml\card\{313ead72-fa07-4c3c-9740-1378a1e3ae90}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateWorkExperience\FormXml\main\{6d964f55-fe58-43ac-b37b-a7d8c206f8e4}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateWorkExperience\FormXml\main\{6d964f55-fe58-43ac-b37b-a7d8c206f8e4}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateWorkExperience\FormXml\quick\{a480e962-a1af-423c-bb7a-e57845bd0be0}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateWorkExperience\FormXml\quick\{a480e962-a1af-423c-bb7a-e57845bd0be0}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateWorkExperience\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateWorkExperience\SavedQueries\{42946691-a0b8-4abd-987b-fd62ce91c292}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateWorkExperience\SavedQueries\{5da9ae55-eb12-4907-a091-c0ad52999441}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateWorkExperience\SavedQueries\{8c464bb6-f924-4eb9-8568-87cad1795a67}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateWorkExperience\SavedQueries\{8f91c8db-d2e4-44ab-abd9-025207a82193}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateWorkExperience\SavedQueries\{9711440b-d926-41ec-b74f-b1ab406b90ab}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateWorkExperience\SavedQueries\{a673cf1c-85ed-e811-a970-000d3a233b72}.xml" />
+    <Content Include="GITIS\Entities\dfe_CandidateWorkExperience\SavedQueries\{fa1a9672-72c4-4713-b717-8da42b40951c}.xml" />
+    <Content Include="GITIS\Entities\dfe_config\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_config\FormXml\card\{4c1ff6a3-753f-4673-8cb5-06f87e0f3734}.xml" />
+    <Content Include="GITIS\Entities\dfe_config\FormXml\card\{4c1ff6a3-753f-4673-8cb5-06f87e0f3734}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_config\FormXml\main\{7d20adf4-a1ff-42e3-bd4c-7e7900275617}.xml" />
+    <Content Include="GITIS\Entities\dfe_config\FormXml\main\{7d20adf4-a1ff-42e3-bd4c-7e7900275617}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_config\FormXml\quick\{48ae4d20-6098-45bd-b794-eeaa019e7882}.xml" />
+    <Content Include="GITIS\Entities\dfe_config\FormXml\quick\{48ae4d20-6098-45bd-b794-eeaa019e7882}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_config\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_config\SavedQueries\{0a22fdc0-aa40-4c90-aed0-aeb87a1aca89}.xml" />
+    <Content Include="GITIS\Entities\dfe_config\SavedQueries\{14d2c73a-e416-47d1-a63e-5f2f8fd59e84}.xml" />
+    <Content Include="GITIS\Entities\dfe_config\SavedQueries\{6074734a-be79-4845-ae8b-24c8c0cb1a35}.xml" />
+    <Content Include="GITIS\Entities\dfe_config\SavedQueries\{7916b082-69cc-e811-a96b-000d3a23443b}.xml" />
+    <Content Include="GITIS\Entities\dfe_config\SavedQueries\{89bbe64f-f8f1-4fab-ad6e-f48d5563e4f5}.xml" />
+    <Content Include="GITIS\Entities\dfe_config\SavedQueries\{8f173a36-0021-4337-ad4b-1870139b7fc1}.xml" />
+    <Content Include="GITIS\Entities\dfe_config\SavedQueries\{9b9d8324-b9ba-4b7d-aa08-54c880d61135}.xml" />
+    <Content Include="GITIS\Entities\dfe_country\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_country\FormXml\card\{f35f7a3d-f4c4-482e-a623-de9c5aa92705}.xml" />
+    <Content Include="GITIS\Entities\dfe_country\FormXml\card\{f35f7a3d-f4c4-482e-a623-de9c5aa92705}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_country\FormXml\main\{4528685c-285c-41f7-bb31-9782c45a16d6}.xml" />
+    <Content Include="GITIS\Entities\dfe_country\FormXml\main\{4528685c-285c-41f7-bb31-9782c45a16d6}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_country\FormXml\quick\{f613f5dd-eb4a-4018-8d2e-eac4b05326d3}.xml" />
+    <Content Include="GITIS\Entities\dfe_country\FormXml\quick\{f613f5dd-eb4a-4018-8d2e-eac4b05326d3}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_country\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_country\SavedQueries\{4cf18a9f-9ee7-45d2-b73d-87bf3b62f94b}.xml" />
+    <Content Include="GITIS\Entities\dfe_country\SavedQueries\{5ffbb149-23a4-480f-bbcb-d2786817d380}.xml" />
+    <Content Include="GITIS\Entities\dfe_country\SavedQueries\{7956908a-a4bd-46fa-973e-c649f8daa79a}.xml" />
+    <Content Include="GITIS\Entities\dfe_country\SavedQueries\{ae286d91-1194-e811-a848-000d3a2a37ad}.xml" />
+    <Content Include="GITIS\Entities\dfe_country\SavedQueries\{b4b299d8-c410-40e4-bb35-4c55a7a16eba}.xml" />
+    <Content Include="GITIS\Entities\dfe_country\SavedQueries\{e5bd6785-f54f-4b55-86a5-9b40ea6a880b}.xml" />
+    <Content Include="GITIS\Entities\dfe_country\SavedQueries\{ed4f1824-d853-42cd-9e0c-c427826b61b9}.xml" />
+    <Content Include="GITIS\Entities\dfe_facebookmessage\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_facebookmessage\FormXml\card\{ac92922e-56ea-4f67-8ba1-f256291594a8}.xml" />
+    <Content Include="GITIS\Entities\dfe_facebookmessage\FormXml\card\{ac92922e-56ea-4f67-8ba1-f256291594a8}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_facebookmessage\FormXml\main\{07a69b19-0dab-4177-9190-ebd6ea11bba8}.xml" />
+    <Content Include="GITIS\Entities\dfe_facebookmessage\FormXml\main\{07a69b19-0dab-4177-9190-ebd6ea11bba8}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_facebookmessage\FormXml\quick\{55de9994-53dc-43e7-95cf-bd7fd7a15d4e}.xml" />
+    <Content Include="GITIS\Entities\dfe_facebookmessage\FormXml\quick\{55de9994-53dc-43e7-95cf-bd7fd7a15d4e}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_facebookmessage\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_facebookmessage\SavedQueries\{2aa094df-fe06-48bf-8aab-bfca50bdd872}.xml" />
+    <Content Include="GITIS\Entities\dfe_facebookmessage\SavedQueries\{55a3b926-094b-4da0-8acf-7adca187c5e1}.xml" />
+    <Content Include="GITIS\Entities\dfe_facebookmessage\SavedQueries\{62d4cb50-9f07-4801-b5d8-0c620f3877b5}.xml" />
+    <Content Include="GITIS\Entities\dfe_facebookmessage\SavedQueries\{85c2c61a-6d13-42f6-aa81-910632acd657}.xml" />
+    <Content Include="GITIS\Entities\dfe_facebookmessage\SavedQueries\{d0acfe76-df37-4af7-977c-3470dbca354a}.xml" />
+    <Content Include="GITIS\Entities\dfe_facebookmessage\SavedQueries\{d2d42704-9f85-4bff-9beb-7d8c904c284e}.xml" />
+    <Content Include="GITIS\Entities\dfe_facebookmessage\SavedQueries\{dadf2dd9-831d-e911-a979-000d3a20838a}.xml" />
+    <Content Include="GITIS\Entities\dfe_facebookmessage\SavedQueries\{f1b49106-804f-49bd-a572-8a1c82ca31c3}.xml" />
+    <Content Include="GITIS\Entities\dfe_Language\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_Language\FormXml\card\{deeb48b5-e059-4d7c-94a0-e14807c4d3e6}.xml" />
+    <Content Include="GITIS\Entities\dfe_Language\FormXml\card\{deeb48b5-e059-4d7c-94a0-e14807c4d3e6}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_Language\FormXml\main\{a1aee73b-cb16-4d19-8f33-c1a805db39f3}.xml" />
+    <Content Include="GITIS\Entities\dfe_Language\FormXml\main\{a1aee73b-cb16-4d19-8f33-c1a805db39f3}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_Language\FormXml\quick\{a426c38d-f0b4-454b-8da4-7229046a18c3}.xml" />
+    <Content Include="GITIS\Entities\dfe_Language\FormXml\quick\{a426c38d-f0b4-454b-8da4-7229046a18c3}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_Language\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_Language\SavedQueries\{1118cbc2-9daa-4a9c-805d-5a58405e62af}.xml" />
+    <Content Include="GITIS\Entities\dfe_Language\SavedQueries\{161a8ba2-a811-4b5e-9dd5-8c6f2e76af0a}.xml" />
+    <Content Include="GITIS\Entities\dfe_Language\SavedQueries\{72a6abb4-335b-4f2d-a615-ccc663424868}.xml" />
+    <Content Include="GITIS\Entities\dfe_Language\SavedQueries\{a3227fd6-99af-e811-a84d-000d3a2a3ab7}.xml" />
+    <Content Include="GITIS\Entities\dfe_Language\SavedQueries\{afa152be-320e-4999-ba71-517b904675ee}.xml" />
+    <Content Include="GITIS\Entities\dfe_Language\SavedQueries\{b3c6ff4f-ba53-4a60-99bb-36b09946c475}.xml" />
+    <Content Include="GITIS\Entities\dfe_Language\SavedQueries\{fbfea194-4324-4acf-afaa-2e6551e9a67d}.xml" />
+    <Content Include="GITIS\Entities\dfe_MarketingConfig\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_MarketingConfig\FormXml\card\{99a9c42d-eab8-4152-9760-3b546131bf9f}.xml" />
+    <Content Include="GITIS\Entities\dfe_MarketingConfig\FormXml\card\{99a9c42d-eab8-4152-9760-3b546131bf9f}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_MarketingConfig\FormXml\main\{96b55052-3fca-4913-982d-22b897795edf}.xml" />
+    <Content Include="GITIS\Entities\dfe_MarketingConfig\FormXml\main\{96b55052-3fca-4913-982d-22b897795edf}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_MarketingConfig\FormXml\quick\{17730066-f45e-4776-88f6-71798af8ad66}.xml" />
+    <Content Include="GITIS\Entities\dfe_MarketingConfig\FormXml\quick\{17730066-f45e-4776-88f6-71798af8ad66}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_MarketingConfig\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_MarketingConfig\SavedQueries\{215911cc-3c98-4ff7-b607-acfd7a3f41df}.xml" />
+    <Content Include="GITIS\Entities\dfe_MarketingConfig\SavedQueries\{44f68778-9ae1-4e0e-adc0-1c4de7bffc60}.xml" />
+    <Content Include="GITIS\Entities\dfe_MarketingConfig\SavedQueries\{5d17e694-2228-4ab1-a98c-9ae58563166c}.xml" />
+    <Content Include="GITIS\Entities\dfe_MarketingConfig\SavedQueries\{6abab315-7b57-e911-a97c-000d3a20838a}.xml" />
+    <Content Include="GITIS\Entities\dfe_MarketingConfig\SavedQueries\{88679f54-511f-4053-8422-1982ea8eb296}.xml" />
+    <Content Include="GITIS\Entities\dfe_MarketingConfig\SavedQueries\{b615353a-f8b8-4d51-8164-77a4317d9be1}.xml" />
+    <Content Include="GITIS\Entities\dfe_MarketingConfig\SavedQueries\{bd9b7df7-8f69-4300-89e6-d86da17d2f6e}.xml" />
+    <Content Include="GITIS\Entities\dfe_othermessage\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_othermessage\FormXml\card\{db243d0e-e8ef-4e4b-b000-7f70bc6122a0}.xml" />
+    <Content Include="GITIS\Entities\dfe_othermessage\FormXml\card\{db243d0e-e8ef-4e4b-b000-7f70bc6122a0}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_othermessage\FormXml\main\{b27cfa20-a477-467e-a75c-0370ccc44592}.xml" />
+    <Content Include="GITIS\Entities\dfe_othermessage\FormXml\main\{b27cfa20-a477-467e-a75c-0370ccc44592}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_othermessage\FormXml\quick\{fa174d99-df34-4453-ace0-e95ba6ffb754}.xml" />
+    <Content Include="GITIS\Entities\dfe_othermessage\FormXml\quick\{fa174d99-df34-4453-ace0-e95ba6ffb754}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_othermessage\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_othermessage\SavedQueries\{1898d786-901d-e911-a9ac-000d3a2065c5}.xml" />
+    <Content Include="GITIS\Entities\dfe_othermessage\SavedQueries\{249f8d68-23d7-454c-a26b-2d26e27a1ede}.xml" />
+    <Content Include="GITIS\Entities\dfe_othermessage\SavedQueries\{3592f180-576f-492a-990e-cac518fe2119}.xml" />
+    <Content Include="GITIS\Entities\dfe_othermessage\SavedQueries\{3c9db8f2-34f4-44ac-9111-94c80cb0d275}.xml" />
+    <Content Include="GITIS\Entities\dfe_othermessage\SavedQueries\{51002e55-3021-47c3-a26c-c5b479b0dd17}.xml" />
+    <Content Include="GITIS\Entities\dfe_othermessage\SavedQueries\{680bb78b-fa01-42f2-8bb0-1b2ff26ae8af}.xml" />
+    <Content Include="GITIS\Entities\dfe_othermessage\SavedQueries\{c09ce4c4-555e-44b4-ae55-3cd0b7e3ea60}.xml" />
+    <Content Include="GITIS\Entities\dfe_othermessage\SavedQueries\{f19e6840-c49f-4da8-bb05-7d90ee73ff35}.xml" />
+    <Content Include="GITIS\Entities\dfe_privacypolicy\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_privacypolicy\FormXml\card\{d829c8ba-4965-4847-8fdd-f1dfd66f22b8}.xml" />
+    <Content Include="GITIS\Entities\dfe_privacypolicy\FormXml\card\{d829c8ba-4965-4847-8fdd-f1dfd66f22b8}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_privacypolicy\FormXml\main\{e6df1231-886d-427d-b69f-46f347efae3e}.xml" />
+    <Content Include="GITIS\Entities\dfe_privacypolicy\FormXml\main\{e6df1231-886d-427d-b69f-46f347efae3e}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_privacypolicy\FormXml\quick\{5ff14f78-3e15-4a0e-be6d-3b9bc31726e5}.xml" />
+    <Content Include="GITIS\Entities\dfe_privacypolicy\FormXml\quick\{5ff14f78-3e15-4a0e-be6d-3b9bc31726e5}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_privacypolicy\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_privacypolicy\SavedQueries\{2c5f9b72-c810-4011-8d02-581134e21e9d}.xml" />
+    <Content Include="GITIS\Entities\dfe_privacypolicy\SavedQueries\{3a1fdf0c-a3b0-4f65-9df5-615b436ce14c}.xml" />
+    <Content Include="GITIS\Entities\dfe_privacypolicy\SavedQueries\{3f5df30b-e670-4a83-87a7-902bfd3fd13f}.xml" />
+    <Content Include="GITIS\Entities\dfe_privacypolicy\SavedQueries\{47e12bb1-871d-e911-a97f-000d3a233e06}.xml" />
+    <Content Include="GITIS\Entities\dfe_privacypolicy\SavedQueries\{629ddfc1-7b18-49de-b30b-3f3849afa213}.xml" />
+    <Content Include="GITIS\Entities\dfe_privacypolicy\SavedQueries\{83f17644-35c3-410e-aa10-14e7757442e4}.xml" />
+    <Content Include="GITIS\Entities\dfe_privacypolicy\SavedQueries\{8592bcae-6189-4ca3-a0bb-42c6570fc07a}.xml" />
+    <Content Include="GITIS\Entities\dfe_sar\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_sar\FormXml\card\{a24a50ad-7006-43cc-b98f-7558d4e75b6e}.xml" />
+    <Content Include="GITIS\Entities\dfe_sar\FormXml\card\{a24a50ad-7006-43cc-b98f-7558d4e75b6e}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_sar\FormXml\main\{f4467848-5c88-4158-bba4-0e739a1a5a42}.xml" />
+    <Content Include="GITIS\Entities\dfe_sar\FormXml\main\{f4467848-5c88-4158-bba4-0e739a1a5a42}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_sar\FormXml\quick\{73a04e46-d66c-4f56-9680-95a97186a359}.xml" />
+    <Content Include="GITIS\Entities\dfe_sar\FormXml\quick\{73a04e46-d66c-4f56-9680-95a97186a359}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_sar\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_sar\SavedQueries\{1d67c398-10a9-4a99-b6c2-fb853271ddcb}.xml" />
+    <Content Include="GITIS\Entities\dfe_sar\SavedQueries\{438d7eb5-c59d-4495-bd00-8f5b3e1365ec}.xml" />
+    <Content Include="GITIS\Entities\dfe_sar\SavedQueries\{4e291124-7e6b-4e4e-8e59-541e1eb1daa2}.xml" />
+    <Content Include="GITIS\Entities\dfe_sar\SavedQueries\{7f566e84-cd2f-4617-a66d-ea68387603ef}.xml" />
+    <Content Include="GITIS\Entities\dfe_sar\SavedQueries\{998e45fd-871d-e911-a97f-000d3a233e06}.xml" />
+    <Content Include="GITIS\Entities\dfe_sar\SavedQueries\{af32ba63-3627-4740-822d-3f9e27a48076}.xml" />
+    <Content Include="GITIS\Entities\dfe_sar\SavedQueries\{ffed0774-379d-4c4f-80df-f94221dc38bc}.xml" />
+    <Content Include="GITIS\Entities\dfe_servicesubscription\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_servicesubscription\FormXml\card\{f4ace2eb-29be-4129-9748-4f8af63c4c3d}.xml" />
+    <Content Include="GITIS\Entities\dfe_servicesubscription\FormXml\card\{f4ace2eb-29be-4129-9748-4f8af63c4c3d}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_servicesubscription\FormXml\main\{e6558f77-1be8-40bc-b7e5-c25d2e60f2c1}.xml" />
+    <Content Include="GITIS\Entities\dfe_servicesubscription\FormXml\main\{e6558f77-1be8-40bc-b7e5-c25d2e60f2c1}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_servicesubscription\FormXml\quick\{30b53e79-9f3b-4fac-bf1a-01c34d740074}.xml" />
+    <Content Include="GITIS\Entities\dfe_servicesubscription\FormXml\quick\{30b53e79-9f3b-4fac-bf1a-01c34d740074}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_servicesubscription\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_servicesubscription\SavedQueries\{0fe40811-eac6-4b6e-aece-cdf831bdc181}.xml" />
+    <Content Include="GITIS\Entities\dfe_servicesubscription\SavedQueries\{195a5b3e-1932-44a5-8ff5-1ddb12a31671}.xml" />
+    <Content Include="GITIS\Entities\dfe_servicesubscription\SavedQueries\{4a4bd9dc-016b-4bff-b160-c286d46628f6}.xml" />
+    <Content Include="GITIS\Entities\dfe_servicesubscription\SavedQueries\{53137c0d-b00f-4f75-900c-21b80573162b}.xml" />
+    <Content Include="GITIS\Entities\dfe_servicesubscription\SavedQueries\{560b1083-23ba-ea11-a812-000d3a44afcc}.xml" />
+    <Content Include="GITIS\Entities\dfe_servicesubscription\SavedQueries\{73cd8b39-6c27-4373-92fd-9b7ffbe3e6cc}.xml" />
+    <Content Include="GITIS\Entities\dfe_servicesubscription\SavedQueries\{7f46e884-6224-4af5-8e73-6a8faabade8d}.xml" />
+    <Content Include="GITIS\Entities\dfe_sms\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_sms\FormXml\card\{4ca9da54-11fe-453c-a1ce-30770749c8c7}.xml" />
+    <Content Include="GITIS\Entities\dfe_sms\FormXml\card\{4ca9da54-11fe-453c-a1ce-30770749c8c7}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_sms\FormXml\main\{177fea53-fc7b-4760-b287-751919d8a6c6}.xml" />
+    <Content Include="GITIS\Entities\dfe_sms\FormXml\main\{177fea53-fc7b-4760-b287-751919d8a6c6}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_sms\FormXml\quickCreate\{edf20fca-f535-4e5f-ab2f-c501a69c21c5}.xml" />
+    <Content Include="GITIS\Entities\dfe_sms\FormXml\quickCreate\{edf20fca-f535-4e5f-ab2f-c501a69c21c5}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_sms\FormXml\quick\{1ec95d41-1222-4adb-b99a-9e49a843259c}.xml" />
+    <Content Include="GITIS\Entities\dfe_sms\FormXml\quick\{1ec95d41-1222-4adb-b99a-9e49a843259c}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_sms\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_sms\SavedQueries\{1cd2a4ce-1b15-43e3-8fb5-dfde2435324b}.xml" />
+    <Content Include="GITIS\Entities\dfe_sms\SavedQueries\{29a6f956-21d3-4207-baf8-0d106fb9de23}.xml" />
+    <Content Include="GITIS\Entities\dfe_sms\SavedQueries\{3adfc585-8657-e911-a979-000d3a233b72}.xml" />
+    <Content Include="GITIS\Entities\dfe_sms\SavedQueries\{4c74a7f2-00c6-4d56-a650-c08f730774ab}.xml" />
+    <Content Include="GITIS\Entities\dfe_sms\SavedQueries\{5a6aaaa1-8c57-e911-a979-000d3a233b72}.xml" />
+    <Content Include="GITIS\Entities\dfe_sms\SavedQueries\{75fa777b-237e-e911-a97d-000d3a20838a}.xml" />
+    <Content Include="GITIS\Entities\dfe_sms\SavedQueries\{7b9b9de0-127e-e911-a97d-000d3a20838a}.xml" />
+    <Content Include="GITIS\Entities\dfe_sms\SavedQueries\{983a349c-1dfa-46f0-9905-8aea6407533c}.xml" />
+    <Content Include="GITIS\Entities\dfe_sms\SavedQueries\{9d4bfcfa-da5a-e911-a983-000d3a233e06}.xml" />
+    <Content Include="GITIS\Entities\dfe_sms\SavedQueries\{c074b6af-1d9b-e811-a849-000d3a2a37ad}.xml" />
+    <Content Include="GITIS\Entities\dfe_sms\SavedQueries\{c52b56d0-c52c-44f7-b990-7b4b41351ffc}.xml" />
+    <Content Include="GITIS\Entities\dfe_sms\SavedQueries\{cd929fbc-b9f8-4c9b-928a-ddbba3435295}.xml" />
+    <Content Include="GITIS\Entities\dfe_sms\SavedQueries\{db6a8918-66a8-4dfb-ac8c-05ab6f6e5027}.xml" />
+    <Content Include="GITIS\Entities\dfe_sms\SavedQueries\{e408690a-1e7e-e911-a97d-000d3a20838a}.xml" />
+    <Content Include="GITIS\Entities\dfe_stage\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_stage\FormXml\card\{f4b4b02d-a26d-4cef-9ed8-097cf6a6ff98}.xml" />
+    <Content Include="GITIS\Entities\dfe_stage\FormXml\card\{f4b4b02d-a26d-4cef-9ed8-097cf6a6ff98}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_stage\FormXml\main\{f320d9dd-bc93-4132-808d-8f4a683dea0b}.xml" />
+    <Content Include="GITIS\Entities\dfe_stage\FormXml\main\{f320d9dd-bc93-4132-808d-8f4a683dea0b}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_stage\FormXml\quick\{79ac5929-e7ae-417c-a33e-04d59167d008}.xml" />
+    <Content Include="GITIS\Entities\dfe_stage\FormXml\quick\{79ac5929-e7ae-417c-a33e-04d59167d008}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_stage\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_stage\SavedQueries\{35d14763-f596-4024-90b1-2b040dbe11f5}.xml" />
+    <Content Include="GITIS\Entities\dfe_stage\SavedQueries\{40d15938-7ba5-ea11-a812-000d3a44afcc}.xml" />
+    <Content Include="GITIS\Entities\dfe_stage\SavedQueries\{59ef20ed-b555-497b-9c35-fd8307a9892a}.xml" />
+    <Content Include="GITIS\Entities\dfe_stage\SavedQueries\{7e81f0d2-a915-41fa-ad80-c1ce3fa7d0ae}.xml" />
+    <Content Include="GITIS\Entities\dfe_stage\SavedQueries\{9f32bd0c-0cdb-40da-bae4-41182c3fc35f}.xml" />
+    <Content Include="GITIS\Entities\dfe_stage\SavedQueries\{a7d536ba-4cb4-4f5c-9e48-7208c41b7fd9}.xml" />
+    <Content Include="GITIS\Entities\dfe_stage\SavedQueries\{aca9c376-21fb-e911-a813-000d3a44a2a9}.xml" />
+    <Content Include="GITIS\Entities\dfe_stage\SavedQueries\{b58945c8-7aa5-ea11-a812-000d3a44afcc}.xml" />
+    <Content Include="GITIS\Entities\dfe_stage\SavedQueries\{e56dba31-f77c-4cb8-8c88-3147d9b63a6e}.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingCollegeAppliedTo\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingCollegeAppliedTo\FormXml\card\{b5c6dbe3-aa17-41d9-933d-9ced45f6c400}.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingCollegeAppliedTo\FormXml\card\{b5c6dbe3-aa17-41d9-933d-9ced45f6c400}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingCollegeAppliedTo\FormXml\main\{16229a80-d2d0-4597-a0d2-5671bf53d603}.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingCollegeAppliedTo\FormXml\main\{16229a80-d2d0-4597-a0d2-5671bf53d603}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingCollegeAppliedTo\FormXml\quick\{d794ebb2-7b93-4003-a690-623b40777409}.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingCollegeAppliedTo\FormXml\quick\{d794ebb2-7b93-4003-a690-623b40777409}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingCollegeAppliedTo\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingCollegeAppliedTo\SavedQueries\{1d9cfcfa-2ae4-e811-a96e-000d3a206976}.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingCollegeAppliedTo\SavedQueries\{221f408b-b54a-44fd-88df-b3de25ca912e}.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingCollegeAppliedTo\SavedQueries\{24fcf388-150a-4e38-b4a1-db1b79d41b30}.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingCollegeAppliedTo\SavedQueries\{69d09aca-06e0-42c4-9513-5ea7346049ec}.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingCollegeAppliedTo\SavedQueries\{9a764bdc-551c-4bd2-9a56-cb1b94c47ec3}.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingCollegeAppliedTo\SavedQueries\{dd9f6b9c-989f-4036-9da9-02f8b60ad9a9}.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingCollegeAppliedTo\SavedQueries\{eaeb3ac5-3f99-410a-a1ff-a0e2aa5c4d01}.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingSubjectList\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingSubjectList\FormXml\card\{0e00e75a-9c0f-4d4c-acd6-4207777b09a9}.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingSubjectList\FormXml\card\{0e00e75a-9c0f-4d4c-acd6-4207777b09a9}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingSubjectList\FormXml\main\{548d13cc-54a3-40d5-b5f1-d87bdc880632}.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingSubjectList\FormXml\main\{548d13cc-54a3-40d5-b5f1-d87bdc880632}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingSubjectList\FormXml\quick\{961c4e04-1330-453b-9ade-c31f98189db3}.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingSubjectList\FormXml\quick\{961c4e04-1330-453b-9ade-c31f98189db3}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingSubjectList\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingSubjectList\SavedQueries\{2f20bcaf-129c-4023-ba33-b3388ad5b8c0}.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingSubjectList\SavedQueries\{3d4e17cd-419c-ea11-a812-000d3a44afcc}.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingSubjectList\SavedQueries\{4615439e-3c7f-4bb7-a08f-a9ae3e73734e}.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingSubjectList\SavedQueries\{65ead18b-9eed-e811-a972-000d3a20838a}.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingSubjectList\SavedQueries\{9221c2c6-b41d-47d8-a851-7e11f9fcd770}.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingSubjectList\SavedQueries\{a2505d82-cb73-4643-ad50-1a0f29c8e6b0}.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingSubjectList\SavedQueries\{a2ebaba8-419c-ea11-a812-000d3a44afcc}.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingSubjectList\SavedQueries\{d09b48c8-5263-451d-8f86-f552bac2383e}.xml" />
+    <Content Include="GITIS\Entities\dfe_TeachingSubjectList\SavedQueries\{e13d6993-72c7-46c4-a3e6-09a420fba210}.xml" />
+    <Content Include="GITIS\Entities\dfe_topic\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_topic\FormXml\card\{4694f3e0-d01c-4eb3-8bfe-12add00a1215}.xml" />
+    <Content Include="GITIS\Entities\dfe_topic\FormXml\card\{4694f3e0-d01c-4eb3-8bfe-12add00a1215}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_topic\FormXml\main\{7272f3a0-fc4f-4305-b312-8b61730b3f93}.xml" />
+    <Content Include="GITIS\Entities\dfe_topic\FormXml\main\{7272f3a0-fc4f-4305-b312-8b61730b3f93}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_topic\FormXml\quick\{f33752a7-8ab7-47fe-8336-ea6bd33bbb55}.xml" />
+    <Content Include="GITIS\Entities\dfe_topic\FormXml\quick\{f33752a7-8ab7-47fe-8336-ea6bd33bbb55}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_topic\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_topic\SavedQueries\{55c9a658-5a84-451b-bdfe-150e549596b5}.xml" />
+    <Content Include="GITIS\Entities\dfe_topic\SavedQueries\{60da8abf-ec04-4064-8d46-fa047b4a7358}.xml" />
+    <Content Include="GITIS\Entities\dfe_topic\SavedQueries\{754e583f-9515-e911-a974-000d3a233b72}.xml" />
+    <Content Include="GITIS\Entities\dfe_topic\SavedQueries\{8f686deb-7832-44df-805d-b75e0aa94492}.xml" />
+    <Content Include="GITIS\Entities\dfe_topic\SavedQueries\{9f352030-c005-4371-aafd-860613d26f52}.xml" />
+    <Content Include="GITIS\Entities\dfe_topic\SavedQueries\{9fe3b11a-cd15-4490-b2d6-86f1c42f9f00}.xml" />
+    <Content Include="GITIS\Entities\dfe_topic\SavedQueries\{f15cc977-54c4-4571-9666-de9dfa746e22}.xml" />
+    <Content Include="GITIS\Entities\dfe_whatsappmessage\Entity.xml" />
+    <Content Include="GITIS\Entities\dfe_whatsappmessage\FormXml\card\{e37783a1-00ee-4680-b12e-245c91924dca}.xml" />
+    <Content Include="GITIS\Entities\dfe_whatsappmessage\FormXml\card\{e37783a1-00ee-4680-b12e-245c91924dca}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_whatsappmessage\FormXml\main\{777cc11a-e6c4-4841-a2f6-b22f43994a72}.xml" />
+    <Content Include="GITIS\Entities\dfe_whatsappmessage\FormXml\main\{777cc11a-e6c4-4841-a2f6-b22f43994a72}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_whatsappmessage\FormXml\quick\{d7ed98ec-640f-422c-9749-4ed37062ca12}.xml" />
+    <Content Include="GITIS\Entities\dfe_whatsappmessage\FormXml\quick\{d7ed98ec-640f-422c-9749-4ed37062ca12}_managed.xml" />
+    <Content Include="GITIS\Entities\dfe_whatsappmessage\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\dfe_whatsappmessage\SavedQueries\{0c0c29bd-079a-45ef-9905-a19b0cbe5d32}.xml" />
+    <Content Include="GITIS\Entities\dfe_whatsappmessage\SavedQueries\{0d10e29c-6022-4e8e-b1d7-50e97b34730a}.xml" />
+    <Content Include="GITIS\Entities\dfe_whatsappmessage\SavedQueries\{22e091de-e784-4602-bd1f-a07ec1d77bc9}.xml" />
+    <Content Include="GITIS\Entities\dfe_whatsappmessage\SavedQueries\{675ea5fb-efdb-4db8-8bf8-d71c7c8fa8b8}.xml" />
+    <Content Include="GITIS\Entities\dfe_whatsappmessage\SavedQueries\{a1976758-2630-4335-9fb2-6f8830ed8198}.xml" />
+    <Content Include="GITIS\Entities\dfe_whatsappmessage\SavedQueries\{d6c8fce7-8e1d-e911-a9ac-000d3a2065c5}.xml" />
+    <Content Include="GITIS\Entities\dfe_whatsappmessage\SavedQueries\{f05b383b-89f7-442e-b0b8-e9309ca696a7}.xml" />
+    <Content Include="GITIS\Entities\dfe_whatsappmessage\SavedQueries\{fb13fb92-f258-489b-8cb6-93c581f942f6}.xml" />
+    <Content Include="GITIS\Entities\Email\Entity.xml" />
+    <Content Include="GITIS\Entities\Email\FormXml\card\{22bc9b0e-555d-4e56-9421-cc039a4a5c71}.xml" />
+    <Content Include="GITIS\Entities\Email\FormXml\card\{22bc9b0e-555d-4e56-9421-cc039a4a5c71}_managed.xml" />
+    <Content Include="GITIS\Entities\Email\FormXml\card\{e5538bb9-77ec-4d24-bc5f-8cb2d825f664}.xml" />
+    <Content Include="GITIS\Entities\Email\FormXml\main\{0d1e47ff-12b2-4f53-9090-bee951b98cb4}.xml" />
+    <Content Include="GITIS\Entities\Email\FormXml\main\{0d1e47ff-12b2-4f53-9090-bee951b98cb4}_managed.xml" />
+    <Content Include="GITIS\Entities\Email\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\Email\SavedQueries\{2667ca02-5f29-e911-a975-000d3a233b72}.xml" />
+    <Content Include="GITIS\Entities\Email\SavedQueries\{69240e27-5f29-e911-a975-000d3a233b72}.xml" />
+    <Content Include="GITIS\Entities\Fax\Entity.xml" />
+    <Content Include="GITIS\Entities\Fax\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\PhoneCall\Entity.xml" />
+    <Content Include="GITIS\Entities\PhoneCall\FormXml\card\{983dc188-2a05-4cfe-b907-4fbfae8c21f7}.xml" />
+    <Content Include="GITIS\Entities\PhoneCall\FormXml\card\{983dc188-2a05-4cfe-b907-4fbfae8c21f7}_managed.xml" />
+    <Content Include="GITIS\Entities\PhoneCall\FormXml\main\{7da0dbb0-790e-406c-a85a-827805e338df}.xml" />
+    <Content Include="GITIS\Entities\PhoneCall\FormXml\main\{7da0dbb0-790e-406c-a85a-827805e338df}_managed.xml" />
+    <Content Include="GITIS\Entities\PhoneCall\FormXml\main\{a91390a5-99bb-4d10-9eee-3a5c87f841f1}.xml" />
+    <Content Include="GITIS\Entities\PhoneCall\FormXml\main\{a91390a5-99bb-4d10-9eee-3a5c87f841f1}_managed.xml" />
+    <Content Include="GITIS\Entities\PhoneCall\FormXml\main\{cdc622ea-2a17-4cc3-9605-44564d56cea7}.xml" />
+    <Content Include="GITIS\Entities\PhoneCall\FormXml\main\{d9776b60-fb22-49bb-bbca-c3452e7dc8f8}.xml" />
+    <Content Include="GITIS\Entities\PhoneCall\FormXml\main\{d9776b60-fb22-49bb-bbca-c3452e7dc8f8}_managed.xml" />
+    <Content Include="GITIS\Entities\PhoneCall\FormXml\main\{f668c993-0c4f-4207-8d1b-9126f747b73b}.xml" />
+    <Content Include="GITIS\Entities\PhoneCall\FormXml\main\{f668c993-0c4f-4207-8d1b-9126f747b73b}_managed.xml" />
+    <Content Include="GITIS\Entities\PhoneCall\FormXml\quickCreate\{6c698cce-b2cf-4d98-9802-3a868da4423a}.xml" />
+    <Content Include="GITIS\Entities\PhoneCall\FormXml\quickCreate\{6c698cce-b2cf-4d98-9802-3a868da4423a}_managed.xml" />
+    <Content Include="GITIS\Entities\PhoneCall\FormXml\quickCreate\{a80fb36c-353f-4310-a4cb-b8fa47d58b9b}.xml" />
+    <Content Include="GITIS\Entities\PhoneCall\FormXml\quickCreate\{a80fb36c-353f-4310-a4cb-b8fa47d58b9b}_managed.xml" />
+    <Content Include="GITIS\Entities\PhoneCall\FormXml\quick\{8e0b7c1e-f5a0-4e7d-b04d-4ca8d5c5ca80}.xml" />
+    <Content Include="GITIS\Entities\PhoneCall\FormXml\quick\{c466c56a-ab9d-41a3-ac68-008a60bfe67e}.xml" />
+    <Content Include="GITIS\Entities\PhoneCall\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\PhoneCall\SavedQueries\{0874635f-4a0f-e911-a990-000d3a2065c5}.xml" />
+    <Content Include="GITIS\Entities\PhoneCall\SavedQueries\{65f927d1-8cf1-4639-97d4-7b6388fb26d2}.xml" />
+    <Content Include="GITIS\Entities\PhoneCall\SavedQueries\{b65900d5-7d55-4ac9-bc6a-33c24b458b05}.xml" />
+    <Content Include="GITIS\Entities\PhoneCall\SavedQueries\{cb204db5-5812-e911-a974-000d3a206976}.xml" />
+    <Content Include="GITIS\Entities\PhoneCall\SavedQueries\{e89f10f0-eab1-e811-a84e-000d3a2a3148}.xml" />
+    <Content Include="GITIS\Entities\PhoneCall\SavedQueries\{ea4d5afe-89b2-e811-a84c-000d3a2a37ad}.xml" />
+    <Content Include="GITIS\Entities\PhoneCall\SavedQueries\{f6a2f891-6846-4b21-b922-712695afd65c}.xml" />
+    <Content Include="GITIS\Entities\QueueItem\Entity.xml" />
+    <Content Include="GITIS\Entities\QueueItem\FormXml\main\{6e47949e-8d77-4f99-8de2-aa6e88d88967}.xml" />
+    <Content Include="GITIS\Entities\QueueItem\FormXml\main\{6e47949e-8d77-4f99-8de2-aa6e88d88967}_managed.xml" />
+    <Content Include="GITIS\Entities\QueueItem\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\QueueItem\SavedQueries\{0155c732-0e18-e911-a974-000d3a233b72}.xml" />
+    <Content Include="GITIS\Entities\QueueItem\SavedQueries\{2d8d408d-c255-4587-9e34-596d496e6738}.xml" />
+    <Content Include="GITIS\Entities\QueueItem\SavedQueries\{31c1d587-5374-4c22-bdcf-54fe8cd1aee5}.xml" />
+    <Content Include="GITIS\Entities\SystemUser\Entity.xml" />
+    <Content Include="GITIS\Entities\SystemUser\FormXml\main\{1429a6ca-dd0e-4b3f-8efa-aac1a065fad4}.xml" />
+    <Content Include="GITIS\Entities\SystemUser\FormXml\main\{1429a6ca-dd0e-4b3f-8efa-aac1a065fad4}_managed.xml" />
+    <Content Include="GITIS\Entities\SystemUser\FormXml\main\{c0d7d7dd-afd0-4675-85fe-1cc5a48be6df}.xml" />
+    <Content Include="GITIS\Entities\SystemUser\FormXml\main\{c0d7d7dd-afd0-4675-85fe-1cc5a48be6df}_managed.xml" />
+    <Content Include="GITIS\Entities\SystemUser\FormXml\main\{c2cd9e55-d4b4-4b55-9951-16ead79643e5}.xml" />
+    <Content Include="GITIS\Entities\SystemUser\FormXml\main\{c2cd9e55-d4b4-4b55-9951-16ead79643e5}_managed.xml" />
+    <Content Include="GITIS\Entities\SystemUser\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\SystemUser\SavedQueries\{54c7cd37-a502-e911-a971-000d3a206976}.xml" />
+    <Content Include="GITIS\Entities\Task\Entity.xml" />
+    <Content Include="GITIS\Entities\Task\FormXml\card\{5e9725e4-5449-4363-8c1c-5ae71767af34}.xml" />
+    <Content Include="GITIS\Entities\Task\FormXml\main\{16654191-19ad-48ca-9e46-c4b4fbdad76f}.xml" />
+    <Content Include="GITIS\Entities\Task\FormXml\main\{16654191-19ad-48ca-9e46-c4b4fbdad76f}_managed.xml" />
+    <Content Include="GITIS\Entities\Task\FormXml\main\{3b087c05-c48d-42e0-a938-fbf853a6b5b2}.xml" />
+    <Content Include="GITIS\Entities\Task\FormXml\main\{3b087c05-c48d-42e0-a938-fbf853a6b5b2}_managed.xml" />
+    <Content Include="GITIS\Entities\Task\FormXml\main\{6e752f70-bf1b-456e-b9fc-5a505ebf8b28}.xml" />
+    <Content Include="GITIS\Entities\Task\FormXml\main\{6e752f70-bf1b-456e-b9fc-5a505ebf8b28}_managed.xml" />
+    <Content Include="GITIS\Entities\Task\FormXml\main\{d5b4a1b2-de4f-4f86-8768-b0730001e7d1}.xml" />
+    <Content Include="GITIS\Entities\Task\FormXml\main\{d5b4a1b2-de4f-4f86-8768-b0730001e7d1}_managed.xml" />
+    <Content Include="GITIS\Entities\Task\FormXml\quickCreate\{0ae398e7-ce8c-46bd-8cde-b04b927f7cdc}.xml" />
+    <Content Include="GITIS\Entities\Task\FormXml\quickCreate\{0ae398e7-ce8c-46bd-8cde-b04b927f7cdc}_managed.xml" />
+    <Content Include="GITIS\Entities\Task\FormXml\quickCreate\{753a378e-5d18-4f1d-9307-d8bf53436a9a}.xml" />
+    <Content Include="GITIS\Entities\Task\FormXml\quickCreate\{753a378e-5d18-4f1d-9307-d8bf53436a9a}_managed.xml" />
+    <Content Include="GITIS\Entities\Task\FormXml\quickCreate\{a1c8a6dc-8804-4019-9c78-7dbe86560ea1}.xml" />
+    <Content Include="GITIS\Entities\Task\FormXml\quickCreate\{a1c8a6dc-8804-4019-9c78-7dbe86560ea1}_managed.xml" />
+    <Content Include="GITIS\Entities\Task\FormXml\quick\{1fac7e2e-0b1c-4b6c-ab92-8af0f92dbdbc}.xml" />
+    <Content Include="GITIS\Entities\Task\FormXml\quick\{81a89014-442c-44ad-9725-4077426a7fee}.xml" />
+    <Content Include="GITIS\Entities\Task\FormXml\quick\{81a89014-442c-44ad-9725-4077426a7fee}_managed.xml" />
+    <Content Include="GITIS\Entities\Task\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\Task\SavedQueries\{20dafc19-ab36-4ab3-bce8-1f431d08748f}.xml" />
+    <Content Include="GITIS\Entities\Task\SavedQueries\{24bc310f-2476-e811-a96b-000d3a2065c5}.xml" />
+    <Content Include="GITIS\Entities\Task\SavedQueries\{2b5f5a5d-2d23-4fe7-aa58-e77995368ae7}.xml" />
+    <Content Include="GITIS\Entities\Task\SavedQueries\{33029def-afb2-e811-a84c-000d3a2a37ad}.xml" />
+    <Content Include="GITIS\Entities\Task\SavedQueries\{392d145c-edd5-e811-a96f-000d3a233b72}.xml" />
+    <Content Include="GITIS\Entities\Task\SavedQueries\{39394fa5-2576-e811-a96b-000d3a2065c5}.xml" />
+    <Content Include="GITIS\Entities\Task\SavedQueries\{4340434c-44c5-4527-a915-d03af5d261cd}.xml" />
+    <Content Include="GITIS\Entities\Task\SavedQueries\{4acd57aa-3b1b-e911-a976-000d3a206976}.xml" />
+    <Content Include="GITIS\Entities\Task\SavedQueries\{5163f25a-a7b2-e811-a84c-000d3a2a37ad}.xml" />
+    <Content Include="GITIS\Entities\Task\SavedQueries\{5de42842-8e1d-e911-a979-000d3a20838a}.xml" />
+    <Content Include="GITIS\Entities\Task\SavedQueries\{6cf285aa-eb20-4277-925a-3e9735411ff0}.xml" />
+    <Content Include="GITIS\Entities\Task\SavedQueries\{985c7b57-8e1d-e911-a979-000d3a20838a}.xml" />
+    <Content Include="GITIS\Entities\Task\SavedQueries\{a0ba31fe-04d6-e811-a96c-000d3a206976}.xml" />
+    <Content Include="GITIS\Entities\Task\SavedQueries\{b2397ca2-8672-4863-bc69-b65802061665}.xml" />
+    <Content Include="GITIS\Entities\Task\SavedQueries\{bd9e5b3b-94ae-4c4a-9e79-2e7aefee4f5e}.xml" />
+    <Content Include="GITIS\Entities\Task\SavedQueries\{c4329725-3b1b-e911-a976-000d3a206976}.xml" />
+    <Content Include="GITIS\Entities\Team\Entity.xml" />
+    <Content Include="GITIS\Entities\Team\RibbonDiff.xml" />
+    <Content Include="GITIS\Entities\Team\SavedQueries\{1927ecd7-f42d-e911-a97f-000d3a233e06}.xml" />
+    <Content Include="GITIS\OptionSets\dfe_advisortype.xml" />
+    <Content Include="GITIS\OptionSets\dfe_barrierorconcerntype.xml" />
+    <Content Include="GITIS\OptionSets\dfe_calloutcomecodesinbound.xml" />
+    <Content Include="GITIS\OptionSets\dfe_calloutcomecodesoutbound.xml" />
+    <Content Include="GITIS\OptionSets\dfe_candidatetype.xml" />
+    <Content Include="GITIS\OptionSets\dfe_category.xml" />
+    <Content Include="GITIS\OptionSets\dfe_contacttype.xml" />
+    <Content Include="GITIS\OptionSets\dfe_courselevel.xml" />
+    <Content Include="GITIS\OptionSets\dfe_currentprofession.xml" />
+    <Content Include="GITIS\OptionSets\dfe_dayperiods.xml" />
+    <Content Include="GITIS\OptionSets\dfe_daysanddayperiods.xml" />
+    <Content Include="GITIS\OptionSets\dfe_degreegradeforukdegrees.xml" />
+    <Content Include="GITIS\OptionSets\dfe_degreestatus.xml" />
+    <Content Include="GITIS\OptionSets\dfe_dm_currentprofession.xml" />
+    <Content Include="GITIS\OptionSets\dfe_dm_eligiblecode.xml" />
+    <Content Include="GITIS\OptionSets\dfe_educationphase.xml" />
+    <Content Include="GITIS\OptionSets\dfe_experiencelength.xml" />
+    <Content Include="GITIS\OptionSets\dfe_gender.xml" />
+    <Content Include="GITIS\OptionSets\dfe_hasqualification.xml" />
+    <Content Include="GITIS\OptionSets\dfe_highestqual.xml" />
+    <Content Include="GITIS\OptionSets\dfe_highestqualsubject.xml" />
+    <Content Include="GITIS\OptionSets\dfe_honours.xml" />
+    <Content Include="GITIS\OptionSets\dfe_ittyear.xml" />
+    <Content Include="GITIS\OptionSets\dfe_learegion.xml" />
+    <Content Include="GITIS\OptionSets\dfe_nationality.xml" />
+    <Content Include="GITIS\OptionSets\dfe_preferredroute.xml" />
+    <Content Include="GITIS\OptionSets\dfe_prioritylevel.xml" />
+    <Content Include="GITIS\OptionSets\dfe_qualificationtype.xml" />
+    <Content Include="GITIS\OptionSets\dfe_region.xml" />
+    <Content Include="GITIS\OptionSets\dfe_salutation.xml" />
+    <Content Include="GITIS\OptionSets\dfe_teachingpositioncategory.xml" />
+    <Content Include="GITIS\OptionSets\dfe_weekdays.xml" />
+    <Content Include="GITIS\OptionSets\dfe_years.xml" />
+    <Content Include="GITIS\OptionSets\dfe_yesno.xml" />
+    <Content Include="GITIS\OptionSets\dfe_yesnounknown.xml" />
+    <Content Include="GITIS\Other\Customizations.xml" />
+    <Content Include="GITIS\Other\Relationships.xml" />
+    <Content Include="GITIS\Other\Relationships\Account.xml" />
+    <Content Include="GITIS\Other\Relationships\ActivityPointer.xml" />
+    <Content Include="GITIS\Other\Relationships\Adx_ad.xml" />
+    <Content Include="GITIS\Other\Relationships\Adx_adplacement.xml" />
+    <Content Include="GITIS\Other\Relationships\adx_blog.xml" />
+    <Content Include="GITIS\Other\Relationships\adx_blogpost.xml" />
+    <Content Include="GITIS\Other\Relationships\adx_casedeflection.xml" />
+    <Content Include="GITIS\Other\Relationships\Adx_communityforumaccesspermission.xml" />
+    <Content Include="GITIS\Other\Relationships\Adx_communityforumalert.xml" />
+    <Content Include="GITIS\Other\Relationships\adx_contentaccesslevel.xml" />
+    <Content Include="GITIS\Other\Relationships\adx_invitation.xml" />
+    <Content Include="GITIS\Other\Relationships\Adx_poll.xml" />
+    <Content Include="GITIS\Other\Relationships\Adx_polloption.xml" />
+    <Content Include="GITIS\Other\Relationships\Adx_pollplacement.xml" />
+    <Content Include="GITIS\Other\Relationships\Adx_pollsubmission.xml" />
+    <Content Include="GITIS\Other\Relationships\adx_publishingstatetransitionrule.xml" />
+    <Content Include="GITIS\Other\Relationships\Adx_redirect.xml" />
+    <Content Include="GITIS\Other\Relationships\adx_shortcut.xml" />
+    <Content Include="GITIS\Other\Relationships\Adx_webpage.xml" />
+    <Content Include="GITIS\Other\Relationships\Adx_website.xml" />
+    <Content Include="GITIS\Other\Relationships\afk_workflowelementoption.xml" />
+    <Content Include="GITIS\Other\Relationships\BookableResourceBooking.xml" />
+    <Content Include="GITIS\Other\Relationships\BookableResourceBookingHeader.xml" />
+    <Content Include="GITIS\Other\Relationships\BulkOperation.xml" />
+    <Content Include="GITIS\Other\Relationships\BusinessUnit.xml" />
+    <Content Include="GITIS\Other\Relationships\Campaign.xml" />
+    <Content Include="GITIS\Other\Relationships\CampaignActivity.xml" />
+    <Content Include="GITIS\Other\Relationships\Contact.xml" />
+    <Content Include="GITIS\Other\Relationships\Contract.xml" />
+    <Content Include="GITIS\Other\Relationships\dfe_country.xml" />
+    <Content Include="GITIS\Other\Relationships\dfe_Language.xml" />
+    <Content Include="GITIS\Other\Relationships\dfe_privacypolicy.xml" />
+    <Content Include="GITIS\Other\Relationships\dfe_TeachingSubjectList.xml" />
+    <Content Include="GITIS\Other\Relationships\dfe_topic.xml" />
+    <Content Include="GITIS\Other\Relationships\Entitlement.xml" />
+    <Content Include="GITIS\Other\Relationships\EntitlementTemplate.xml" />
+    <Content Include="GITIS\Other\Relationships\Incident.xml" />
+    <Content Include="GITIS\Other\Relationships\InteractionForEmail.xml" />
+    <Content Include="GITIS\Other\Relationships\Invoice.xml" />
+    <Content Include="GITIS\Other\Relationships\KnowledgeArticle.xml" />
+    <Content Include="GITIS\Other\Relationships\KnowledgeBaseRecord.xml" />
+    <Content Include="GITIS\Other\Relationships\Lead.xml" />
+    <Content Include="GITIS\Other\Relationships\Mailbox.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyncrm_contentsettings.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyncrm_customerjourney.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyncrm_leadscoremodel.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyncrm_linkedinaccount.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyncrm_linkedinactivity.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyncrm_linkedinfieldmapping.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyncrm_linkedinform.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyncrm_linkedinformanswer.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyncrm_linkedinformquestion.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyncrm_linkedinformsubmission.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyncrm_linkedinleadmatchingstrategy.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyncrm_linkedinuserprofile.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyncrm_marketingdynamiccontentmetadata.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyncrm_marketingemaildynamiccontentmetadata.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyncrm_marketingemailtestsend.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyncrm_migration.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyncrm_uicconfig.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyn_bookingalertstatus.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyn_bookingrule.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyn_customerasset.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyn_playbookinstance.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyn_PostAlbum.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyn_question.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyn_resourceterritory.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyn_responseaction.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyn_responseerror.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyn_survey.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyn_surveyresponse.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyn_systemuserschedulersetting.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyn_timegroup.xml" />
+    <Content Include="GITIS\Other\Relationships\msdyn_timegroupdetail.xml" />
+    <Content Include="GITIS\Other\Relationships\msevtmgt_CheckIn.xml" />
+    <Content Include="GITIS\Other\Relationships\msevtmgt_Event.xml" />
+    <Content Include="GITIS\Other\Relationships\msevtmgt_eventpurchase.xml" />
+    <Content Include="GITIS\Other\Relationships\msevtmgt_eventpurchaseattendee.xml" />
+    <Content Include="GITIS\Other\Relationships\msevtmgt_eventpurchasepass.xml" />
+    <Content Include="GITIS\Other\Relationships\msevtmgt_EventRegistration.xml" />
+    <Content Include="GITIS\Other\Relationships\msevtmgt_Hotel.xml" />
+    <Content Include="GITIS\Other\Relationships\msevtmgt_HotelRoomAllocation.xml" />
+    <Content Include="GITIS\Other\Relationships\msevtmgt_HotelRoomReservation.xml" />
+    <Content Include="GITIS\Other\Relationships\msevtmgt_Layout.xml" />
+    <Content Include="GITIS\Other\Relationships\msevtmgt_Room.xml" />
+    <Content Include="GITIS\Other\Relationships\msevtmgt_Session.xml" />
+    <Content Include="GITIS\Other\Relationships\msevtmgt_SessionRegistration.xml" />
+    <Content Include="GITIS\Other\Relationships\msevtmgt_SessionTrack.xml" />
+    <Content Include="GITIS\Other\Relationships\msevtmgt_Speaker.xml" />
+    <Content Include="GITIS\Other\Relationships\msevtmgt_speakerengagement.xml" />
+    <Content Include="GITIS\Other\Relationships\msevtmgt_SponsorableArticle.xml" />
+    <Content Include="GITIS\Other\Relationships\msevtmgt_Sponsorship.xml" />
+    <Content Include="GITIS\Other\Relationships\msevtmgt_Venue.xml" />
+    <Content Include="GITIS\Other\Relationships\msevtmgt_webinarconfiguration.xml" />
+    <Content Include="GITIS\Other\Relationships\msevtmgt_WebinarProvider.xml" />
+    <Content Include="GITIS\Other\Relationships\Opportunity.xml" />
+    <Content Include="GITIS\Other\Relationships\Organization.xml" />
+    <Content Include="GITIS\Other\Relationships\Owner.xml" />
+    <Content Include="GITIS\Other\Relationships\PhoneCall.xml" />
+    <Content Include="GITIS\Other\Relationships\Quote.xml" />
+    <Content Include="GITIS\Other\Relationships\SalesOrder.xml" />
+    <Content Include="GITIS\Other\Relationships\Service.xml" />
+    <Content Include="GITIS\Other\Relationships\Site.xml" />
+    <Content Include="GITIS\Other\Relationships\SLA.xml" />
+    <Content Include="GITIS\Other\Relationships\SystemUser.xml" />
+    <Content Include="GITIS\Other\Relationships\Team.xml" />
+    <Content Include="GITIS\Other\Solution.xml" />
+    <Content Include="GITIS\Roles\GITIS - DfE - Analyst.xml" />
+    <Content Include="GITIS\Roles\GITIS - DfE - Direct Marketing User.xml" />
+    <Content Include="GITIS\Roles\GITIS - DfE - Event Staff.xml" />
+    <Content Include="GITIS\Roles\GITIS - DfE - Management.xml" />
+    <Content Include="GITIS\Roles\GITIS - DfE - Regular User.xml" />
+    <Content Include="GITIS\Roles\GITIS - TPUK - Call Agent.xml" />
+    <Content Include="GITIS\Roles\GITIS - TPUK - Contact Centre Manager.xml" />
+    <Content Include="GITIS\Roles\GITIS - TPUK - One to One Advisor.xml" />
+    <Content Include="GITIS\Roles\GITIS - TPUK - QA.xml" />
+    <Content Include="GITIS\Roles\GITIS - TPUK - Team Leader.xml" />
+    <Content Include="GITIS\Roles\Salesperson.xml" />
+    <Content Include="GITIS\Roles\SES.xml" />
+    <Content Include="GITIS\WebResources\dfe_\css\getorclosephonecallcontrols.css" />
+    <Content Include="GITIS\WebResources\dfe_\css\getorclosephonecallcontrols.css.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\css\outgoingphonepanel.css" />
+    <Content Include="GITIS\WebResources\dfe_\css\outgoingphonepanel.css.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\html\callagentgetoutboundphonecallpanel.html" />
+    <Content Include="GITIS\WebResources\dfe_\html\callagentgetoutboundphonecallpanel.html.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\html\closephonecallpanel.html" />
+    <Content Include="GITIS\WebResources\dfe_\html\closephonecallpanel.html.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\html\phonecalloutgoingpanel.html" />
+    <Content Include="GITIS\WebResources\dfe_\html\phonecalloutgoingpanel.html.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\html\phoneprivacypolicy.html" />
+    <Content Include="GITIS\WebResources\dfe_\html\phoneprivacypolicy.html.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\images\Facebook_Icon16x16.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\images\Facebook_Icon32x32.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\images\OtherMessage_Icon16x16.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\images\OtherMessage_Icon32x32.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\images\SMS_Icon16x16.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\images\SMS_Icon32x32.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\images\WhatsApp_Icon16x16.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\images\WhatsApp_Icon32x32.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\appointment_form_library.js" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\appointment_form_library.js.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\contact_form_library.js" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\contact_form_library.js.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\customactivity_form_library.js" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\customactivity_form_library.js.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\dataservices.js" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\dataservices.js.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\jquery-3.3.1.min.js" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\jquery-3.3.1.min.js.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\phonecallprivacypolicy.js" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\phonecallprivacypolicy.js.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\phonecall_form_adviser.js" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\phonecall_form_adviser.js.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\phonecall_form_incoming.js" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\phonecall_form_incoming.js.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\phonecall_form_outgoing.js" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\phonecall_form_outgoing.js.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\phonecall_quickcreate_agent.js" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\phonecall_quickcreate_agent.js.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\task_form_adviser.js" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\task_form_adviser.js.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\task_form_agent.js" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\task_form_agent.js.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\task_ribbon_library.js" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\task_ribbon_library.js.data.xml" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\utils.js" />
+    <Content Include="GITIS\WebResources\dfe_\javascript\utils.js.data.xml" />
+    <Content Include="GITIS\Workflows\AmendOwnershipofPhoneCallfromOutboundteambacktoits-CF7D1E47-EDB6-44DF-A2AD-683D42C95575.xaml.data.xml" />
+    <Content Include="GITIS\Workflows\Assigntasktosupportteam-D7312A4D-4D10-4AF6-A88B-1394DAF59BAF.xaml.data.xml" />
+    <Content Include="GITIS\Workflows\AutoPopulateAdviserTeamforCandidate-71D3D4EE-EAA6-440E-94EE-8A5A96D22FF2.xaml.data.xml" />
+    <Content Include="GITIS\Workflows\AutoPopulateDateReleasedonCandidate-7F5605A5-6273-4FBB-B702-6F50D51066FF.xaml.data.xml" />
+    <Content Include="GITIS\Workflows\CreateEventCheckinforWalkups-BEEAEB12-908E-4712-9A1B-B7360C3AC714.xaml.data.xml" />
+    <Content Include="GITIS\Workflows\CreateMarketingSMSScheduledActivityReadyforSending-D498C683-3CF0-4E57-B744-C9B11F68C53B.xaml.data.xml" />
+    <Content Include="GITIS\Workflows\CreateMarketingSMSSummerCampaignActivityReadyforSe-51743A48-747D-E911-A97C-000D3A206976.xaml.data.xml" />
+    <Content Include="GITIS\Workflows\Createphonecallforappointment-B74788C6-1242-43B7-A99F-4D8052A1DE1D.xaml.data.xml" />
+    <Content Include="GITIS\Workflows\CreatequeueItemforcallbackphonecall-D8186E52-CDE2-4B19-907F-FC71D6567C22.xaml.data.xml" />
+    <Content Include="GITIS\Workflows\CreatequeueitemforphonecallinOutboundHoldingQueue-5ACE753F-8F6E-EA11-A811-000D3A44A2A9.xaml.data.xml" />
+    <Content Include="GITIS\Workflows\CreatequeueItemforphonecallwithgap-B3D5553B-B08E-EA11-A811-000D3A44A2A9.xaml.data.xml" />
+    <Content Include="GITIS\Workflows\CreateSummerCampaignPhoneCall-04936A7E-63CF-435E-933E-5C2813B1B1AC.xaml.data.xml" />
+    <Content Include="GITIS\Workflows\ITTReportingLoggingtoStageRecords-47D644EB-AEFD-4613-A206-154495CF49BB.xaml.data.xml" />
+    <Content Include="GITIS\Workflows\Removefrom5WeekCampaignafter90Days-21AA4143-7096-43DF-9688-E6214776D3AB.xaml.data.xml" />
+    <Content Include="GITIS\Workflows\SetMarketingEmailText-8634E9DE-311A-48C9-9515-1E7E66E90914.xaml.data.xml" />
+    <Content Include="GITIS\Workflows\SetSMSStatustoCompletedafterSentviaNotify-BBD08F0A-2EC5-48C0-B17B-B27EC04BEC55.xaml.data.xml" />
+    <Content Include="GITIS\Workflows\Showhidegradefields-8288F2DE-753B-E911-A978-000D3A23443B.xaml.data.xml" />
+    <Content Include="GITIS\Workflows\Updatephonecallforappointment-608AD0FD-88F0-435E-94E4-85974CB05328.xaml.data.xml" />
+    <Content Include="GITIS\Workflows\UpdateQualificationonContact-CAF4F496-5B23-47ED-9650-2EAF966262C7.xaml.data.xml" />
+    <Content Include="GITIS\Workflows\Validatefieldsaccordingtoappointmentrequired-A7299F52-7A3E-E911-A97A-000D3A20838A.xaml.data.xml" />
+    <Content Include="GITIS\Workflows\Website-CreatequeueItemforphonecallwithgap-80E1994A-89F2-EA11-A815-000D3A44AFCC.xaml.data.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="GITIS\Entities\Contact\Formulas\contact-dfe_changersemail.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Entities\Contact\Formulas\contact-dfe_dateofbirth.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Entities\Contact\Formulas\contact-dfe_dayssinceassigned.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Entities\Contact\Formulas\contact-dfe_dayssincetriaged.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Entities\Contact\Formulas\contact-dfe_graduatesemail.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Entities\Contact\Formulas\contact-dfe_minutessinceassigned.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Entities\Contact\Formulas\contact-dfe_overdue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Entities\Contact\Formulas\contact-dfe_qualificationrollup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Entities\dfe_topic\Formulas\dfe_topic-dfe_noofcallbacks.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Entities\SystemUser\Formulas\systemuser-dfe_currentnumberofcandidates.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Workflows\AmendOwnershipofPhoneCallfromOutboundteambacktoits-CF7D1E47-EDB6-44DF-A2AD-683D42C95575.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Workflows\Assigntasktosupportteam-D7312A4D-4D10-4AF6-A88B-1394DAF59BAF.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Workflows\AutoPopulateAdviserTeamforCandidate-71D3D4EE-EAA6-440E-94EE-8A5A96D22FF2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Workflows\AutoPopulateDateReleasedonCandidate-7F5605A5-6273-4FBB-B702-6F50D51066FF.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Workflows\CreateEventCheckinforWalkups-BEEAEB12-908E-4712-9A1B-B7360C3AC714.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Workflows\CreateMarketingSMSScheduledActivityReadyforSending-D498C683-3CF0-4E57-B744-C9B11F68C53B.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Workflows\CreateMarketingSMSSummerCampaignActivityReadyforSe-51743A48-747D-E911-A97C-000D3A206976.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Workflows\Createphonecallforappointment-B74788C6-1242-43B7-A99F-4D8052A1DE1D.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Workflows\CreatequeueItemforcallbackphonecall-D8186E52-CDE2-4B19-907F-FC71D6567C22.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Workflows\CreatequeueitemforphonecallinOutboundHoldingQueue-5ACE753F-8F6E-EA11-A811-000D3A44A2A9.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Workflows\CreatequeueItemforphonecallwithgap-B3D5553B-B08E-EA11-A811-000D3A44A2A9.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Workflows\CreateSummerCampaignPhoneCall-04936A7E-63CF-435E-933E-5C2813B1B1AC.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Workflows\ITTReportingLoggingtoStageRecords-47D644EB-AEFD-4613-A206-154495CF49BB.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Workflows\Removefrom5WeekCampaignafter90Days-21AA4143-7096-43DF-9688-E6214776D3AB.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Workflows\SetMarketingEmailText-8634E9DE-311A-48C9-9515-1E7E66E90914.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Workflows\SetSMSStatustoCompletedafterSentviaNotify-BBD08F0A-2EC5-48C0-B17B-B27EC04BEC55.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Workflows\Showhidegradefields-8288F2DE-753B-E911-A978-000D3A23443B.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Workflows\Updatephonecallforappointment-608AD0FD-88F0-435E-94E4-85974CB05328.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Workflows\UpdateQualificationonContact-CAF4F496-5B23-47ED-9650-2EAF966262C7.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Workflows\Validatefieldsaccordingtoappointmentrequired-A7299F52-7A3E-E911-A97A-000D3A20838A.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GITIS\Workflows\Website-CreatequeueItemforphonecallwithgap-80E1994A-89F2-EA11-A815-000D3A44AFCC.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GITIS\WebResources\dfe_\images\Facebook_Icon16x16" />
+    <None Include="GITIS\WebResources\dfe_\images\Facebook_Icon32x32" />
+    <None Include="GITIS\WebResources\dfe_\images\OtherMessage_Icon16x16" />
+    <None Include="GITIS\WebResources\dfe_\images\OtherMessage_Icon32x32" />
+    <None Include="GITIS\WebResources\dfe_\images\SMS_Icon16x16" />
+    <None Include="GITIS\WebResources\dfe_\images\SMS_Icon32x32" />
+    <None Include="GITIS\WebResources\dfe_\images\WhatsApp_Icon16x16" />
+    <None Include="GITIS\WebResources\dfe_\images\WhatsApp_Icon32x32" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

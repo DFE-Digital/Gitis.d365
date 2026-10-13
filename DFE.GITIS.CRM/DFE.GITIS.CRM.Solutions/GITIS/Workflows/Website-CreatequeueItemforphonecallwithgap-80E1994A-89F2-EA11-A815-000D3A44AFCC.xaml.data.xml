@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow Description="Create a queue item with 1 hour gap for initial registration on contact&#xA;24 hours gap for 2nd and 3rd attempt phone calls" Name="Website - Create queue Item for phone call with gap" WorkflowId="{80e1994a-89f2-ea11-a815-000d3a44afcc}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/Website-CreatequeueItemforphonecallwithgap-80E1994A-89F2-EA11-A815-000D3A44AFCC.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>0</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <UniqueName>WebsiteCreatequeueItemforphonecallwith1hourgap82e1994a89f2ea11a815000d3a44afcc</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.0.2</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <PrimaryEntity>PhoneCall</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName description="Website - Create queue Item for phone call with gap" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="Create a queue item with 1 hour gap for initial registration on contact&#xA;24 hours gap for 2nd and 3rd attempt phone calls" languagecode="1033" />
+  </Descriptions>
+  <labels>
+    <steplabels id="{0a67d27a-4922-4013-b93f-3c2015efb734}" />
+  </labels>
+</Workflow>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{293c878f-f068-40a0-ae48-4297e060871c}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>0</FormActivationState>
+    <form showImage="true">
+      <tabs>
+        <tab expanded="false" id="{15bb2d4b-71da-74ea-3c5b-e497d78a55a2}" IsUserDefined="0" labelid="{3709dd2f-f819-4f6f-afa4-ab9eec4ba1d9}" name="SUMMARY_TAB" ordinalvalue="0" showlabel="true" solutionaction="Modified">
+          <columns>
+            <column id="0" width="33%">
+              <sections>
+                <section celllabelposition="Left" columns="1" id="{9d943649-0387-1882-caa1-36de40d5a86c}" IsUserDefined="0" labelid="{a4ed1799-1e10-472b-ba64-ecac508a5d20}" labelwidth="115" layout="varwidth" name="CONTACT_INFORMATION" ordinalvalue="0" showbar="false" showlabel="true">
+                  <rows>
+                    <row>
+                      <cell id="{07326cde-7529-ddc0-e421-c0bcddd07b8a}" labelid="{674721c7-61d8-48cd-bd71-6d2742698248}" ordinalvalue="10002" showlabel="true" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{a54c19c9-4722-ce25-60c5-2bb9452680d2}" labelid="{62acbd58-7543-4e62-97d0-764736cec6ca}" locklevel="0" ordinalvalue="10001" showlabel="true" solutionaction="Modified" />
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab expanded="false" id="{fe1c5c3b-d556-4552-a444-4781214a6d63}" IsUserDefined="0" labelid="{d69cb78e-7ce6-4454-ac92-3b85edb98b14}" name="DETAILS_TAB" ordinalvalue="1" showlabel="true" solutionaction="Modified" />
+        <tab expanded="false" id="{4dc1958a-3a2a-c27b-150a-ba8d47b3353d}" IsUserDefined="0" locklevel="0" name="tab_3" ordinalvalue="2" showlabel="true" solutionaction="Added">
+          <labels>
+            <label description="Activities" languagecode="1033" />
+          </labels>
+          <columns>
+            <column id="0" width="100%">
+              <sections>
+                <section celllabelalignment="Left" celllabelposition="Top" columns="1" id="{95b19d63-5e53-49ea-22d7-dd5b18e2ec40}" IsUserDefined="0" labelwidth="115" layout="varwidth" locklevel="0" name="tab_3_section_1" ordinalvalue="0" showbar="false" showlabel="false">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell auto="false" colspan="1" id="{1da11400-263b-7dd6-268a-59e865d60ae1}" ordinalvalue="10000" rowspan="6" showlabel="true">
+                        <labels>
+                          <label description="Activities" languagecode="1033" />
+                        </labels>
+                        <control classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" id="Activities" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{00000000-0000-0000-00AA-000010001899}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>Contact_ActivityPointers</RelationshipName>
+                            <TargetEntityType>activitypointer</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{00000000-0000-0000-00AA-000010001899}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId>{EDF35649-5293-DE11-97D4-00155DA3B01E}</VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#CFDCE3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions FallbackForm="true" Order="10" solutionaction="Modified" />
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Sales Insights" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Updated default Contact form." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

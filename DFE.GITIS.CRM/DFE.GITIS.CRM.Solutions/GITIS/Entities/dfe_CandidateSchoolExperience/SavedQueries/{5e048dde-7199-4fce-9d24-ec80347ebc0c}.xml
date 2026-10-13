@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{5e048dde-7199-4fce-9d24-ec80347ebc0c}</savedqueryid>
+    <layoutxml>
+      <grid icon="1" jump="dfe_name" name="resultset" preview="1" select="1">
+        <row id="dfe_candidateschoolexperienceid" name="result">
+          <cell name="dfe_length" width="100" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_educationphase" width="125" />
+          <cell name="dfe_startyear" width="100" />
+          <cell name="dfe_endyear" width="100" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_where" width="300" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_country" width="125" />
+          <cell name="dfe_hasdonelessonplanning" width="100" />
+          <cell name="dfe_hasdoneteaching" width="100" />
+          <cell name="dfe_hasdoneassessment" width="100" />
+          <cell disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_notes" width="300" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="dfe_candidateschoolexperience">
+          <order attribute="dfe_length" descending="false" />
+          <order attribute="dfe_educationphase" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="dfe_where" />
+          <attribute name="dfe_startyear" />
+          <attribute name="dfe_notes" />
+          <attribute name="dfe_length" />
+          <attribute name="dfe_endyear" />
+          <attribute name="dfe_educationphase" />
+          <attribute name="dfe_country" />
+          <attribute name="dfe_hasdoneteaching" />
+          <attribute name="dfe_hasdonelessonplanning" />
+          <attribute name="dfe_hasdoneassessment" />
+          <attribute name="dfe_candidateschoolexperienceid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.6</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Candidate School Experiences" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

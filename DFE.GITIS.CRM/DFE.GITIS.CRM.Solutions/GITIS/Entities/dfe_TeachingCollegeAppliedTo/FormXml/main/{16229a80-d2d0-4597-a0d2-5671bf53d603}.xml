@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{16229a80-d2d0-4597-a0d2-5671bf53d603}</formid>
+    <IntroducedVersion>1.0.0.6</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab expanded="true" id="{a7019f2f-1c42-40d7-97d8-9f1656c8ca6f}" IsUserDefined="1" locklevel="0" name="{a7019f2f-1c42-40d7-97d8-9f1656c8ca6f}" showlabel="true" verticallayout="true">
+          <labels>
+            <label description="MAIN" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section celllabelalignment="Left" celllabelposition="Top" columns="1" id="{5afd5a7b-f2bc-4502-9653-81b8ee4a00d4}" IsUserDefined="0" labelwidth="130" locklevel="0" name="{5afd5a7b-f2bc-4502-9653-81b8ee4a00d4}" showbar="false" showlabel="false">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{65033ba6-c260-5e1a-068e-c4026919a86b}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" id="statuscode" uniqueid="{c446e07c-6b4a-7e69-cc13-3585160bccd5}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6d4c5854-f443-44ea-b9eb-3da98035d620}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Name of college applied to" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_name" disabled="false" id="dfe_name" uniqueid="{718315e3-3315-158a-5a87-2dc2d327338a}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section celllabelalignment="Left" celllabelposition="Top" columns="111" id="{b3784670-19d2-bd8e-8788-0054e266cdd9}" IsUserDefined="0" labelwidth="115" layout="varwidth" locklevel="0" name="{a7019f2f-1c42-40d7-97d8-9f1656c8ca6f}_section_3" showbar="false" showlabel="true">
+                  <labels>
+                    <label description="Course details" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell colspan="3" id="{4a8e8cc2-7cad-01a9-d242-1ea18ad980b6}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Course name" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_coursename" disabled="false" id="dfe_coursename" uniqueid="{7c8d2a38-a4b0-9dae-9e87-1d90d4bd57dc}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{75e31784-1e57-0570-008b-cae974205bd0}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Teaching subject" languagecode="1033" />
+                        </labels>
+                        <control classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="dfe_teachingsubject" disabled="false" id="dfe_teachingsubject" />
+                      </cell>
+                      <cell id="{0134aa9e-dcee-055a-9142-ab71219ad752}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Course education phase" languagecode="1033" />
+                        </labels>
+                        <control classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="dfe_educationphase" disabled="false" id="dfe_educationphase" uniqueid="{5b75424a-e1d7-789b-d62e-1b56ea661edc}" />
+                      </cell>
+                      <cell id="{6224516e-6911-d649-875d-705b06e5a097}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Course level" languagecode="1033" />
+                        </labels>
+                        <control classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="dfe_courselevel" disabled="false" id="dfe_courselevel" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section celllabelalignment="Left" celllabelposition="Top" columns="11" id="{37bc0a37-081a-6a55-c092-081a150380ed}" IsUserDefined="0" labelwidth="115" layout="varwidth" locklevel="0" name="{a7019f2f-1c42-40d7-97d8-9f1656c8ca6f}_section_2" showbar="false" showlabel="true">
+                  <labels>
+                    <label description="Dates" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{20824325-6db2-c0a6-020d-389c2a3d1736}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Date applied" languagecode="1033" />
+                        </labels>
+                        <control classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="dfe_dateapplied" disabled="false" id="dfe_dateapplied" />
+                      </cell>
+                      <cell id="{bc40acd0-8cb3-c215-93ba-b3bd5c15078a}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Date of interview" languagecode="1033" />
+                        </labels>
+                        <control classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="dfe_dateofinterview" disabled="false" id="dfe_dateofinterview" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c74aecea-7059-7805-cc05-2b9110c47b1d}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Date accepted" languagecode="1033" />
+                        </labels>
+                        <control classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="dfe_dateaccepted" disabled="false" id="dfe_dateaccepted" />
+                      </cell>
+                      <cell id="{4ea68c50-711d-a383-3c78-8adca399ab2c}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Date training starts" languagecode="1033" />
+                        </labels>
+                        <control classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="dfe_dateteachertrainingstarts" disabled="false" id="dfe_dateteachertrainingstarts" uniqueid="{d3384334-423a-53cc-494e-81244a33edc7}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section celllabelalignment="Left" celllabelposition="Top" columns="1" id="{165e1562-c604-32ab-d474-a2d588a4052e}" IsUserDefined="0" labelwidth="115" layout="varwidth" locklevel="0" name="{a7019f2f-1c42-40d7-97d8-9f1656c8ca6f}_section_4" showbar="false" showlabel="false">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7c818225-ad9b-d0c6-9941-972dd850c482}" locklevel="0" rowspan="1" showlabel="true">
+                        <labels>
+                          <label description="Notes" languagecode="1033" />
+                        </labels>
+                        <control classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="dfe_notes" disabled="false" id="dfe_notes" uniqueid="{b721661c-1266-6aa8-5736-20118a245831}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header celllabelalignment="Left" celllabelposition="Top" columns="111" id="{2f987f78-74c2-49d1-82a4-3f7bcc87ce61}" labelwidth="130">
+        <rows>
+          <row>
+            <cell id="{b4ea4462-42bd-3b35-1b0a-a38dcd0d3aa2}" locklevel="0" showlabel="true" visible="false">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" id="header_ownerid" uniqueid="{8ae46416-5b0a-0555-2b9d-0ec4d9797e06}">
+                <parameters>
+                  <AutoResolve>true</AutoResolve>
+                  <DisableMru>false</DisableMru>
+                </parameters>
+              </control>
+            </cell>
+            <cell id="{e27178d8-d252-43ab-8e08-b29249cbd390}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{415e6137-b987-83c5-bdb8-3770cd60c83e}" locklevel="0" showlabel="true">
+              <labels>
+                <label description="Candidate" languagecode="1033" />
+              </labels>
+              <control classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="dfe_contactid" disabled="true" id="header_dfe_contactid" uniqueid="{4c73143d-8e60-78c3-2c65-7eb259edca9b}">
+                <parameters>
+                  <AutoResolve>true</AutoResolve>
+                  <DisableMru>false</DisableMru>
+                  <DisableQuickFind>false</DisableQuickFind>
+                  <DisableViewPicker>false</DisableViewPicker>
+                  <DefaultViewId>{A2D479C5-53E3-4C69-ADDD-802327E67A0D}</DefaultViewId>
+                  <AllowFilterOff>false</AllowFilterOff>
+                </parameters>
+              </control>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

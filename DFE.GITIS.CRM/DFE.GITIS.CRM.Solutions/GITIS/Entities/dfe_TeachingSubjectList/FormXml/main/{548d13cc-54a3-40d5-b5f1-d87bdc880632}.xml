@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{548d13cc-54a3-40d5-b5f1-d87bdc880632}</formid>
+    <IntroducedVersion>1.0.0.6</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="{272378af-8243-429e-823b-dc3b836a298d}" IsUserDefined="1" verticallayout="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section celllabelalignment="Left" celllabelposition="Top" columns="1" id="{a1601f78-e50b-4871-a808-13d808f99409}" IsUserDefined="0" labelwidth="130" locklevel="0" name="{a1601f78-e50b-4871-a808-13d808f99409}" showbar="false" showlabel="false">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{4198d9fa-be93-45b6-9616-70a1c624c273}">
+                        <labels>
+                          <label description="Subject name" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_name" id="dfe_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7382ca40-a62d-8930-9d78-95247e08db98}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Marketing teaching subject name" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_marketingteachingsubjectname" disabled="false" id="dfe_marketingteachingsubjectname" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{25104c94-7c32-22c8-19a1-a9ac022373a0}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Priority subject" languagecode="1033" />
+                        </labels>
+                        <control classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="dfe_isprioritysubject" disabled="false" id="dfe_isprioritysubject" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{41b71344-cc1a-e997-ec7b-e7eac03769a4}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="RTT subject" languagecode="1033" />
+                        </labels>
+                        <control classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="dfe_isrttsubject" disabled="false" id="dfe_isrttsubject" uniqueid="{dab35895-ea61-e686-5698-101e72b1dd02}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{404bc7b8-b357-d73b-6c1c-4ae2a9c9b2b1}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="TPUK subject code" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_tpuksubjectcode" disabled="false" id="dfe_tpuksubjectcode" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9e41cc50-10de-87a2-eada-19e1918b5993}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Notes" languagecode="1033" />
+                        </labels>
+                        <control classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="dfe_notes" disabled="false" id="dfe_notes" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header columns="111" id="{13cb3a7f-2b10-434f-be71-1022f4fc7bb8}">
+        <rows>
+          <row>
+            <cell id="{75d02d1f-4987-4686-9ca9-4ee590d5a7a8}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{ffdcb66b-3360-4ed3-a891-cb384f121290}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{7c5ccc07-a663-b52d-c07a-e0ab667278c5}" locklevel="0" showlabel="true">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" id="header_ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

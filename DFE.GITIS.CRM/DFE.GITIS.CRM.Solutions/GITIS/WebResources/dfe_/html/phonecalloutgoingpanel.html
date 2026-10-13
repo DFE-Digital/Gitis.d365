@@ -1,0 +1,305 @@
+<html><head>
+    <link href="../css/outgoingphonepanel.css" rel="stylesheet">
+	<meta charset="utf-8"><meta charset="utf-8"><meta><meta><meta><meta><meta><meta><meta><meta><meta><meta><meta></head><body style="word-wrap: break-word;">
+	<script src="../javascript/utils.js"></script>
+    <script src="../javascript/jquery-3.3.1.min.js"></script>
+    <script src="../javascript/dataservices.js"></script>  
+    <script type="text/jscript">
+        //Create a global variable for the cti paths we will retrieve in a later query
+        var cti = {};
+
+        // in case the document is already rendered
+        if (document.readyState != 'loading') onPageReady();
+        // modern browsers
+        else if (document.addEventListener) document.addEventListener('DOMContentLoaded', onPageReady);
+        // IE <= 8
+        else document.attachEvent('onreadystatechange', function () {
+            if (document.readyState == 'complete') onPageReady();
+        });
+        function onPageReady() {    
+				var utils = dfe_common.utils(parent);
+				var data = dfe_common.data(parent);
+				cti = data.getConfigByName("GITIS");
+                if (cti) {
+                    //send a request to get the cti status in order to set up the button state and phone panel correctly
+                    createJQueryCTIRequest(cti.dfe_tpworkspaceroot, processCtiResponse, setPhoneStatusReady);
+                    //Check that the PhoneStatus message shows the initial loading message still, if it does start a timer for 5s then replace it with an error message for the user
+                    //if it has not got to showing 'Ready' by that point
+                    setTimeout(function () {
+                        if (document.getElementById("phoneStatus").innerHTML.indexOf("Loading") >= 0) {
+                            //Show an error message as the Ready message did not get shown in time.
+                            errorCallback("The Telephony application is not running or is unavailable.");
+                        }
+                    }, 5000);                                               
+                }                    
+                else {
+                      alert("Error occured to get config data");
+                }            
+        }
+
+        function createJQueryCTIRequest(endpoint, callback, nextCallback, data) {
+        //@PARAM 'endpoint' the url to send the request to
+        //@PARAM 'callback' the function to route to once the successful response is ready - depends on the initiating event. Will be null for an actual dial request or termainate request.
+        //@PARAM 'nextCallback' the function to route to once the initial callback method completes - depends on the initiating event. Will be null for an actual dial request or termainate request.
+        //@PARAM 'data' - optional - any additional data to send in the request such as the number to dial
+
+            //if data was received, append it to the endpoint
+            if (data) {
+                var endpoint = endpoint + data;
+            }
+            //Create a new JQuery CTI Request - NOTE this fails with CORS concerns in the real TPWorkspace.
+            ///Removed it out and try a JsonP version instead...
+            
+            //Need to route requests to /cti via jsonp and requests to Dial via the .getJSON approach.
+            if (endpoint.indexOf('command=')>0){
+                //Create a new JQuery.getJSON Request
+                var req = $.getJSON(endpoint, function (json) {
+                })
+                    .done(function (json) {
+                        //do nothing
+                    })
+                    .fail(function (jqXHR, textStatus, errorThrown) {
+                        //Alldial and hangup requests are dropping into error or failure for Jquery approach
+                        //This is beacuse the test harness responds with a 200 but the response body is empty which causes
+                        //JSON parse errors - the response should be a 204 instead. For now, trap the error and ignore it for dial and hangup.
+                        //TO DO - fix and trap errors but exclude the code mismatch type.
+                    })
+                    .always(function () {
+                        //non-cti requests will always drop in here as there is no proper response code and body
+                        //Create a fakeResponse string instead empty piece of fake json so that the callbacks will still run further on
+                        var json = "fakeResponse";
+                        if (callback != null) {
+                            callback(json, nextCallback);
+                        }
+                    })
+
+            }
+            else {
+                // here we need a jsonp request and to process the json we receive.     
+                $.ajax({
+                    url: endpoint,
+                    dataType: 'jsonp',
+                    type: 'GET',
+                    async: true,
+                    success: function (result) {
+                        //Now call the callback function if one exists
+                        if (callback != null) {
+                            callback(result, nextCallback);
+                        }
+                    }
+                 });
+            };
+
+        }
+
+        function processCtiResponse(response, nextCallback) {
+            if (response == "fakeResponse") {
+                //Do nothing
+            }
+            else {
+                if (response != "") {
+                    //NOTE - if using Ajax getJSON approach, the response is already parsed, so comment out the next line.
+                    var parsedResponse = JSON.parse(response);
+                    //14/11/2018 - AGREED WITH AARON TO JUST SET ALL BUTTONS TO ACTIVE AND DO NOT TRY TO SET STATE FROM CTI / EVENTS.
+                }
+            }
+            //Determine whether to proceed to the nextCallback or not based on the cti state.
+            if (nextCallback == dial) {
+                //check the canDial flag from the cti status callback to decide if the dial should proceed or not
+                if (parsedResponse.TelephonyState.CanDial) {
+                    nextCallback();
+                }
+                else {
+                    //display an error that the Dial is not allowed at present.
+                    errorCallback("Dial request not allowed by the telephony application at this time.");
+                }
+ 
+            }
+            else if (nextCallback == hangup) {
+                //check the canTerminate flag from the cti status callback to decide if the hangup should proceed or not
+                if (parsedResponse.TelephonyState.CanTerminate) {
+                    nextCallback();
+                }
+                else {
+                    //display an error that the Dial is not allowed at present.
+                    errorCallback("Hangup request not allowed by the telephony application at this time.");
+                }
+            }
+            else if (nextCallback == onhold) {
+                //check the canHold flag from the cti status callback to decide if the dial should proceed or not
+                if (parsedResponse.TelephonyState.CanHold) {
+                    nextCallback();
+                }
+                else {
+                    //display an error that the Dial is not allowed at present.
+                    errorCallback("Hold request not allowed by the telephony application at this time.");
+                }
+
+            }
+            else if (nextCallback == getActiveCallDetails) {
+                //delay for 7 seconds and then make a new /cti request so we can retrieve the call's UCID etc
+                setTimeout(function () {
+                    nextCallback();
+                }, 7000);
+                 
+            }
+            else if (nextCallback == useActiveCallDetailsOnScreen) {
+                nextCallback(parsedResponse);
+            }
+            else {
+                //Catches the 'setPhoneStatusReady' callbacks
+                nextCallback();
+            }
+        }
+        function errorCallback(error) {
+            document.getElementById("phoneStatus").innerHTML = "<h4>ERROR - "+ error +"</h4>";
+        }
+        function setPhoneStatusReady() {
+            document.getElementById("phoneStatus").innerHTML = "<h4>Ready.</h4>";
+        }
+        function disableButton(buttonId) {
+            //Disables the state of the button for any buttonId passed in and sets the .css class appropriately too
+            document.getElementById(buttonId).disabled = true;
+            document.getElementById(buttonId).classList.remove('button');
+            document.getElementById(buttonId).classList.add('disabledButton');
+        }
+        function enableButton(buttonId) {
+            //Enables the state of the button for any buttonId passed in and sets the .css class appropriately too
+            document.getElementById(buttonId).disabled = false;
+            document.getElementById(buttonId).classList.remove('disabledButton');
+            document.getElementById(buttonId).classList.add('button');
+        }
+        function changeOnHoldButtonToOnHoldState(buttonId) {
+            //Changes the state of the On Hold button from being active to being active but crimson and with a different title and on click method
+            document.getElementById(buttonId).classList.remove('button');
+            document.getElementById(buttonId).classList.add('onholdbuttonactive');
+            document.getElementById(buttonId).title = "Take your active phone call back Off Hold";
+            document.getElementById(buttonId).onclick = offHoldButton_onClick;
+        }
+        function changeOnHoldButtonToNormalState(buttonId) {
+            //Changes the state of the On Hold button from being on hold to being active with the normal different title and on click method
+            document.getElementById(buttonId).classList.remove('onholdbuttonactive');
+            document.getElementById(buttonId).classList.add('button');
+            document.getElementById(buttonId).title = "Put your active phone call On Hold";
+            document.getElementById(buttonId).onclick = onHoldButton_onClick;
+        }
+        function dialButton_onClick() {
+            //An approach that avoids Xrm.page, makes use of the window.parent.FormContextP that was created on load by the javascript web resource.
+            //Get the phone number from there
+            var phoneNumber = window.parent.FormContextP.getAttribute("phonenumber").getValue();
+            //Block the dial request if the phone number is null
+            if (phoneNumber != null) {
+                //Send a CTI request to the TP Workspace before then dialling or not
+                createJQueryCTIRequest(cti.dfe_tpworkspaceroot, processCtiResponse, dial);
+                //Update the message in the phoneStatus div
+                document.getElementById("phoneStatus").innerHTML = "<h4><i>Dialled " + phoneNumber + ".</i></h4>";
+            }
+            else {
+                //report an error to the screen
+                errorCallback("The Phone number is blank - please type it in and try again.");
+            }
+
+        }
+
+        function dial() {
+            //Proceed to dialling the number now we have checked the cti status successfully
+            //An approach that avoids Xrm.page, makes use of the window.parent.FormContextP that was created on load by the javascript web resource.
+            //Get the phone number from there
+            var phoneNumber = window.parent.FormContextP.getAttribute("phonenumber").getValue();
+            //Block the dial request if the phone number is null
+            if (phoneNumber != null) {
+                //Send a dial request to the TP Workspace
+                createJQueryCTIRequest(cti.dfe_tpworkspaceroot + cti.dfe_tpworkspacedial, processCtiResponse, getActiveCallDetails, cti.dfe_tpworkspacedialprefix + phoneNumber);
+                //Set the current date and time into the Actual End field
+                window.parent.FormContextP.getAttribute("actualstart").setValue(Date.now());
+            }
+            else {
+                //report an error to the screen
+                errorCallback("The Phone number is blank - please type it in and try again.");
+            }
+
+        }
+
+        function getActiveCallDetails() {
+            //Make a new /cti request to retrieve the call details such as the UCID
+            createJQueryCTIRequest(cti.dfe_tpworkspaceroot, processCtiResponse, useActiveCallDetailsOnScreen);
+        }
+
+        function useActiveCallDetailsOnScreen(response) {
+            if (response != "") {
+            //    if (response.TelephonyState.Ucid) { //NOTE - TPW bug from 14/11/2018 - Ucid is not currently being set in TPWorkspace on an active call
+                    //Set the Ucid value into the phone call.
+                    window.parent.FormContextP.getAttribute("dfe_tpukucid").setValue(response.TelephonyState.Ucid); //will see this currently blanking the placeholder
+                    //Get the phone number
+                    var phoneNumber = window.parent.FormContextP.getAttribute("phonenumber").getValue();
+                    //Update the message in the phoneStatus div
+                    document.getElementById("phoneStatus").innerHTML = "<h4>Active call to " + phoneNumber + ".</h4>";
+             //   } //uncomment this once TP Bug is fixed and retest.
+            }
+        }
+
+        function hangupButton_onClick() {
+            //Update the message in the phoneStatus div
+            document.getElementById("phoneStatus").innerHTML = "<h4><i>Terminating the active call...</i></h4>";
+            //send a request to get the cti status before terminating
+            createJQueryCTIRequest(cti.dfe_tpworkspaceroot, processCtiResponse, hangup);
+        }
+        function hangup() {
+            //Proceed to terminating the call now we have checked the cti status successfully
+            //Send a terminate request to the TP Workspace, and then set phone status to ready again
+            createJQueryCTIRequest(cti.dfe_tpworkspaceroot + cti.dfe_tpworkspacehangup, setPhoneStatusReady, null);
+            //Set the current date and time into the Actual End field
+            window.parent.FormContextP.getAttribute("actualend").setValue(Date.now());
+            document.getElementById("phoneStatus").innerHTML = "<h4>Call ended.</h4>";
+        }
+        function onHoldButton_onClick() {
+            //Change the button state to indicate that on hold is active
+            changeOnHoldButtonToOnHoldState("TPW-btn-OnHold");
+            //Send a CTI request to the TP Workspace before then putting on hold or not
+            createJQueryCTIRequest(cti.dfe_tpworkspaceroot, processCtiResponse, onhold);
+            //Update the message in the phoneStatus div
+            document.getElementById("phoneStatus").innerHTML = "<h4><i>Putting call On Hold...</i></h4>";
+        }
+        function onhold() {
+            //Send a Hold request to TP Workspace
+            createJQueryCTIRequest(cti.dfe_tpworkspaceroot + cti.dfe_tpworkspacehold, null, null);
+            //Update the message to the user
+            document.getElementById("phoneStatus").innerHTML = "<h4>Active call is On Hold.</h4>";
+        }
+        function offHoldButton_onClick() {
+            //Change the button state to indicate that on hold is no longer active
+            changeOnHoldButtonToNormalState("TPW-btn-OnHold");
+            //Send a CTI request to the TP Workspace before then retrieving the call from on hold or not
+            createJQueryCTIRequest(cti.dfe_tpworkspaceroot, processCtiResponse, offhold);
+            //Update the message in the phoneStatus div
+            document.getElementById("phoneStatus").innerHTML = "<h4><i>Retrieving On Hold call...</i></h4>";
+        }
+        function offhold() {
+            //Send a Retrieve request to TP Workspace
+            createJQueryCTIRequest(cti.dfe_tpworkspaceroot + cti.dfe_tpworkspaceretrieve, null, null);
+            //Update the message to the user
+            //TODO - when can get the phone number from the CTI, display the active number in the message.
+            document.getElementById("phoneStatus").innerHTML = "<h4>Active call.</h4>";
+        }
+    </script>
+	<meta>
+	<meta>
+    
+    
+        <div class="PhonePanel" id="phonePanel" style="font-family: undefined;">
+            <h3 style="margin: 0 0 10px 0; color: #000000;">TP Workspace phone controls</h3>
+            <table>
+                <tbody><tr>
+                    <th><button title="Dial the phone number shown on this form using TP Workspace" class="button" id="TPW-btn-Dial" onclick="dialButton_onClick()" type="button" value="Dial">Dial</button></th>
+                    <!--Initially set the On Hold and Transfer buttons to be disabled-->
+                    <th><button title="Put your active phone call On Hold" class="button" id="TPW-btn-OnHold" onclick="onHoldButton_onClick()" type="button" value="OnHold">On hold</button></th>
+                    <th><button title="Hang up an active phone call in TP Workspace" class="button" id="TPW-btn-Hangup" onclick="hangupButton_onClick()" type="button" value="Hangup">Hangup</button></th>
+                </tr>
+            </tbody></table>
+            
+        </div>
+        <div class="phonestatuspanel" id="phoneStatus" style="font-family: undefined;">
+            <h4><i>Loading phone status...</i></h4>
+        </div>
+    
+</body></html>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{0e6f373d-341b-e911-a979-000d3a20838a}</WebResourceId>
+  <Name>dfe_/images/SMS_Icon32x32</Name>
+  <DisplayName>dfe_/images/SMS_Icon32x32</DisplayName>
+  <Description>32 pixel svg image for SMS custom activity for use in the Unified Interface.</Description>
+  <LanguageCode>1033</LanguageCode>
+  <WebResourceType>11</WebResourceType>
+  <IntroducedVersion>1.0.0.5</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/dfe_imagesSMS_Icon32x320E6F373D-341B-E911-A979-000D3A20838A</FileName>
+</WebResource>

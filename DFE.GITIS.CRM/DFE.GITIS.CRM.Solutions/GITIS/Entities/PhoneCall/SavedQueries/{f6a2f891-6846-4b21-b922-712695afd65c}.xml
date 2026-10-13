@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{f6a2f891-6846-4b21-b922-712695afd65c}</savedqueryid>
+    <queryapi></queryapi>
+    <layoutxml>
+      <grid icon="1" jump="subject" name="resultset" preview="1" select="1">
+        <row id="activityid" name="result">
+          <cell name="subject" width="250" />
+          <cell disableSorting="1" name="from" width="150" />
+          <cell disableSorting="1" name="to" width="150" />
+          <cell name="regardingobjectid" width="100" />
+          <cell name="directioncode" width="100" />
+          <cell name="phonenumber" width="100" />
+          <cell name="prioritycode" width="100" />
+          <cell name="scheduledend" width="100" />
+          <cell name="statecode" width="100" />
+          <cell name="ownerid" width="100" />
+        </row>
+        <controlDescriptions />
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" output-format="xml-platform" version="1.0">
+        <entity name="phonecall">
+          <attribute name="subject" />
+          <order attribute="subject" descending="false" />
+          <attribute name="regardingobjectid" />
+          <attribute name="from" />
+          <attribute name="to" />
+          <attribute name="directioncode" />
+          <attribute name="phonenumber" />
+          <attribute name="prioritycode" />
+          <attribute name="scheduledend" />
+          <attribute name="statecode" />
+          <attribute name="ownerid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="not-null" />
+          </filter>
+          <attribute name="activityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Phone Calls" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="All Phone Calls" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

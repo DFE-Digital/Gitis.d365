@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{a80fb36c-353f-4310-a4cb-b8fa47d58b9b}</formid>
+    <IntroducedVersion>9.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="{ddbec6c0-c9d7-49b0-b066-37452cc224d0}" name="PhoneCall_Tab_1" showlabel="false">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section columns="1" id="{d31b733c-2d1b-020b-4335-ea510c673378}" IsUserDefined="0" name="PhoneCall_Description" showbar="false" showlabel="true">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b721cae8-b39c-4bb9-989f-3fd40130a2c0}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" id="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c75d0ed5-b39c-4678-a94b-1382258ea55e}">
+                        <labels>
+                          <label description="Call subject" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="subject" id="subject" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{efa00b37-8e3e-4229-8331-47dc1f3615be}">
+                        <labels>
+                          <label description="Candidate to call" languagecode="1033" />
+                        </labels>
+                        <control classid="{CBFB742C-14E7-4a17-96BB-1A13F7F64AA2}" datafieldname="to" id="to" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{405658c7-633b-44f6-91ba-038b9baf4a41}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Call from" languagecode="1033" />
+                        </labels>
+                        <control classid="{CBFB742C-14E7-4a17-96BB-1A13F7F64AA2}" datafieldname="from" disabled="false" id="from" uniqueid="{8e138e8e-a9db-8b87-908e-2461334559cb}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0729f3f9-8ce3-43b2-8e3c-067927071477}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Direction" languagecode="1033" />
+                        </labels>
+                        <control classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="directioncode" disabled="false" id="directioncode" uniqueid="{5492983d-00ad-9823-ec70-803e3358155e}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section columns="1" id="{d31b733c-2d1b-020b-4335-ea510c673377}" IsUserDefined="0" name="PhoneCall_Description_2" showbar="false" showlabel="true">
+                  <labels>
+                    <label description="DESCRIPTION" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{6965d7bf-c0ea-4bbb-90ad-7f3415df1bab}">
+                        <labels>
+                          <label description="Phone number" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="phonenumber" id="phonenumber" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f481f1a2-6111-40c9-8eca-ff477666b75a}">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="description" id="description" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7474f28a-c24c-44a6-bd4e-b648d5d1acab}">
+                        <labels>
+                          <label description="Scheduled duration" languagecode="1033" />
+                        </labels>
+                        <control classid="{AA987274-CE4E-4271-A803-66164311A958}" datafieldname="actualdurationminutes" disabled="false" id="actualdurationminutes" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section columns="1" id="{d31b733c-2d1b-020b-4335-ea510c673376}" IsUserDefined="0" name="PhoneCall_Description_3" showbar="false" showlabel="true">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{a74f621f-b15c-4ffa-890f-6a20e9746998}">
+                        <labels>
+                          <label description="Call start date and time" languagecode="1033" />
+                        </labels>
+                        <control classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="scheduledend" disabled="false" id="scheduledend" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{850991fd-30c2-4098-a369-aa6ec7cee7cb}">
+                        <labels>
+                          <label description="Priority" languagecode="1033" />
+                        </labels>
+                        <control classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="prioritycode" id="prioritycode"></control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{196075AD-03CE-4F20-A982-02C8DB06769B}">
+                        <labels>
+                          <label description="Candidate" languagecode="1033" />
+                        </labels>
+                        <control classid="{F3015350-44A2-4aa0-97B5-00166532B5E9}" datafieldname="regardingobjectid" id="regardingobjectid"></control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <events>
+        <event active="true" application="true" name="onload">
+          <InternalHandlers>
+            <Handler enabled="true" functionName="Activities.PhoneCall.Form_onload" handlerUniqueId="82BFC0AB-EB2A-44AC-8332-36EF4A9597A7" libraryName="Activities/SystemLibraries/PhoneCall_main_system_library.js" parameters="" passExecutionContext="true" />
+          </InternalHandlers>
+        </event>
+        <event active="true" application="true" attribute="directioncode" name="onchange">
+          <InternalHandlers>
+            <Handler enabled="true" functionName="Activities.PhoneCall.directionCodeOnChange" handlerUniqueId="0DDDBAC0-7EBD-49D1-A8B9-7874FCC4D28B" libraryName="Activities/SystemLibraries/PhoneCall_main_system_library.js" parameters="" passExecutionContext="true">
+              <dependencies>
+                <dependency id="to" />
+                <dependency id="from" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+        </event>
+      </events>
+      <clientresources>
+        <internalresources>
+          <clientincludes>
+            <internaljscriptfile src="$webresource:Activities/SystemLibraries/PhoneCall_main_system_library.js" />
+          </clientincludes>
+        </internalresources>
+      </clientresources>
+      <controlDescriptions />
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Phone call quick create form." languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Phone call quick create form." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

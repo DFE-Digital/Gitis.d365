@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{f2a0aa3a-7a69-403e-9167-3166c17abf2a}</formid>
+    <IntroducedVersion>1.0.0.6</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab expanded="true" id="{539f77d3-1dd6-4481-9801-394373acd8f7}" IsUserDefined="1" locklevel="0" name="{539f77d3-1dd6-4481-9801-394373acd8f7}" showlabel="true" verticallayout="true">
+          <labels>
+            <label description="MAIN" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section celllabelalignment="Left" celllabelposition="Top" columns="11" id="{c1586a04-287b-489a-ac1e-f6fc4face903}" IsUserDefined="0" labelwidth="130" locklevel="0" name="{c1586a04-287b-489a-ac1e-f6fc4face903}" showbar="false" showlabel="false">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{74a1bace-c5cc-7c4e-c291-7957099c8162}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="dfe_type" disabled="false" id="dfe_type" uniqueid="{54d70e5e-b581-55d2-4d6b-804e0c13d19e}" />
+                      </cell>
+                      <cell id="{7bdc009a-248a-ae50-d98b-4030315407cc}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6262eba1-dc6e-6aca-5d89-25128754d574}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Other barrier or concern" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_otherbarrierorconcern" disabled="false" id="dfe_otherbarrierorconcern" uniqueid="{25bd6c4d-9375-c91a-6196-721ed52ac86a}" />
+                      </cell>
+                      <cell id="{952617c3-1041-85d2-aba2-ec6787aeeb78}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{68b45537-9a0d-1353-7427-5ae240eed26a}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="dfe_level" disabled="false" id="dfe_level" />
+                      </cell>
+                      <cell id="{0d797c8e-6e7e-b1b1-23cd-b5cd795e6ad2}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section celllabelalignment="Left" celllabelposition="Top" columns="1" id="{31c6c20e-a7c8-7b3e-cc03-1357e7644ca3}" IsUserDefined="0" labelwidth="115" layout="varwidth" locklevel="0" name="{539f77d3-1dd6-4481-9801-394373acd8f7}_section_2" showbar="false" showlabel="false">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{6c5458c0-683b-162c-6ac0-1aec047639d4}" locklevel="0" rowspan="1" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="dfe_notes" disabled="false" id="dfe_notes" uniqueid="{ba908914-14c7-2737-2680-778cea655bb9}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header celllabelalignment="Left" celllabelposition="Top" columns="111" id="{43e6c4c1-78f0-4096-8a12-a4952586989b}" labelwidth="130">
+        <rows>
+          <row>
+            <cell id="{18ad6783-bba2-6d79-0538-432624985e1e}" locklevel="0" showlabel="true" visible="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+              <control classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" id="header_ownerid" uniqueid="{940ebc0d-7b24-cd9e-354d-eb6d86787344}">
+                <parameters>
+                  <AutoResolve>true</AutoResolve>
+                  <DisableMru>false</DisableMru>
+                </parameters>
+              </control>
+            </cell>
+            <cell id="{9ac5d086-e88e-dc18-a593-255911c5e757}" locklevel="0" showlabel="true" visible="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+              <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_name" disabled="false" id="header_dfe_name" uniqueid="{46e5823a-2c34-cc9d-ee03-91192381352e}" />
+            </cell>
+            <cell id="{747dd4c4-e841-620c-0940-515634796824}" locklevel="0" showlabel="true">
+              <labels>
+                <label description="Candidate" languagecode="1033" />
+              </labels>
+              <control classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="dfe_contactid" disabled="true" id="header_dfe_contactid" uniqueid="{698704c7-36bd-10a0-7708-a7937be55c11}">
+                <parameters>
+                  <AutoResolve>true</AutoResolve>
+                  <DisableMru>false</DisableMru>
+                  <DisableQuickFind>false</DisableQuickFind>
+                  <DisableViewPicker>false</DisableViewPicker>
+                  <DefaultViewId>{A2D479C5-53E3-4C69-ADDD-802327E67A0D}</DefaultViewId>
+                  <AllowFilterOff>false</AllowFilterOff>
+                </parameters>
+              </control>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

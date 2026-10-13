@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{fb16ccfd-a802-e911-a971-000d3a206976}</savedqueryid>
+    <layoutxml>
+      <grid icon="1" jump="fullname" name="resultset" preview="1" select="1">
+        <row id="contactid" name="result">
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_typeofcandidate" width="150" />
+          <cell name="dfe_ittyear" width="100" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_preferredteachingregion01" width="200" />
+          <cell disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_dayssincetriaged" width="125" />
+          <cell name="fullname" width="150" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_preferredteachingsubject01" width="150" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_preferredteachingsubject02" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch distinct="false" mapping="logical" output-format="xml-platform" version="1.0">
+        <entity name="contact">
+          <attribute name="fullname" />
+          <attribute name="dfe_preferredteachingregion01" />
+          <attribute name="dfe_preferredteachingsubject02" />
+          <attribute name="dfe_preferredteachingsubject01" />
+          <attribute name="dfe_dayssincetriaged" />
+          <attribute name="dfe_typeofcandidate" />
+          <attribute name="dfe_ittyear" />
+          <order attribute="dfe_typeofcandidate" descending="false" />
+          <order attribute="dfe_ittyear" descending="false" />
+          <filter type="and">
+            <condition attribute="dfe_candidatestatus" operator="eq" value="222750001" />
+            <condition attribute="dfe_typeofcandidate" operator="in">
+              <value>222750000</value>
+              <value>222750001</value>
+            </condition>
+            <condition attribute="dfe_gitisttaservicesubscriptionchannel" operator="null" />
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="contactid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.6</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Candidates waiting to be assigned to an adviser" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="For call centre managers - newly triaged candidates (ITT and RTT) who are waiting to be assigned to an adviser by a call centre manager." languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

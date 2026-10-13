@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>dfe_callagent</UniqueName>
+  <IntroducedVersion>1.0.0.2</IntroducedVersion>
+  <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents>
+    <AppModuleComponent schemaName="dfe_callagent" type="62" />
+    <AppModuleComponent id="{ab81c1af-1a45-48d9-8133-3edc033dbeef}" type="29" />
+    <AppModuleComponent id="{8997bf36-ceb4-e811-a84c-000d3a2a343e}" type="60" />
+    <AppModuleComponent schemaName="appointment" type="1" />
+    <AppModuleComponent id="{549a8aa3-c349-4ab9-8bac-4873fa9a7a5c}" type="60" />
+    <AppModuleComponent schemaName="dfe_candidatejourneystep" type="1" />
+    <AppModuleComponent schemaName="contact" type="1" />
+    <AppModuleComponent id="{1fed44d1-ae68-4a41-bd2b-f13acac4acfa}" type="60" />
+    <AppModuleComponent schemaName="email" type="1" />
+    <AppModuleComponent schemaName="knowledgearticle" type="1" />
+    <AppModuleComponent schemaName="newprocess" type="1" />
+    <AppModuleComponent schemaName="phonecall" type="1" />
+    <AppModuleComponent id="{d9776b60-fb22-49bb-bbca-c3452e7dc8f8}" type="60" />
+    <AppModuleComponent id="{f6a2f891-6846-4b21-b922-712695afd65c}" type="26" />
+    <AppModuleComponent schemaName="dfe_candidatequalification" type="1" />
+    <AppModuleComponent id="{179c5f59-4cf9-4817-86b4-ef9eb6d9b605}" type="60" />
+    <AppModuleComponent schemaName="dfe_sms" type="1" />
+    <AppModuleComponent schemaName="task" type="1" />
+    <AppModuleComponent id="{3b087c05-c48d-42e0-a938-fbf853a6b5b2}" type="60" />
+    <AppModuleComponent id="{4acd57aa-3b1b-e911-a976-000d3a206976}" type="26" />
+    <AppModuleComponent id="{c4329725-3b1b-e911-a976-000d3a206976}" type="26" />
+    <AppModuleComponent schemaName="dfe_candidateteachingleavingreason" type="1" />
+    <AppModuleComponent schemaName="dfe_candidateteachingpostappliedfor" type="1" />
+    <AppModuleComponent schemaName="dfe_teachingsubjectlist" type="1" />
+    <AppModuleComponent schemaName="dfe_candidatetrainedtaughtteachingsubject" type="1" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{07cf42fe-32ad-e811-a84a-000d3a2a3caf}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+  </AppModuleRoleMaps>
+  <LocalizedNames>
+    <LocalizedName description="Call Agent: Inbound" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="An App for Call agents to working on the GITIS Service" languagecode="1033" />
+  </Descriptions>
+</AppModule>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModuleSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SiteMapUniqueName>dfe_adviser</SiteMapUniqueName>
+  <SiteMap IntroducedVersion="7.0.0.0">
+    <Area DescriptionResourceId="SitemapDesigner.NewArea" Id="New_Area" IntroducedVersion="7.0.0.0" ResourceId="SitemapDesigner.NewArea" ShowGroups="true">
+      <Titles>
+        <Title LCID="1033" Title="Home" />
+      </Titles>
+      <Group DescriptionResourceId="SitemapDesigner.NewGroup" Id="dfe_home" IntroducedVersion="7.0.0.0" IsProfile="false" ResourceId="SitemapDesigner.NewGroup" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="1 to 1 Adviser" />
+        </Titles>
+        <SubArea AvailableOffline="true" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" Entity="appointment" Icon="/_imgs/imagestrips/transparent_spacer.gif" Id="New_SubArea" IntroducedVersion="7.0.0.0" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Meetings and scheduled phone calls" />
+          </Titles>
+        </SubArea>
+        <SubArea AvailableOffline="true" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" DefaultDashboard="ab95b05a-d9b1-e811-a84e-000d3a2a3148" DescriptionResourceId="Dashboards_Description" Icon="/_imgs/imagestrips/transparent_spacer.gif" Id="NewSubArea_7aaa7af3" PassParams="false" ResourceId="Homepage_Dashboards" Sku="All,OnPremise,Live,SPLA" Url="/workplace/home_dashboards.aspx">
+          <Titles>
+            <Title LCID="1033" Title="Dashboard" />
+          </Titles>
+        </SubArea>
+        <SubArea AvailableOffline="true" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" DefaultDashboard="3f978ba9-cfb1-e811-a84e-000d3a2a3148" DescriptionResourceId="Dashboards_Description" Icon="/_imgs/imagestrips/transparent_spacer.gif" Id="NewSubArea_51f0fab" PassParams="false" ResourceId="Homepage_Dashboards" Sku="All,OnPremise,Live,SPLA" Url="/workplace/home_dashboards.aspx">
+          <Titles>
+            <Title LCID="1033" Title="My candidates" />
+          </Titles>
+        </SubArea>
+      </Group>
+    </Area>
+  </SiteMap>
+  <LocalizedNames>
+    <LocalizedName description="1 to 1 Adviser" languagecode="1033" />
+  </LocalizedNames>
+</AppModuleSiteMap>

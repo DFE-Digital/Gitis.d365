@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{24a863ab-f461-4c4a-83bd-b9f008a45e7a}</savedqueryid>
+    <layoutxml>
+      <grid icon="1" jump="dfe_name" name="" preview="1" select="1">
+        <row id="dfe_candidateteachingleavingreasonid" name="dfe_candidateteachingleavingreason">
+          <cell name="dfe_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="dfe_candidateteachingleavingreason">
+          <attribute name="dfe_candidateteachingleavingreasonid" />
+          <attribute name="dfe_name" />
+          <attribute name="createdon" />
+          <order attribute="dfe_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.6</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Candidate Teaching Leaving Reason Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

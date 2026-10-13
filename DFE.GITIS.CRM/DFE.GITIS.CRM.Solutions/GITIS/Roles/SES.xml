@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Role id="{bea1cad5-a6b3-e911-a98a-000d3a233e06}" isinherited="0" name="SES" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsCustomizable>1</IsCustomizable>
+  <RolePrivileges>
+    <RolePrivilege level="Global" name="prvAppendContact" />
+    <RolePrivilege level="Global" name="prvAppenddfe_CandidateLanguageSkills" />
+    <RolePrivilege level="Global" name="prvAppenddfe_candidateprivacypolicy" />
+    <RolePrivilege level="Global" name="prvAppenddfe_CandidateQualification" />
+    <RolePrivilege level="Global" name="prvAppenddfe_CandidateSchoolExperience" />
+    <RolePrivilege level="Global" name="prvAppenddfe_country" />
+    <RolePrivilege level="Global" name="prvAppenddfe_privacypolicy" />
+    <RolePrivilege level="Global" name="prvAppenddfe_TeachingSubjectList" />
+    <RolePrivilege level="Global" name="prvAppendTeam" />
+    <RolePrivilege level="Global" name="prvAppendToContact" />
+    <RolePrivilege level="Global" name="prvAppendTodfe_CandidateLanguageSkills" />
+    <RolePrivilege level="Global" name="prvAppendTodfe_candidateprivacypolicy" />
+    <RolePrivilege level="Global" name="prvAppendTodfe_CandidateQualification" />
+    <RolePrivilege level="Global" name="prvAppendTodfe_CandidateSchoolExperience" />
+    <RolePrivilege level="Global" name="prvAppendTodfe_country" />
+    <RolePrivilege level="Global" name="prvAppendTodfe_privacypolicy" />
+    <RolePrivilege level="Global" name="prvAppendTodfe_TeachingSubjectList" />
+    <RolePrivilege level="Global" name="prvAppendToTeam" />
+    <RolePrivilege level="Global" name="prvCreateContact" />
+    <RolePrivilege level="Global" name="prvCreatedfe_candidateprivacypolicy" />
+    <RolePrivilege level="Global" name="prvCreatedfe_CandidateSchoolExperience" />
+    <RolePrivilege level="Global" name="prvCreateNote" />
+    <RolePrivilege level="Global" name="prvCreateSharePointData" />
+    <RolePrivilege level="Global" name="prvReadAsyncOperation" />
+    <RolePrivilege level="Global" name="prvReadBusinessUnit" />
+    <RolePrivilege level="Global" name="prvReadContact" />
+    <RolePrivilege level="Global" name="prvReaddfe_CandidateLanguageSkills" />
+    <RolePrivilege level="Global" name="prvReaddfe_candidateprivacypolicy" />
+    <RolePrivilege level="Global" name="prvReaddfe_CandidateQualification" />
+    <RolePrivilege level="Global" name="prvReaddfe_CandidateSchoolExperience" />
+    <RolePrivilege level="Global" name="prvReaddfe_country" />
+    <RolePrivilege level="Global" name="prvReaddfe_privacypolicy" />
+    <RolePrivilege level="Global" name="prvReaddfe_TeachingSubjectList" />
+    <RolePrivilege level="Global" name="prvReadNote" />
+    <RolePrivilege level="Global" name="prvReadplt_idgenerator" />
+    <RolePrivilege level="Global" name="prvReadPluginAssembly" />
+    <RolePrivilege level="Global" name="prvReadPluginType" />
+    <RolePrivilege level="Global" name="prvReadSdkMessage" />
+    <RolePrivilege level="Global" name="prvReadSdkMessageProcessingStep" />
+    <RolePrivilege level="Global" name="prvReadSdkMessageProcessingStepImage" />
+    <RolePrivilege level="Global" name="prvReadSharePointData" />
+    <RolePrivilege level="Global" name="prvReadSharePointDocument" />
+    <RolePrivilege level="Global" name="prvReadTeam" />
+    <RolePrivilege level="Global" name="prvReadUser" />
+    <RolePrivilege level="Global" name="prvWriteContact" />
+    <RolePrivilege level="Global" name="prvWritedfe_candidateprivacypolicy" />
+    <RolePrivilege level="Global" name="prvWritedfe_CandidateSchoolExperience" />
+    <RolePrivilege level="Global" name="prvWriteNote" />
+    <RolePrivilege level="Global" name="prvWriteSharePointData" />
+  </RolePrivileges>
+</Role>

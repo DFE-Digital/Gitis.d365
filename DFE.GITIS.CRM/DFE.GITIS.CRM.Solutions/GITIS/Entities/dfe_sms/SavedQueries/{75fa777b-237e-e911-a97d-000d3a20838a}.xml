@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{75fa777b-237e-e911-a97d-000d3a20838a}</savedqueryid>
+    <layoutxml>
+      <grid icon="1" jump="subject" name="resultset" preview="1" select="1">
+        <row id="activityid" name="result">
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="subject" width="150" />
+          <cell disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="description" width="150" />
+          <cell name="regardingobjectid" width="100" />
+          <cell disableSorting="1" name="to" width="100" />
+          <cell name="statuscode" width="100" />
+          <cell name="dfe_directioncode" width="100" />
+          <cell disableSorting="1" name="a_12047c0b1db8e811a96b000d3a20838a.mobilephone" width="100" />
+          <cell disableSorting="1" name="a_12047c0b1db8e811a96b000d3a20838a.firstname" width="100" />
+          <cell disableSorting="1" name="a_12047c0b1db8e811a96b000d3a20838a.lastname" width="100" />
+          <cell disableSorting="1" name="a_12047c0b1db8e811a96b000d3a20838a.address1_telephone1" width="100" />
+          <cell name="dfe_mobilenumber" width="100" />
+          <cell disableSorting="1" name="a_12047c0b1db8e811a96b000d3a20838a.telephone1" width="100" />
+          <cell name="ownerid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch distinct="false" mapping="logical" output-format="xml-platform" version="1.0">
+        <entity name="dfe_sms">
+          <attribute name="subject" />
+          <attribute name="to" />
+          <attribute name="statuscode" />
+          <attribute name="ownerid" />
+          <attribute name="dfe_mobilenumber" />
+          <attribute name="description" />
+          <attribute name="dfe_directioncode" />
+          <attribute name="regardingobjectid" />
+          <order attribute="subject" descending="false" />
+          <filter type="and">
+            <filter type="and">
+              <condition attribute="statuscode" operator="eq" value="4" />
+              <condition attribute="subject" operator="like" value="%Spring 2020%" />
+              <condition attribute="subject" operator="like" value="%Invite SMS%" />
+            </filter>
+          </filter>
+          <link-entity alias="a_12047c0b1db8e811a96b000d3a20838a" from="contactid" link-type="outer" name="contact" to="regardingobjectid" visible="false">
+            <attribute name="telephone1" />
+            <attribute name="mobilephone" />
+            <attribute name="address1_telephone1" />
+            <attribute name="firstname" />
+            <attribute name="lastname" />
+          </link-entity>
+          <attribute name="activityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.2.0.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Spring Invite Event SMS Messages Scheduled to be Sent" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="View of Spring (or Summer) Event SMS Messages that need to be sent in response to targeted invite SMS Customer Journeys (or user generated requests)" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

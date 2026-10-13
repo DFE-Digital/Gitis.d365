@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset description="The 'UK degree' grade - 1st, 2.1 etc." localizedName="UK degree grade (expected or obtained)" Name="dfe_degreegradeforukdegrees" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.5</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="UK degree grade (expected or obtained)" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="The 'UK degree' grade - 1st, 2.1 etc." languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option Color="#0000ff" ExternalValue="" value="222750001">
+      <labels>
+        <label description="First class" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750002">
+      <labels>
+        <label description="2:1" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750003">
+      <labels>
+        <label description="2:2" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750004">
+      <labels>
+        <label description="Third class or below" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750005">
+      <labels>
+        <label description="Pass (grade unknown)" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="Added for TPUK data migration" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750000">
+      <labels>
+        <label description="Not applicable" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="Added for TPUK data migration" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

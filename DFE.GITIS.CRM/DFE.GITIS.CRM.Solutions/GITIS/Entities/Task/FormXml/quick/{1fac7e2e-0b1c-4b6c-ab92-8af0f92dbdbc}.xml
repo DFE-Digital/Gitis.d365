@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform unmodified="1">
+    <formid>{1fac7e2e-0b1c-4b6c-ab92-8af0f92dbdbc}</formid>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form hasmargin="false" shownavigationbar="false">
+      <ancestor id="{1fac7e2e-0b1c-4b6c-ab92-8af0f92dbdbc}" />
+      <hiddencontrols>
+        <data classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" datafieldname="modifiedby" id="modifiedby" />
+      </hiddencontrols>
+      <tabs>
+        <tab expanded="true" id="{4CA63CF4-212D-4748-8561-4927E9BEFEB4}" IsUserDefined="0" locklevel="0" name="general" showlabel="false" verticallayout="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section celllabelposition="Left" id="{C473270F-335F-476E-8E1D-F20D9B2382CC}" IsUserDefined="0" labelwidth="115" layout="varheight" locklevel="0" name="information" showbar="false" showlabel="false">
+                  <labels>
+                    <label description="Information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{A9F7F1D8-F5D9-4623-B0B2-5DA8B744E483}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Task title" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="subject" disabled="false" id="subject" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9882AF1A-596B-44A7-A629-EEE7C0FAFF55}" locklevel="4" rowspan="3" showlabel="true">
+                        <labels>
+                          <label description="Notes" languagecode="1033" />
+                        </labels>
+                        <control classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="description" disabled="false" id="description" />
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row>
+                      <cell id="{60CC383E-DAF7-46EA-B86E-50C5CE3C8741}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Due" languagecode="1033" />
+                        </labels>
+                        <control classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="scheduledend" disabled="false" id="scheduledend" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{C0EA964E-21DA-4A6C-A9C9-0B9934E60D3D}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Priority" languagecode="1033" />
+                        </labels>
+                        <control classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="prioritycode" disabled="false" id="prioritycode" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" id="{05A1926C-28FB-4452-9C06-D2AB225B06C3}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" id="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Quick Form" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="This is the form that is displayed for the Dynamics 365 quick form." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

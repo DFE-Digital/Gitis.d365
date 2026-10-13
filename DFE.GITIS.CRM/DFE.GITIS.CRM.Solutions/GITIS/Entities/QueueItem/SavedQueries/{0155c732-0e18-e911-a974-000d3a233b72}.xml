@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{0155c732-0e18-e911-a974-000d3a233b72}</savedqueryid>
+    <layoutxml>
+      <grid icon="1" jump="title" name="resultset" preview="1" select="1">
+        <row id="objectid" multiobjectidfield="objecttypecode" name="result">
+          <cell ishidden="1" name="queueitemid" width="150" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="title" width="200" />
+          <cell name="dfe_callweighting" width="100" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_scheduledstarttime" width="150" />
+          <cell name="objectid" width="100" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="enteredon" width="125" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="overriddencreatedon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch distinct="false" mapping="logical" output-format="xml-platform" version="1.0">
+        <entity name="queueitem">
+          <attribute name="title" />
+          <attribute name="queueitemid" />
+          <attribute name="overriddencreatedon" />
+          <attribute name="objectid" />
+          <attribute name="enteredon" />
+          <attribute name="dfe_callweighting" />
+          <attribute name="objecttypecode" />
+          <order attribute="dfe_callweighting" descending="true" />
+          <order attribute="enteredon" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+            <condition attribute="statuscode" operator="eq" value="1" />
+          </filter>
+          <attribute name="dfe_scheduledstarttime" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Outbound phone call queue items" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A view of items in the Outbound Phone call Queue for the Call Centre manager." languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

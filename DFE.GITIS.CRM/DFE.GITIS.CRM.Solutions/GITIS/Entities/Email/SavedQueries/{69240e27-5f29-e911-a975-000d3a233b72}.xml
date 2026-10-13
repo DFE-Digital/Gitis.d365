@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{69240e27-5f29-e911-a975-000d3a233b72}</savedqueryid>
+    <layoutxml>
+      <grid icon="1" jump="subject" name="resultset" preview="1" select="1">
+        <row id="activityid" name="result">
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="senton" width="100" />
+          <cell disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="to" width="125" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="subject" width="200" />
+          <cell disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="description" width="300" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch distinct="false" mapping="logical" output-format="xml-platform" version="1.0">
+        <entity name="email">
+          <attribute name="subject" />
+          <attribute name="description" />
+          <attribute name="senton" />
+          <attribute name="to" />
+          <order attribute="senton" descending="true" />
+          <filter type="and">
+            <condition attribute="directioncode" operator="eq" value="1" />
+            <condition attribute="ownerid" operator="eq-userid" />
+          </filter>
+          <attribute name="activityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.7</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Emails to candidates (sent items)" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="For a 1-to-1 adviser: sent emails for all candidates." languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

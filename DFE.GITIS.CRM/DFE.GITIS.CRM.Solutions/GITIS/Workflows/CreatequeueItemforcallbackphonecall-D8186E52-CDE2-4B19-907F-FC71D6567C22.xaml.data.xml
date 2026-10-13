@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow Name="Create queue Item for callback phone call" WorkflowId="{d8186e52-cde2-4b19-907f-fc71d6567c22}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/CreatequeueItemforcallbackphonecall-D8186E52-CDE2-4B19-907F-FC71D6567C22.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>0</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>0</StateCode>
+  <StatusCode>1</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.0.2</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <PrimaryEntity>PhoneCall</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName description="Create queue Item for callback phone call" languagecode="1033" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{0a67d27a-4922-4013-b93f-3c2015efb734}" />
+  </labels>
+</Workflow>

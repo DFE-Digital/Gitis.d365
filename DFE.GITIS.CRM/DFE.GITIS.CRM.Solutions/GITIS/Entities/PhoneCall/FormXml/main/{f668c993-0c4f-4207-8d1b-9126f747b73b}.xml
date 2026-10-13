@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{f668c993-0c4f-4207-8d1b-9126f747b73b}</formid>
+    <IntroducedVersion>1.0.0.7</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="1920" showImage="false" shownavigationbar="true">
+      <ancestor id="{A91390A5-99BB-4D10-9EEE-3A5C87F841F1}" />
+      <tabs>
+        <tab expanded="true" id="{8ba34836-01c0-355d-5e7b-2dd6655b9232}" IsUserDefined="0" labelid="{88f814a5-1f53-4bc3-b048-b0509831c254}" locklevel="0" name="tab_3" showlabel="true">
+          <labels>
+            <label description="MAIN" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section celllabelalignment="Left" celllabelposition="Top" columns="11" id="{b7bbdd96-5dea-ab9e-404e-b64bc7736cc3}" IsUserDefined="0" labelid="{ee8a917e-6cea-47f8-97aa-6e5e55b9de7b}" labelwidth="115" layout="varwidth" locklevel="0" name="tab_3_section_1" showbar="false" showlabel="true">
+                  <labels>
+                    <label description="CALL DETAILS" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0ad04bc8-440c-4558-9d41-59829724a125}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Display in calendar as scheduled phone call" languagecode="1033" />
+                        </labels>
+                        <control classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="dfe_appointmentrequired" disabled="false" id="dfe_appointmentrequired" uniqueid="{cca57b64-10ba-4a98-be8d-1e8d63b0162d}" />
+                      </cell>
+                      <cell id="{395a5dd8-16e2-173e-77a6-ae2728650e72}" labelid="{ae6393b0-b18a-4971-8477-9be1ce618e1b}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Incoming or outgoing call" languagecode="1033" />
+                        </labels>
+                        <control classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="directioncode" disabled="false" id="directioncode" uniqueid="{705dc111-606b-890d-d9a8-33959695b7c1}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" colspan="1" id="{EFA00B37-8E3E-4229-8331-47DC1F3615BE}" labelid="{7114c9f3-f99a-4aae-8974-85f8d3c7ae7f}" locklevel="0" rowspan="1" showlabel="true">
+                        <labels>
+                          <label description="Candidate to call" languagecode="1033" />
+                        </labels>
+                        <control classid="{CBFB742C-14E7-4a17-96BB-1A13F7F64AA2}" datafieldname="to" disabled="false" id="to" uniqueid="{a3072423-89b8-532b-1d46-c90aeace3b81}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell auto="false" colspan="1" id="{405658C7-633B-44F6-91BA-038B9BAF4A41}" labelid="{55573268-fa63-493f-a22e-e75559fcd0cb}" locklevel="0" rowspan="1" showlabel="true">
+                        <labels>
+                          <label description="Call from" languagecode="1033" />
+                        </labels>
+                        <control classid="{CBFB742C-14E7-4a17-96BB-1A13F7F64AA2}" datafieldname="from" disabled="false" id="from" uniqueid="{64d26688-8d2d-d26b-7633-2aed1679ec78}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" colspan="1" id="{C75D0ED5-B39C-4678-A94B-1382258EA55E}" labelid="{f3c9154d-16ed-4384-8be3-d800e3273251}" locklevel="0" rowspan="1" showlabel="true">
+                        <labels>
+                          <label description="Call subject" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="subject" disabled="false" id="subject" uniqueid="{9e4080b1-2eaa-6b8b-75cb-decdd79c10d8}" />
+                      </cell>
+                      <cell id="{1d1a4ed7-c626-0290-8c4d-4bd569573b8d}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Phone number" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="phonenumber" disabled="false" id="phonenumber" uniqueid="{1742298b-b424-742d-9305-48d3ed062485}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{88ed412d-a713-dba6-3021-35de7bd06bb5}" labelid="{d5d08b3a-49a0-4b43-b749-f6dda28678bb}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Start time/date" languagecode="1033" />
+                        </labels>
+                        <control classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="actualstart" disabled="false" id="actualstart" uniqueid="{06258153-57de-8e59-9483-4820c93604a0}" />
+                      </cell>
+                      <cell id="{a116a4b8-e419-3571-5b46-05398d901866}" labelid="{2864b638-8d01-434c-8a62-e2b29e17013d}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="End time/date" languagecode="1033" />
+                        </labels>
+                        <control classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="actualend" disabled="false" id="actualend" uniqueid="{63b2adad-a740-723d-1c57-dcacce091408}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{53ed4cbd-1749-16ab-5d70-70a511bc760e}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{05a5ae66-e8d5-0ab4-483e-805b950c9ad3}" locklevel="0" showlabel="true" visible="false">
+                        <labels>
+                          <label description="Appointment Flag" languagecode="1033" />
+                        </labels>
+                        <control classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="dfe_appointmentflag" disabled="true" id="dfe_appointmentflag" uniqueid="{a7ea1bc8-ddd0-398a-2ab2-cc31b10b4e84}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section celllabelalignment="Left" celllabelposition="Top" columns="1" id="{4cbec8e9-2ae3-005e-191d-791be1b9dda9}" IsUserDefined="0" labelwidth="115" layout="varwidth" locklevel="0" name="tab_3_section_precall" showbar="false" showlabel="true">
+                  <labels>
+                    <label description="PRE-CALL" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9c6d5445-b81d-d291-0c28-edcbc15a3b11}" locklevel="0" rowspan="3" showlabel="true">
+                        <labels>
+                          <label description="Pre-call: Notes (items to discuss)" languagecode="1033" />
+                        </labels>
+                        <control classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="description" disabled="false" id="description" uniqueid="{91852a9c-d551-361a-3665-d139c1a4b396}" />
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                  </rows>
+                </section>
+                <section celllabelalignment="Left" celllabelposition="Top" columns="1" id="{572ad679-21e7-6126-306a-bac0bee791ba}" IsUserDefined="0" labelwidth="115" layout="varwidth" locklevel="0" name="tab_3_section_postcall" showbar="false" showlabel="true">
+                  <labels>
+                    <label description="POST-CALL" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{26779b9c-5212-3ec1-24a4-9402381399bd}" locklevel="0" rowspan="3" showlabel="true">
+                        <labels>
+                          <label description="Post call: Notes" languagecode="1033" />
+                        </labels>
+                        <control classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="dfe_postcallnotes" disabled="false" id="dfe_postcallnotes" uniqueid="{1d735582-4d71-410b-7382-89233dde3122}" />
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row>
+                      <cell id="{d4c15259-245c-6d5a-d6bc-bc8dac96674d}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Left voicemail" languagecode="1033" />
+                        </labels>
+                        <control classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="leftvoicemail" disabled="false" id="leftvoicemail" uniqueid="{3288561d-c190-ecc3-4196-d392d5bc3622}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header celllabelposition="Top" columns="1111" id="{5A88E8A6-D3C5-48E8-806D-644E55DFC2E7}" labelwidth="115">
+        <rows>
+          <row>
+            <cell id="{9bacd2e8-c008-1b8e-0b86-57273d539a7d}" labelid="{5d68154c-d5db-4cd7-bf7b-139901071315}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{94286276-8031-3b8a-53ab-d446d26664d9}" labelid="{df968995-2367-409b-8a00-8fc57bf7e12e}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{DCBC8C79-0F64-488D-BAE1-1ABDCBB8E460}" labelid="{8a0f2b77-d188-4800-a81b-ce63fa9e0d3d}" locklevel="0" showlabel="true" visible="false">
+              <labels>
+                <label description="Status" languagecode="1033" />
+              </labels>
+              <control classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="true" id="header_statecode" uniqueid="{b4a3e3ec-b904-2e96-d657-7756a6035628}" />
+            </cell>
+            <cell id="{2C735F61-F74C-4D9A-A25B-56DF11AF5216}" labelid="{36656e68-f49e-47a0-95c3-48c889ae0792}" locklevel="1" showlabel="true">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" id="header_ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <events>
+        <event active="true" application="true" name="onload">
+          <InternalHandlers>
+            <Handler enabled="true" functionName="Activities.PhoneCall.Form_onload" handlerUniqueId="64c59696-aed0-41fd-9570-b6a504ba7ea2" libraryName="Activities/SystemLibraries/PhoneCall_main_system_library.js" parameters="" passExecutionContext="true" />
+          </InternalHandlers>
+          <Handlers>
+            <Handler enabled="true" functionName="DFEPhoneCallAdviser.formOnLoad" handlerUniqueId="{7140c330-1847-08ec-11dd-129811d612ce}" libraryName="dfe_/javascript/phonecall_form_adviser.js" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event active="true" application="true" attribute="directioncode" name="onchange">
+          <InternalHandlers>
+            <Handler enabled="true" functionName="Activities.PhoneCall.directionCodeOnChange" handlerUniqueId="17d9b56a-72fb-4cf6-8fde-4a7263c84ca4" libraryName="Activities/SystemLibraries/PhoneCall_main_system_library.js" parameters="" passExecutionContext="true">
+              <dependencies>
+                <dependency id="to" />
+                <dependency id="from" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+        </event>
+        <event active="false" application="false" attribute="to" name="onchange">
+          <Handlers>
+            <Handler enabled="true" functionName="DFEPhoneCallAdviser.OnContactChange" handlerUniqueId="{74919e93-7567-8248-50b8-d85d5e6e3542}" libraryName="dfe_/javascript/phonecall_form_adviser.js" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event active="false" application="false" name="onsave">
+          <Handlers>
+            <Handler enabled="false" functionName="DFEPhoneCallAdviser.formOnSave" handlerUniqueId="{92d098c0-e786-a987-1a49-a8d7dc349d1c}" libraryName="dfe_/javascript/phonecall_form_adviser.js" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+      <clientresources>
+        <internalresources>
+          <clientincludes>
+            <internaljscriptfile src="$webresource:Activities/SystemLibraries/PhoneCall_main_system_library.js" />
+          </clientincludes>
+        </internalresources>
+      </clientresources>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <formLibraries>
+        <Library libraryUniqueId="{20022be8-2e05-0a91-64e4-c32c4b80bac7}" name="dfe_/javascript/utils.js" />
+        <Library libraryUniqueId="{8ae7e4d1-7d61-09d0-c5cc-143cb400a1b2}" name="dfe_/javascript/dataservices.js" />
+        <Library libraryUniqueId="{ee9c0d19-a256-98a5-8c14-96d103133113}" name="dfe_/javascript/phonecall_form_adviser.js" />
+      </formLibraries>
+      <DisplayConditions FallbackForm="true" Order="6">
+        <Role Id="{5E94ECDD-4DAF-E811-A84E-000D3A2A3148}" />
+        <Role Id="{7BF2152C-EFF1-EA11-A815-000D3A44AFCC}" />
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Adviser phone call" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="The Phone Call form used for advisers" languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

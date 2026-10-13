@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow Name="Update Qualification on Contact" WorkflowId="{caf4f496-5b23-47ed-9650-2eaf966262c7}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/UpdateQualificationonContact-CAF4F496-5B23-47ED-9650-2EAF966262C7.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>0</Category>
+  <Mode>0</Mode>
+  <Scope>2</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnUpdateAttributeList>dfe_ukdegreegrade,dfe_subject,dfe_type,dfe_name,dfe_degreestatus</TriggerOnUpdateAttributeList>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>1</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <PrimaryEntity>dfe_CandidateQualification</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName description="Update Qualification on Contact" languagecode="1033" />
+  </LocalizedNames>
+</Workflow>

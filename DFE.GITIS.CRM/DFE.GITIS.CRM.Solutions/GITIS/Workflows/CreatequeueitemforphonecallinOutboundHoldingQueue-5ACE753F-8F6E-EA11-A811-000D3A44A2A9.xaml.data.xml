@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow Name="Create queue item for phone call in Outbound Holding Queue" WorkflowId="{5ace753f-8f6e-ea11-a811-000d3a44a2a9}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/CreatequeueitemforphonecallinOutboundHoldingQueue-5ACE753F-8F6E-EA11-A811-000D3A44A2A9.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>0</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>0</StateCode>
+  <StatusCode>1</StatusCode>
+  <RunAs>1</RunAs>
+  <UniqueName>CreatequeueitemforphonecallsinOutboundHoldingQueue5cce753f8f6eea11a811000d3a44a2a9</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.0.2</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <PrimaryEntity>PhoneCall</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName description="Create queue item for phone call in Outbound Holding Queue" languagecode="1033" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{0a67d27a-4922-4013-b93f-3c2015efb734}" />
+  </labels>
+</Workflow>

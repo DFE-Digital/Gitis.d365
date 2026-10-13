@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>dfe_callcentremanagement</UniqueName>
+  <IntroducedVersion>1.0.0.2</IntroducedVersion>
+  <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents>
+    <AppModuleComponent schemaName="dfe_callcentremanagement" type="62" />
+    <AppModuleComponent id="{1872b642-7a03-e911-a974-000d3a20838a}" type="60" />
+    <AppModuleComponent id="{5300e01b-7da5-ea11-a812-000d3a44afcc}" type="60" />
+    <AppModuleComponent schemaName="dfe_calltopics" type="1" />
+    <AppModuleComponent id="{00adf461-cff5-4949-91c7-b50841fa6cdf}" type="26" />
+    <AppModuleComponent schemaName="dfe_callbackbookingquota" type="1" />
+    <AppModuleComponent id="{c4115d5c-955a-4115-a4fe-c18a193226eb}" type="26" />
+    <AppModuleComponent id="{11268f7c-0c13-42c4-8f09-5a80f20d3862}" type="26" />
+    <AppModuleComponent id="{8e98e73d-a62e-e911-a977-000d3a23443b}" type="26" />
+    <AppModuleComponent schemaName="contact" type="1" />
+    <AppModuleComponent id="{1fed44d1-ae68-4a41-bd2b-f13acac4acfa}" type="60" />
+    <AppModuleComponent id="{0d5d377b-5e7c-47b5-bab1-a5cb8b4ac105}" type="26" />
+    <AppModuleComponent id="{fb16ccfd-a802-e911-a971-000d3a206976}" type="26" />
+    <AppModuleComponent id="{701743ee-4467-e911-a984-000d3a233e06}" type="26" />
+    <AppModuleComponent id="{e365462f-1db9-46a8-928d-beab1a7a2375}" type="59" />
+    <AppModuleComponent schemaName="phonecall" type="1" />
+    <AppModuleComponent id="{7da0dbb0-790e-406c-a85a-827805e338df}" type="60" />
+    <AppModuleComponent id="{f6a2f891-6846-4b21-b922-712695afd65c}" type="26" />
+    <AppModuleComponent schemaName="dfe_candidatepreferredcontacttime" type="1" />
+    <AppModuleComponent id="{12a57131-24a6-4ce3-beb1-2966f3d61543}" type="26" />
+    <AppModuleComponent schemaName="queue" type="1" />
+    <AppModuleComponent id="{240b4abc-99b6-499c-87e2-5c70829ff273}" type="26" />
+    <AppModuleComponent schemaName="queueitem" type="1" />
+    <AppModuleComponent id="{0155c732-0e18-e911-a974-000d3a233b72}" type="26" />
+    <AppModuleComponent schemaName="dfe_stage" type="1" />
+    <AppModuleComponent id="{f320d9dd-bc93-4132-808d-8f4a683dea0b}" type="60" />
+    <AppModuleComponent schemaName="dfe_teachingsubjectlist" type="1" />
+    <AppModuleComponent schemaName="team" type="1" />
+    <AppModuleComponent id="{1927ecd7-f42d-e911-a97f-000d3a233e06}" type="26" />
+    <AppModuleComponent schemaName="systemuser" type="1" />
+    <AppModuleComponent id="{1429a6ca-dd0e-4b3f-8efa-aac1a065fad4}" type="60" />
+    <AppModuleComponent id="{54c7cd37-a502-e911-a971-000d3a206976}" type="26" />
+    <AppModuleComponent id="{00000000-0000-0000-00aa-000010001019}" type="26" />
+    <AppModuleComponent id="{e88ca999-0b16-4ae9-b6a9-9edc840d42d8}" type="26" />
+    <AppModuleComponent schemaName="dfe_candidateworkexperience" type="1" />
+    <AppModuleComponent id="{8c464bb6-f924-4eb9-8568-87cad1795a67}" type="26" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{8ed19131-4eaf-e811-a84e-000d3a2a3148}" />
+  </AppModuleRoleMaps>
+  <LocalizedNames>
+    <LocalizedName description="Call Centre Management" languagecode="1033" />
+  </LocalizedNames>
+</AppModule>

@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml generatedBy="CrmLive" languagecode="1033" SolutionPackageVersion="9.1" version="9.1.0.25551" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>GITIS</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="GITIS" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Core Gitis Solution Containing Base Customisations&#xA;Followed by Gitis Events for Marketing related event customisations&#xA;Gitis Plugins to be installed after Data Migrations" languagecode="1033" />
+    </Descriptions>
+    <Version>1.3.0.55</Version>
+    <Managed>2</Managed>
+    <Publisher>
+      <UniqueName>gitisbeta</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="GITIS Beta" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description description="This is the publisher that will be used to publish all Solutions delivered by the GITIS Project during the Beta Phase of the Dynamics delivery." languagecode="1033" />
+      </Descriptions>
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>dfe</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>22275</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent behavior="1" schemaName="account" type="1" />
+      <RootComponent behavior="1" schemaName="activitypointer" type="1" />
+      <RootComponent behavior="1" schemaName="appointment" type="1" />
+      <RootComponent behavior="1" schemaName="contact" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_adminjourneystep" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_advisertodoitem" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_barrierorconcern" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_callbackbookingquota" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_calltopics" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_candidatejourneystep" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_candidatelanguageskills" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_candidatepastteachingposition" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_candidatepreferredcontacttime" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_candidateprivacypolicy" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_candidatequalification" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_candidateschoolexperience" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_candidateteachingleavingreason" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_candidateteachingpostappliedfor" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_candidatetrainedtaughtteachingsubject" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_candidateworkexperience" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_config" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_country" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_facebookmessage" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_language" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_marketingconfig" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_othermessage" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_privacypolicy" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_sar" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_servicesubscription" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_sms" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_stage" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_teachingcollegeappliedto" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_teachingsubjectlist" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_topic" type="1" />
+      <RootComponent behavior="0" schemaName="dfe_whatsappmessage" type="1" />
+      <RootComponent behavior="1" schemaName="email" type="1" />
+      <RootComponent behavior="1" schemaName="fax" type="1" />
+      <RootComponent behavior="1" schemaName="phonecall" type="1" />
+      <RootComponent behavior="1" schemaName="queueitem" type="1" />
+      <RootComponent behavior="2" schemaName="systemuser" type="1" />
+      <RootComponent behavior="1" schemaName="task" type="1" />
+      <RootComponent behavior="1" schemaName="team" type="1" />
+      <RootComponent behavior="0" parentId="{a4be89ff-7c35-4d69-9900-999c3f603e6f}" type="20" />
+      <RootComponent behavior="0" id="{0094457f-4eaf-e811-a84e-000d3a2a3148}" type="20" />
+      <RootComponent behavior="0" id="{07cf42fe-32ad-e811-a84a-000d3a2a3caf}" type="20" />
+      <RootComponent behavior="0" id="{1ca2b4fc-4eaf-e811-a84e-000d3a2a3148}" type="20" />
+      <RootComponent behavior="0" id="{59d715a9-4eaf-e811-a84e-000d3a2a3148}" type="20" />
+      <RootComponent behavior="0" id="{5e94ecdd-4daf-e811-a84e-000d3a2a3148}" type="20" />
+      <RootComponent behavior="0" id="{73a99d25-4eaf-e811-a84e-000d3a2a3148}" type="20" />
+      <RootComponent behavior="0" id="{8ed19131-4eaf-e811-a84e-000d3a2a3148}" type="20" />
+      <RootComponent behavior="0" id="{b8747338-4faf-e811-a84e-000d3a2a3148}" type="20" />
+      <RootComponent behavior="0" id="{bea1cad5-a6b3-e911-a98a-000d3a233e06}" type="20" />
+      <RootComponent behavior="0" id="{e6647b2c-4faf-e811-a84e-000d3a2a3148}" type="20" />
+      <RootComponent behavior="0" id="{f4b0ba07-4eaf-e811-a84e-000d3a2a3148}" type="20" />
+      <RootComponent behavior="0" id="{04936a7e-63cf-435e-933e-5c2813b1b1ac}" type="29" />
+      <RootComponent behavior="0" id="{21aa4143-7096-43df-9688-e6214776d3ab}" type="29" />
+      <RootComponent behavior="0" id="{47d644eb-aefd-4613-a206-154495cf49bb}" type="29" />
+      <RootComponent behavior="0" id="{51743a48-747d-e911-a97c-000d3a206976}" type="29" />
+      <RootComponent behavior="0" id="{5ace753f-8f6e-ea11-a811-000d3a44a2a9}" type="29" />
+      <RootComponent behavior="0" id="{608ad0fd-88f0-435e-94e4-85974cb05328}" type="29" />
+      <RootComponent behavior="0" id="{71d3d4ee-eaa6-440e-94ee-8a5a96d22ff2}" type="29" />
+      <RootComponent behavior="0" id="{7f5605a5-6273-4fbb-b702-6f50d51066ff}" type="29" />
+      <RootComponent behavior="0" id="{80e1994a-89f2-ea11-a815-000d3a44afcc}" type="29" />
+      <RootComponent behavior="0" id="{8634e9de-311a-48c9-9515-1e7e66e90914}" type="29" />
+      <RootComponent behavior="0" id="{a7299f52-7a3e-e911-a97a-000d3a20838a}" type="29" />
+      <RootComponent behavior="0" id="{b3d5553b-b08e-ea11-a811-000d3a44a2a9}" type="29" />
+      <RootComponent behavior="0" id="{b74788c6-1242-43b7-a99f-4d8052a1de1d}" type="29" />
+      <RootComponent behavior="0" id="{bbd08f0a-2ec5-48c0-b17b-b27ec04bec55}" type="29" />
+      <RootComponent behavior="0" id="{beeaeb12-908e-4712-9a1b-b7360c3ac714}" type="29" />
+      <RootComponent behavior="0" id="{caf4f496-5b23-47ed-9650-2eaf966262c7}" type="29" />
+      <RootComponent behavior="0" id="{cf7d1e47-edb6-44df-a2ad-683d42c95575}" type="29" />
+      <RootComponent behavior="0" id="{d2c4a303-254b-48b6-ae76-74ae00caa124}" type="29" />
+      <RootComponent behavior="0" id="{d498c683-3cf0-4e57-b744-c9b11f68c53b}" type="29" />
+      <RootComponent behavior="0" id="{d7312a4d-4d10-4af6-a88b-1394daf59baf}" type="29" />
+      <RootComponent behavior="0" id="{d8186e52-cde2-4b19-907f-fc71d6567c22}" type="29" />
+      <RootComponent id="{0ae398e7-ce8c-46bd-8cde-b04b927f7cdc}" type="60" />
+      <RootComponent id="{0d1e47ff-12b2-4f53-9090-bee951b98cb4}" type="60" />
+      <RootComponent behavior="0" id="{1429a6ca-dd0e-4b3f-8efa-aac1a065fad4}" type="60" />
+      <RootComponent id="{156cdde2-ef19-4861-994f-d578ccabda23}" type="60" />
+      <RootComponent id="{16654191-19ad-48ca-9e46-c4b4fbdad76f}" type="60" />
+      <RootComponent behavior="0" id="{177fea53-fc7b-4760-b287-751919d8a6c6}" type="60" />
+      <RootComponent behavior="0" id="{1872b642-7a03-e911-a974-000d3a20838a}" type="60" />
+      <RootComponent id="{1fac7e2e-0b1c-4b6c-ab92-8af0f92dbdbc}" type="60" />
+      <RootComponent id="{1fed44d1-ae68-4a41-bd2b-f13acac4acfa}" type="60" />
+      <RootComponent id="{22bc9b0e-555d-4e56-9421-cc039a4a5c71}" type="60" />
+      <RootComponent id="{293c878f-f068-40a0-ae48-4297e060871c}" type="60" />
+      <RootComponent id="{29de27bc-a257-4f29-99cf-bab4a84e688f}" type="60" />
+      <RootComponent id="{3b087c05-c48d-42e0-a938-fbf853a6b5b2}" type="60" />
+      <RootComponent id="{3d22ab88-96c8-4b3f-a533-d4827e2925c9}" type="60" />
+      <RootComponent behavior="0" id="{3f978ba9-cfb1-e811-a84e-000d3a2a3148}" type="60" />
+      <RootComponent behavior="0" id="{4ca9da54-11fe-453c-a1ce-30770749c8c7}" type="60" />
+      <RootComponent behavior="0" id="{5300e01b-7da5-ea11-a812-000d3a44afcc}" type="60" />
+      <RootComponent behavior="0" id="{548d13cc-54a3-40d5-b5f1-d87bdc880632}" type="60" />
+      <RootComponent id="{549a8aa3-c349-4ab9-8bac-4873fa9a7a5c}" type="60" />
+      <RootComponent id="{5e9725e4-5449-4363-8c1c-5ae71767af34}" type="60" />
+      <RootComponent id="{661157fe-2fc9-4eaa-835f-5bfa2f7b64f7}" type="60" />
+      <RootComponent id="{6c698cce-b2cf-4d98-9802-3a868da4423a}" type="60" />
+      <RootComponent id="{6e47949e-8d77-4f99-8de2-aa6e88d88967}" type="60" />
+      <RootComponent id="{6e752f70-bf1b-456e-b9fc-5a505ebf8b28}" type="60" />
+      <RootComponent id="{707fc57b-c5e6-471b-a180-e37ed28a38e2}" type="60" />
+      <RootComponent id="{753a378e-5d18-4f1d-9307-d8bf53436a9a}" type="60" />
+      <RootComponent id="{7bb87dfd-ec3e-4ed9-8e3e-5725d3067295}" type="60" />
+      <RootComponent behavior="0" id="{7d20adf4-a1ff-42e3-bd4c-7e7900275617}" type="60" />
+      <RootComponent behavior="0" id="{7da0dbb0-790e-406c-a85a-827805e338df}" type="60" />
+      <RootComponent id="{81a89014-442c-44ad-9725-4077426a7fee}" type="60" />
+      <RootComponent behavior="0" id="{8997bf36-ceb4-e811-a84c-000d3a2a343e}" type="60" />
+      <RootComponent id="{8e0b7c1e-f5a0-4e7d-b04d-4ca8d5c5ca80}" type="60" />
+      <RootComponent behavior="0" id="{96b55052-3fca-4913-982d-22b897795edf}" type="60" />
+      <RootComponent id="{983dc188-2a05-4cfe-b907-4fbfae8c21f7}" type="60" />
+      <RootComponent id="{a1c8a6dc-8804-4019-9c78-7dbe86560ea1}" type="60" />
+      <RootComponent id="{a80fb36c-353f-4310-a4cb-b8fa47d58b9b}" type="60" />
+      <RootComponent id="{a91390a5-99bb-4d10-9eee-3a5c87f841f1}" type="60" />
+      <RootComponent behavior="0" id="{ab95b05a-d9b1-e811-a84e-000d3a2a3148}" type="60" />
+      <RootComponent behavior="0" id="{ac92922e-56ea-4f67-8ba1-f256291594a8}" type="60" />
+      <RootComponent id="{bc0f68dd-a4b1-4a8f-bed3-c8f5db2f89cf}" type="60" />
+      <RootComponent id="{bdb0ae1c-32fa-4374-b637-8dafe107bc44}" type="60" />
+      <RootComponent id="{c0d7d7dd-afd0-4675-85fe-1cc5a48be6df}" type="60" />
+      <RootComponent id="{c2cd9e55-d4b4-4b55-9951-16ead79643e5}" type="60" />
+      <RootComponent id="{c466c56a-ab9d-41a3-ac68-008a60bfe67e}" type="60" />
+      <RootComponent id="{cc760212-3eab-4009-b5c3-ea9cf6f3e141}" type="60" />
+      <RootComponent id="{cdbb9298-3b2e-41f3-8f4a-0168d6b09fc4}" type="60" />
+      <RootComponent id="{cdc622ea-2a17-4cc3-9605-44564d56cea7}" type="60" />
+      <RootComponent id="{d5b4a1b2-de4f-4f86-8768-b0730001e7d1}" type="60" />
+      <RootComponent id="{d880c3cf-80e2-42f3-82f9-24d040d09f17}" type="60" />
+      <RootComponent behavior="0" id="{d9776b60-fb22-49bb-bbca-c3452e7dc8f8}" type="60" />
+      <RootComponent behavior="0" id="{db243d0e-e8ef-4e4b-b000-7f70bc6122a0}" type="60" />
+      <RootComponent behavior="0" id="{e37783a1-00ee-4680-b12e-245c91924dca}" type="60" />
+      <RootComponent id="{e5538bb9-77ec-4d24-bc5f-8cb2d825f664}" type="60" />
+      <RootComponent id="{f3b707fb-3b5f-45f9-9c6b-5e573bb5d19e}" type="60" />
+      <RootComponent behavior="0" id="{f4b4b02d-a26d-4cef-9ed8-097cf6a6ff98}" type="60" />
+      <RootComponent behavior="0" id="{f668c993-0c4f-4207-8d1b-9126f747b73b}" type="60" />
+      <RootComponent behavior="0" schemaName="dfe_/css/getorclosephonecallcontrols.css" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/css/outgoingphonepanel.css" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/html/callagentgetoutboundphonecallpanel.html" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/html/closephonecallpanel.html" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/html/phonecalloutgoingpanel.html" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/html/phoneprivacypolicy.html" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/images/Facebook_Icon16x16" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/images/Facebook_Icon32x32" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/images/OtherMessage_Icon16x16" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/images/OtherMessage_Icon32x32" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/images/SMS_Icon16x16" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/images/SMS_Icon32x32" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/images/WhatsApp_Icon16x16" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/images/WhatsApp_Icon32x32" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/javascript/appointment_form_library.js" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/javascript/contact_form_library.js" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/javascript/customactivity_form_library.js" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/javascript/dataservices.js" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/javascript/jquery-3.3.1.min.js" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/javascript/phonecall_form_adviser.js" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/javascript/phonecall_form_incoming.js" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/javascript/phonecall_form_outgoing.js" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/javascript/phonecall_quickcreate_agent.js" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/javascript/phonecallprivacypolicy.js" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/javascript/task_form_adviser.js" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/javascript/task_form_agent.js" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/javascript/task_ribbon_library.js" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_/javascript/utils.js" type="61" />
+      <RootComponent behavior="0" schemaName="dfe_adviser" type="62" />
+      <RootComponent behavior="0" schemaName="dfe_callagent" type="62" />
+      <RootComponent behavior="0" schemaName="dfe_callcentremanagement" type="62" />
+      <RootComponent behavior="0" schemaName="dfe_outbound" type="62" />
+      <RootComponent behavior="0" schemaName="dfe_adviser" type="80" />
+      <RootComponent behavior="0" schemaName="dfe_callagent" type="80" />
+      <RootComponent behavior="0" schemaName="dfe_callcentremanagement" type="80" />
+      <RootComponent behavior="0" schemaName="dfe_outbound" type="80" />
+      <RootComponent behavior="0" schemaName="dfe_advisortype" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_barrierorconcerntype" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_calloutcomecodesinbound" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_calloutcomecodesoutbound" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_candidatetype" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_category" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_contacttype" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_courselevel" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_currentprofession" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_dayperiods" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_daysanddayperiods" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_degreegradeforukdegrees" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_degreestatus" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_dm_currentprofession" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_dm_eligiblecode" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_educationphase" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_experiencelength" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_gender" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_hasqualification" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_highestqual" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_highestqualsubject" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_honours" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_ittyear" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_learegion" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_nationality" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_preferredroute" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_prioritylevel" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_qualificationtype" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_region" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_salutation" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_teachingpositioncategory" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_weekdays" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_years" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_yesno" type="9" />
+      <RootComponent behavior="0" schemaName="dfe_yesnounknown" type="9" />
+    </RootComponents>
+    <MissingDependencies></MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

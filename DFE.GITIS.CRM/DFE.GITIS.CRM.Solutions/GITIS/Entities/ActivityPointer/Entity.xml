@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Entity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name LocalizedName="Activity" OriginalName="Activity">ActivityPointer</Name>
+  <SavedQueries />
+  <RibbonDiffXml />
+  <CustomControlDefaultConfigs>
+    <CustomControlDefaultConfig>
+      <ControlDescriptionXML>
+        <controlDescriptions>
+          <controlDescription>
+            <customControl formFactor="0" id="{E7A81278-8635-4d9e-8D4D-59480B391C5B}">
+              <parameters />
+            </customControl>
+            <customControl formFactor="1" id="{E7A81278-8635-4d9e-8D4D-59480B391C5B}">
+              <parameters />
+            </customControl>
+            <customControl formFactor="2" id="{E7A81278-8635-4d9e-8D4D-59480B391C5B}">
+              <parameters />
+            </customControl>
+            <customControl formFactor="-1" name="MscrmControls.Calendar.CalendarControl">
+              <parameters>
+                <data-set name="Calendar">
+                  <StartDate>scheduledstart</StartDate>
+                  <Description>subject</Description>
+                  <EndDate>scheduledend</EndDate>
+                </data-set>
+                <DisplayMode static="true" type="Enum">anchoredwithhoursofthedaytimeline</DisplayMode>
+                <MinimumDuration static="true" type="Whole.Duration">30</MinimumDuration>
+                <ColorFallbackBehavior static="true" type="Enum">colorfromentity</ColorFallbackBehavior>
+              </parameters>
+            </customControl>
+          </controlDescription>
+        </controlDescriptions>
+      </ControlDescriptionXML>
+      <IntroducedVersion>5.0</IntroducedVersion>
+    </CustomControlDefaultConfig>
+  </CustomControlDefaultConfigs>
+</Entity>

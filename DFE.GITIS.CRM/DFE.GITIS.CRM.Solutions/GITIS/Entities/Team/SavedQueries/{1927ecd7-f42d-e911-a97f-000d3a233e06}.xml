@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{1927ecd7-f42d-e911-a97f-000d3a233e06}</savedqueryid>
+    <layoutxml>
+      <grid icon="1" jump="name" name="teams" preview="1" select="1">
+        <row id="teamid" name="team">
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="name" width="300" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch distinct="false" mapping="logical" output-format="xml-platform" version="1.0">
+        <entity name="team">
+          <attribute name="name" />
+          <order attribute="name" descending="false" />
+          <filter type="and">
+            <filter type="or">
+              <filter type="and">
+                <condition attribute="teamtype" operator="eq" value="0" />
+                <condition attribute="teamid" operator="in">
+                  <value uiname="Outbound" uitype="team">{2388EFEF-4F10-E911-A99A-000D3A2065C5}</value>
+                  <value uiname="Inbound" uitype="team">{3877FEDE-F722-E911-A97F-000D3A233E06}</value>
+                  <value uiname="Support" uitype="team">{7E77912E-F822-E911-A97F-000D3A233E06}</value>
+                  <value uiname="RTTA" uitype="team">{AFD4B958-F822-E911-A97F-000D3A233E06}</value>
+                  <value uiname="TTA EEA" uitype="team">{52C0DF77-F822-E911-A97F-000D3A233E06}</value>
+                  <value uiname="TPUK Managers" uitype="team">{80FFDFDA-F822-E911-A97F-000D3A233E06}</value>
+                </condition>
+              </filter>
+              <filter type="or">
+                <condition attribute="name" operator="eq" value="TPUK Managers" />
+                <condition attribute="name" operator="eq" value="Outbound" />
+                <condition attribute="name" operator="eq" value="Inbound" />
+                <condition attribute="name" operator="eq" value="TTA EEA" />
+                <condition attribute="name" operator="eq" value="RTTA" />
+                <condition attribute="name" operator="eq" value="Support" />
+              </filter>
+            </filter>
+          </filter>
+          <attribute name="teamid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.7</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Manage TPUK teams" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="View to manage TPUK teams i.e. add, edit or remove users from the various TPUK teams" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

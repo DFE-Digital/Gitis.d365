@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{0ef7c664-2482-4faa-b5ba-36d19f337301}</formid>
+    <IntroducedVersion>1.0.0.7</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab expanded="true" id="{33323336-f2e0-4f60-af79-05eba96a7efd}" IsUserDefined="1" locklevel="0" name="{33323336-f2e0-4f60-af79-05eba96a7efd}" showlabel="true" verticallayout="true">
+          <labels>
+            <label description="GENERAL" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{e03c6d3c-a130-4938-89ea-2ff9923631fc}" IsUserDefined="0" showbar="false" showlabel="false">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7773026e-ce4b-9a16-b747-d8d4473d7c57}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Working Day Name" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_workingdayname" disabled="false" id="dfe_workingdayname" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b4e4386c-a57b-4530-92a5-e8114ba30f1a}">
+                        <labels>
+                          <label description="Timeslot name" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_name" id="dfe_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d32b160b-476e-7e06-a73e-05b9540b26a4}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Start time" languagecode="1033" />
+                        </labels>
+                        <control classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="dfe_starttime" disabled="false" id="dfe_starttime" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bb0541eb-756e-2e0c-be0b-72164385c5ab}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="End time" languagecode="1033" />
+                        </labels>
+                        <control classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="dfe_endtime" disabled="false" id="dfe_endtime" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ce952a99-dc1e-d7c8-514c-4d6aba8d01e4}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Quota" languagecode="1033" />
+                        </labels>
+                        <control classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="dfe_quota" disabled="false" id="dfe_quota" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{739de702-608b-8b08-0ca8-9bd4d88c5e6c}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Number of Bookings" languagecode="1033" />
+                        </labels>
+                        <control classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="dfe_numberofbookings" disabled="false" id="dfe_numberofbookings" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header columns="111" id="{616e9187-d32e-4682-9b7a-49f4994d8efa}">
+        <rows>
+          <row>
+            <cell id="{60b1e184-41d0-8a5c-2106-5d92d16bba7b}" locklevel="0" showlabel="true">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" id="header_ownerid" />
+            </cell>
+            <cell id="{23f5d7d9-dcd2-43c2-afcd-053d039645a4}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{9d91caae-ebe7-4401-9aa3-ba207f6915cd}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

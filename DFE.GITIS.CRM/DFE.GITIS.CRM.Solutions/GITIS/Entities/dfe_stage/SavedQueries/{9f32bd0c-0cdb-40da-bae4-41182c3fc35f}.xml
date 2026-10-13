@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{9f32bd0c-0cdb-40da-bae4-41182c3fc35f}</savedqueryid>
+    <layoutxml>
+      <grid icon="1" jump="dfe_name" name="resultset" preview="1" select="1">
+        <row id="dfe_stageid" name="result">
+          <cell name="createdon" width="125" />
+          <cell name="dfe_date" width="100" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_name" width="300" />
+          <cell name="dfe_currentowner" width="100" />
+          <cell name="dfe_currentteam" width="100" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_dateassignedtocurrentowner" width="150" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_dateassignedtopreviousowner" width="150" />
+          <cell name="dfe_previousowner" width="100" />
+          <cell name="dfe_previousteam" width="100" />
+          <cell name="dfe_candidateid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="dfe_stage">
+          <attribute name="dfe_name" />
+          <attribute name="createdon" />
+          <order attribute="createdon" descending="false" />
+          <order attribute="dfe_date" descending="false" />
+          <attribute name="dfe_previousteam" />
+          <attribute name="dfe_previousowner" />
+          <attribute name="dfe_dateassignedtopreviousowner" />
+          <attribute name="dfe_dateassignedtocurrentowner" />
+          <attribute name="dfe_date" />
+          <attribute name="dfe_currentowner" />
+          <attribute name="dfe_candidateid" />
+          <attribute name="dfe_currentteam" />
+          <attribute name="dfe_stageid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Stage Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

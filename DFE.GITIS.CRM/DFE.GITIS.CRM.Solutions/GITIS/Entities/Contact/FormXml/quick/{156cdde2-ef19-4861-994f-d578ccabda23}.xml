@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{156cdde2-ef19-4861-994f-d578ccabda23}</formid>
+    <IntroducedVersion>1.0.0.1</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="400">
+      <tabs>
+        <tab expanded="true" id="{08e9f8d8-9cdd-4dcb-98f3-f9d0410bdafd}" locklevel="0" name="tab_1" showlabel="false">
+          <labels>
+            <label description="Summary" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section celllabelalignment="Left" celllabelposition="Left" columns="1" id="{dbb35916-6992-4ef3-b6bb-adbae8ef1a6f}" IsUserDefined="0" labelwidth="130" locklevel="0" name="tab_1_column_1_section_1" showbar="false" showlabel="true">
+                  <labels>
+                    <label description="ITT PREFERENCES" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9151598d-ee79-ddb7-3618-5c600eab5ee1}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="ITT start year" languagecode="1033" />
+                        </labels>
+                        <control classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="dfe_ittyear" disabled="false" id="dfe_ittyear" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section celllabelalignment="Left" celllabelposition="Left" columns="1" id="{995e57ca-422d-23b4-54e9-6e645306dbc1}" IsUserDefined="0" labelwidth="115" layout="varwidth" locklevel="0" name="tab_1_section_2" showbar="false" showlabel="true">
+                  <labels>
+                    <label description="SUMMARY NOTES FOR CANDIDATE NEXT STEP OR ACTION" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{abc356d3-952a-c23e-7490-b4286ae7810a}" locklevel="0" showlabel="false">
+                        <labels>
+                          <label description="Next action summary" languagecode="1033" />
+                        </labels>
+                        <control classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="dfe_nextactionsummary" disabled="false" id="dfe_nextactionsummary" uniqueid="{3a43d9e7-eda2-9228-44a1-3ba051e3d78d}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section celllabelalignment="Left" celllabelposition="Left" columns="1" id="{c8b2a76d-1960-968c-19c0-ee5b91d1d9db}" IsUserDefined="0" labelwidth="115" layout="varwidth" locklevel="0" name="tab_1_section_3" showbar="false" showlabel="true">
+                  <labels>
+                    <label description="LIST OF CANDIDATE STEPS" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{84ee8d11-c074-cd24-e05d-c088e862ab71}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="3">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="(DEPRECATED)Candidate summary" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A quick view summary of the candidate." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,96 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../css/getorclosephonecallcontrols.css">
+    <script src="../javascript/jquery-3.3.1.min.js"></script>
+    <script src="../javascript/utils.js"></script>
+    <script src="../javascript/dataservices.js"></script>
+    <script src="../javascript/phonecall_form_outgoing.js"></script>
+    <script type="text/jscript">
+        //Create a global variable for the cti paths we will retrieve in a later query
+        var config = {};
+
+        // in case the document is already rendered
+        if (document.readyState != 'loading') onPageReady();
+        // modern browsers
+        else if (document.addEventListener) document.addEventListener('DOMContentLoaded', onPageReady);
+        // IE <= 8
+        else document.attachEvent('onreadystatechange', function () {
+            if (document.readyState == 'complete') onPageReady();
+        });
+        function onPageReady() {
+            var utils = dfe_common.utils(parent);
+            var data = dfe_common.data(parent);
+            config = data.getConfigByName("GITIS");
+            if (config) {
+                console.log(config);
+            }
+            else {
+                alert("Error occured to get config data");
+            }
+        }
+
+        function disableButton(buttonId) {
+            //Disables the state of the button for any buttonId passed in and sets the .css class appropriately too
+            document.getElementById(buttonId).disabled = true;
+            document.getElementById(buttonId).classList.remove('button');
+            document.getElementById(buttonId).classList.add('disabledButton');
+        }
+        function enableButton(buttonId) {
+            //Enables the state of the button for any buttonId passed in and sets the .css class appropriately too
+            document.getElementById(buttonId).disabled = false;
+            document.getElementById(buttonId).classList.remove('disabledButton');
+            document.getElementById(buttonId).classList.add('button');
+        }
+        function closephonecall_onClick() {
+            //Set the Call outcome code field as visible - need to know if this is from the inbound or outbound phone call form
+            var utils = dfe_common.utils(parent);
+            console.log(utils.getAttributeValue("directioncode"));
+            if (utils.getAttributeValue("directioncode")) {
+                utils.setVisible("dfe_calloutcomecodeoutbound", true);
+                //set the Close button to disabled now
+                disableButton("DFE-btn-Closecall");
+                var formType = utils.getFormType();
+                if (formType == 1) {
+                    parent.Xrm.Page.data.entity.save();
+                }
+            }
+            else {
+                var callFrom = utils.getAttributeValue("from");
+                if (callFrom == null) {
+                    parent.Xrm.Page.data.entity.save();
+                }
+                if (callFrom && callFrom.length > 0) {
+                    //set the Close button to disabled now
+                    utils.setVisible("dfe_calloutcomecodeinbound", true);
+                    disableButton("DFE-btn-Closecall");
+                    //this is an Inbound call
+                    //07/01/2020 - also add in the Actual End time and start times if they are blank
+                    //Check if the call start and end times are filled in and provide the current time value if not.
+                    var currentTime = new Date();
+                    var actualEnd = utils.getAttributeValue("actualend");
+                    if (actualEnd == null) {
+                        utils.setAttributeValue("actualend", currentTime);
+                    }
+                    var actualStart = utils.getAttributeValue("actualstart");
+                    if (actualStart == null) {
+                        utils.setAttributeValue("actualstart", currentTime);
+                    }
+                    parent.Xrm.Page.data.entity.save();
+                }
+            }
+            //Comment this section out on 06/01/2020 as it causes an error now div has been removed.
+            //Update the text message in the div
+            // document.getElementById("dfe_closePhonecallUserPrompt").innerHTML = "Select an Outcome code for this call and it will be automatically</br>saved, marked as completed and closed.";
+        }
+    </script>
+    <meta>    
+</head>
+
+<body style="overflow-wrap: break-word;" onfocusout="parent.setEmailRange();">
+    <div id="closedPhoneCallPanel" class="controlpanel">
+        <h3 style="margin: 0; color: #000000;">Close this phone call</h3>
+        <p style="font-family: Segoe UI, Arial, sans-serif; font-size: 14px;">Record post-call notes (optional) and call outcome code.</p>
+        <button onclick="closephonecall_onClick()" style="background-color: #3B79B7; border-color: #3B79B7;" type="button" id="DFE-btn-Closecall" value="Close call" class="button" title="Mark this phone call as complete and record the outcome.">Close call</button>
+    </div>
+</body>
+</html>

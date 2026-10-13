@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{777cc11a-e6c4-4841-a2f6-b22f43994a72}</formid>
+    <IntroducedVersion>1.0.0.7</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="1920" showImage="false" shownavigationbar="true">
+      <tabs>
+        <tab expanded="true" id="{a276001b-d511-43d6-b9a9-1b422f8e5b0e}" IsUserDefined="1" locklevel="0" name="{a276001b-d511-43d6-b9a9-1b422f8e5b0e}" showlabel="true" verticallayout="true">
+          <labels>
+            <label description="MAIN" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section celllabelalignment="Left" celllabelposition="Top" columns="1" id="{2df2be93-bd49-4b74-a5d4-12bdf0ab1d4c}" IsUserDefined="0" labelwidth="130" locklevel="0" name="{2df2be93-bd49-4b74-a5d4-12bdf0ab1d4c}" showbar="false" showlabel="false">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1938a5e4-ab17-14d2-032c-c7c0325c2b3d}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="dfe_directioncode" disabled="false" id="dfe_directioncode" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{097277a5-618c-6237-3092-b09a49bb045d}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{CBFB742C-14E7-4a17-96BB-1A13F7F64AA2}" datafieldname="to" disabled="false" id="to" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4ace313c-ad10-ea09-9044-2147c00a42bc}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{CBFB742C-14E7-4a17-96BB-1A13F7F64AA2}" datafieldname="from" disabled="false" id="from" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{95775c61-e69a-8442-825b-ec28a206950a}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="actualend" disabled="false" id="actualend" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{218c1844-e88c-433e-875f-9617df9780a8}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Message title" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="subject" disabled="false" id="subject" uniqueid="{8884ae5a-3e96-5da3-327c-0780b59130b5}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{58a72c36-7689-5d38-0bd5-05765c36aae8}" locklevel="0" rowspan="6" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="description" disabled="false" id="description" uniqueid="{8a248813-e3c8-2ba1-8c50-b708a17941e4}" />
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row>
+                      <cell id="{4aed4a18-89a5-726d-b840-d2a7cacd927b}" locklevel="0" rowspan="3" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="dfe_attachmentdescription" disabled="false" id="dfe_attachmentdescription" uniqueid="{5341ad37-5121-eb82-891a-5675c70361a1}" />
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row>
+                      <cell id="{c31afbca-b4a8-4009-b24c-0aa9ae608ec8}" locklevel="1" showlabel="true" visible="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" id="ownerid" uniqueid="{6aa1e8a0-6594-e3c9-0701-8d4bb00ede28}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c2c7e9c4-ce6a-444f-b307-1323a484d7c0}" locklevel="0" showlabel="true" visible="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{F3015350-44A2-4aa0-97B5-00166532B5E9}" datafieldname="regardingobjectid" disabled="false" id="regardingobjectid" uniqueid="{7c16c193-8294-1a73-d259-0d67caebc983}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header celllabelposition="Top" columns="1111" id="{9952a55d-84b1-48ae-ac23-0d6c0e11d4de}" labelwidth="115">
+        <rows>
+          <row>
+            <cell id="{24e9a4cb-47b1-4d2f-b6c4-00f930b7d4a5}" locklevel="0" showlabel="true" visible="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+              <control classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="prioritycode" disabled="false" id="header_prioritycode" uniqueid="{30e41dba-4bba-00ab-e321-eb29785d7d11}" />
+            </cell>
+            <cell id="{43394b6e-0b2c-4f1e-bdcd-06096ec82b5d}" locklevel="0" showlabel="true" visible="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+              <control classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="scheduledend" disabled="false" id="header_scheduledend" uniqueid="{8784c90b-3584-158b-6393-c5e85d59ae4a}" />
+            </cell>
+            <cell id="{85873ee7-b71e-406d-844f-3d2d24b2ff75}" locklevel="0" showlabel="true" visible="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+              <control classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" id="header_statecode" uniqueid="{71b8e46d-3cc4-ee54-2944-d74d523eb62a}" />
+            </cell>
+            <cell id="{d0dd120d-31db-4fe3-8e33-2633f5ade7a8}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+              <control classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" id="header_ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <formLibraries>
+        <Library libraryUniqueId="{dc2b9c89-abbd-87d3-2e6d-ce74d3e55833}" name="dfe_/javascript/customactivity_form_library.js" />
+        <Library libraryUniqueId="{15653d9e-90e2-e637-2d29-044769b3029b}" name="dfe_/javascript/dataservices.js" />
+        <Library libraryUniqueId="{62401612-5e58-1cd0-3235-620ee2dc3940}" name="dfe_/javascript/utils.js" />
+      </formLibraries>
+      <events>
+        <event active="false" application="false" name="onload">
+          <Handlers>
+            <Handler enabled="true" functionName="DFECustomActivity.formOnLoad" handlerUniqueId="{e0049392-9769-3edb-a033-181e74939a08}" libraryName="dfe_/javascript/customactivity_form_library.js" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event active="false" application="false" attribute="dfe_directioncode" name="onchange">
+          <Handlers>
+            <Handler enabled="true" functionName="DFECustomActivity.OnDirectionChange" handlerUniqueId="{0b6ba3ca-d369-e62c-8c90-6839e1713de3}" libraryName="dfe_/javascript/customactivity_form_library.js" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

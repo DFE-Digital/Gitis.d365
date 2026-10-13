@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{c2cd9e55-d4b4-4b55-9951-16ead79643e5}</formid>
+    <IntroducedVersion>6.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab expanded="true" id="{33c4221d-ccb0-4a92-853e-369d2d0adb85}" IsUserDefined="0" name="SUMMARY_TAB" ordinalvalue="0" showlabel="true">
+          <columns>
+            <column id="2" width="25%">
+              <sections>
+                <section id="{bba8f882-2050-4d63-ba78-071401809ad5}" IsUserDefined="0" locklevel="0" name="teams information" ordinalvalue="0" showbar="false" showlabel="false">
+                  <rows>
+                    <row>
+                      <cell id="{9ca21c94-c71e-7647-61bc-8d1dbd03cea4}" locklevel="0" ordinalvalue="10001" showlabel="true" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="dfe_primaryadviserteamid" disabled="false" id="dfe_primaryadviserteamid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="User" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Updated default User form" languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

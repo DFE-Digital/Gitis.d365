@@ -1,0 +1,230 @@
+<html><head>
+    <link rel="stylesheet" href="../css/getorclosephonecallcontrols.css">
+    <script src="../javascript/jquery-3.3.1.min.js"></script>
+    <script src="../javascript/utils.js"></script>
+    <script src="../javascript/dataservices.js"></script>
+    <script src="../ClientGlobalContext.js.aspx" type="text/javascript"></script>
+    <script type="text/jscript">
+        //Create a global variable for the cti paths we will retrieve in a later query
+        var config = {};
+        var data = undefined;
+        // in case the document is already rendered
+        if (document.readyState != 'loading') onPageReady();
+        // modern browsers
+        else if (document.addEventListener) document.addEventListener('DOMContentLoaded', onPageReady);
+        // IE <= 8
+        else document.attachEvent('onreadystatechange', function () {
+            if (document.readyState == 'complete') onPageReady();
+        });
+        function onPageReady() {
+            var utils = dfe_common.utils(parent);
+            data = dfe_common.data(parent);
+            config = data.getConfigByName("GITIS");
+            if (config) {
+                console.log(config);
+            }
+            else {
+                alert("Error occured to get config data");
+            }
+        }
+        function disableButton(buttonId) {
+            //Disables the state of the button for any buttonId passed in and sets the .css class appropriately too
+            document.getElementById(buttonId).disabled = true;
+            document.getElementById(buttonId).classList.remove('button');
+            document.getElementById(buttonId).classList.add('disabledButton');
+        }
+        function enableButton(buttonId) {
+            //Enables the state of the button for any buttonId passed in and sets the .css class appropriately too
+            document.getElementById(buttonId).disabled = false;
+            document.getElementById(buttonId).classList.remove('disabledButton');
+            document.getElementById(buttonId).classList.add('button');
+        }
+        async function pickQueueItem(queueItemId, userId) {
+            try {
+                var parameters = {
+                    SystemUser: {
+                        ownerid: userId,
+                        "@odata.type": "Microsoft.Dynamics.CRM.systemuser"
+                    },
+                    RemoveQueueItem: true
+                };
+                var stringifiedParams = JSON.stringify(parameters);
+                var responseCode = "";
+                var req = new XMLHttpRequest();
+                var actionUrl = data.oDataPath + "/queueitems(" + queueItemId + ")/Microsoft.Dynamics.CRM.PickFromQueue";
+                req.open("POST", actionUrl, false);
+                req.setRequestHeader("Accept", "application/json");
+                req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+                req.setRequestHeader("OData-MaxVersion", "4.0");
+                req.setRequestHeader("OData-Version", "4.0");
+                req.onreadystatechange = function () {
+                    if (this.readyState === 4) //Complete
+                    {
+                        responseCode = this.status;
+                        req.onreadystatechange = null;
+                        return true
+                    }
+                };
+                await req.send(stringifiedParams);
+                return responseCode;
+            } catch (e) {
+                alert("CRM Action request failed: " + e.toString());
+                responseCode = "bad request";
+                return responseCode;
+            }
+        }
+
+        async function getoutboundcall_onClick() {
+            //Disable the button until error or success for the pick
+            disableButton("DFE-btn-Getcall");
+            data = dfe_common.data(parent);
+            var errorMessage = "There has been a problem querying the Outbound Queue";
+            //Firstly, check if the user already has any calls currently assigned to them and block their whole request for a new call if so.
+            //Get the current user's Id and also their role
+            var currentUser = data.getCurrentUser();
+            if (currentUser) {
+                var usersCurrentlyAssignedCallsFilter = "/phonecalls?$select=subject,statecode,statuscode&$filter=_ownerid_value eq '" + currentUser.id + "' and statecode eq 0 and directioncode eq true";
+                var usersCurrentlyAssignedCalls = data.retrieveOData(usersCurrentlyAssignedCallsFilter, errorMessage);
+                if (usersCurrentlyAssignedCalls) {
+                    if (usersCurrentlyAssignedCalls.value.length > 0) {
+                        //The user already has open assigned phone calls to deal with
+                        alert("ERROR -  You already have some open, Outbound Phone calls to make assigned to you. Please complete those before requesting any more.");
+                        enableButton("DFE-btn-Getcall");
+                    }
+                    else {//OK to proceed as the user has a clear list of current calls
+                        //Secondly, check the number of items currently on the queue to ensure it is not zero.
+                        var queueFilter = "/queues(" + config.dfe_outboundcallqueueguid + ")?$select=name, numberofitems";
+                        var queue = data.retrieveOData(queueFilter, errorMessage);
+                        if (queue) {
+                            if (queue.numberofitems == 0) {
+                                alert("There aren't currently any available phone calls in the queue - please notify your team leader and try again later.");
+                                enableButton("DFE-btn-Getcall");
+                            }
+                            else {
+                                //Now query the queue to obtain any items with a time limit (i.e. callback requests) that are now due to happen
+                                _getoutboundcall_timelimited(data, errorMessage, currentUser);
+                            }
+                        }
+                        else {
+                            //something went wrong with the initial queue query
+                            alert(errorMessage);
+                            enableButton("DFE-btn-Getcall");
+                        }
+                    }
+                }
+                else {
+                    //something went wrong with the initial query
+                    alert(errorMessage);
+                    enableButton("DFE-btn-Getcall");
+                }
+            }
+        }
+        async function _getoutboundcall_timelimited(data, errorMessage, currentUser) {
+            //This method looks for and attempts to pick any items on the queue that are scheduled to occur now, if it is unsuccesful, it will invoke the 'top40' method instead
+            var currentDateTime = new Date().toISOString();
+            var queueItemCallbackAppointmentsFilter = "/queueitems?$select=_queueid_value, title,dfe_callweighting,dfe_scheduledstarttime&$filter=_queueid_value eq '" + config.dfe_outboundcallqueueguid + "' and dfe_scheduledstarttime lt " + currentDateTime + "&$orderby=dfe_scheduledstarttime asc";
+            var queueItemsDueNow = data.retrieveOData(queueItemCallbackAppointmentsFilter, errorMessage);
+            if (queueItemsDueNow) {
+                if (queueItemsDueNow.value.length > 0) {
+                    //We now have an array of any calls that are now due.
+                    //Cycle through the array in queueItemsDueNow.value and try to pick those items until one succeeds and then exit the loop.
+                    var succesfulPickFlag = false;
+                    //create a loop over the 'due now' items picked until we sucessfully pick one - then break the loop
+                    let queueItems = queueItemsDueNow.value;
+                    for (let pickAttempt of queueItems) {
+                        var pickAttemptResult = await pickQueueItem(pickAttempt.queueitemid, currentUser.id);
+                        if (pickAttemptResult == "204") {
+                            //success!
+                            succesfulPickFlag = true;
+                            enableButton("DFE-btn-Getcall");
+                            //WIP - the refresh below is only working in the classic interface and not in the new UI, attempt to replace it with refreshParentGrid method instead.
+                    //        window.parent.Mscrm.DashboardRibbonActions.refreshDashboardPage();
+                            parent.Xrm.Utility.refreshParentGrid({ entityType: "phonecall" });
+                            //    Xrm.Utility.refreshParentGrid({ entityType: "phonecall", id: "826f097f-1019-e911-a979-000d3a20838a" });
+                            break;
+                        }
+                        if (pickAttemptResult == "403") {
+                            alert("There has been an issue with your security privileges in selecting a phone call - please notify your team leader.")
+                        }
+                        if (pickAttemptResult == "404") {
+                            //let it continue to loop over the array and try another pick.
+                        }
+                    }
+                    if (!succesfulPickFlag) {
+                        //The 'due now' items got picked by others before the request succeeded - drop down to attempting to pick a normal queue item instead
+                        _getoutboundcall_fromtop40(data, errorMessage, currentUser);
+                    }
+
+                }
+                else {
+                    //Now we know there are no time limited calls required to be made now, query the call for the (up to 40) top weighted items,
+                    _getoutboundcall_fromtop40(data, errorMessage, currentUser);
+                }
+
+            }
+            else {
+                //something went wrong with the timebound query
+                alert(errorMessage);
+                enableButton("DFE-btn-Getcall");
+            }
+        }
+        async function _getoutboundcall_fromtop40(data, errorMessage, currentUser) {
+            //This method looks for and attempts to pick an item working down the top 40 items on the queue in priority order
+            //We MUST exclude the items with a specified scheduledstarttime here else they may get picked in error.
+            //sorted as per the queue by weighting descending and then by time joined queue ascending.
+            var succesfulPickFlag = false;
+            var queueItemsToPickFromFilter = "/queueitems?$select=_queueid_value, title,dfe_callweighting,dfe_scheduledstarttime,enteredon&$filter=_queueid_value eq '" + config.dfe_outboundcallqueueguid + "' and dfe_scheduledstarttime eq null&$orderby=dfe_callweighting desc,enteredon asc&$top=40";
+            var queueItemsToPickFrom = data.retrieveOData(queueItemsToPickFromFilter, errorMessage);
+            if (queueItemsToPickFrom) {
+                if (queueItemsToPickFrom.value.length > 0) {
+                    //We now have an array of any calls that are now due.
+                    //Cycle through the array in queueItemsDueNow.value and try to pick those items until one succeeds and then exit the loop,
+                    //dropping down to the next one if it fails (as another user is picking the same item)
+                    //create a loop over the top 40 items picked until we sucessfully pick one - then break the loop
+                    let queueItems = queueItemsToPickFrom.value;
+                    for (let pickAttempt of queueItems) {
+                        var pickAttemptResult = await pickQueueItem(pickAttempt.queueitemid, currentUser.id);
+                        if (pickAttemptResult == "204") {
+                            //success!
+                            succesfulPickFlag = true;
+                            enableButton("DFE-btn-Getcall");
+                         //   window.parent.Mscrm.DashboardRibbonActions.refreshDashboardPage();
+                            parent.Xrm.Utility.refreshParentGrid({ entityType: "phonecall" });
+                            break;
+                        }
+                        if (pickAttemptResult == "403") {
+                            alert("There has been an issue with your security privileges in selecting a phone call - please notify your team leader.")
+                        }
+                        if (pickAttemptResult == "404") {
+                            //let it continue to loop over the array and try another pick.
+                        }
+                    }
+                    //Error if get through all 40 (or however many were available if <40) and no queue item has been succesfully picked and ask the user to retry.
+                    if (!succesfulPickFlag) {
+                        alert("There aren't currently any available phone calls in the queue to select - please notify your team leader and try again later.");
+                        enableButton("DFE-btn-Getcall");
+                    }
+                }
+                else {
+                    //There is now nothing to pick on the queue
+                    alert("There aren't currently any available phone calls in the queue - please notify your team leader and try again later.");
+                    enableButton("DFE-btn-Getcall");
+                }
+
+            }
+            else {
+                //something went wrong with the top of queue query
+                alert(errorMessage);
+                enableButton("DFE-btn-Getcall");
+            }
+        }
+
+    </script>
+    <meta>
+<meta><meta><meta><meta><meta><meta><meta></head>
+<body style="overflow-wrap: break-word;" onfocusout="parent.setEmailRange();">
+    <div id="getOutboundPhoneCallPanel" class="controlpanel" style="font-family: undefined;">
+        <h3>Get next outbound call</h3>
+<button onclick="getoutboundcall_onClick()" type="button" id="DFE-btn-Getcall" value="Request call" class="button" title="Request an outbound phone call to make">Get a call</button>
+</div>
+</body></html>

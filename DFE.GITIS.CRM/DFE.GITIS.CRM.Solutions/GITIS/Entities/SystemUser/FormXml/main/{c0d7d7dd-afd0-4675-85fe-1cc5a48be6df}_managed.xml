@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{c0d7d7dd-afd0-4675-85fe-1cc5a48be6df}</formid>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="{ed7f865a-8800-40f6-8dcc-f01b2f04a734}" IsUserDefined="0" name="general" ordinalvalue="1" solutionaction="Modified" verticallayout="true">
+          <columns>
+            <column id="0" width="100%">
+              <sections>
+                <section id="{a7f586b7-8ad4-4fbf-8567-ec4239338766}" IsUserDefined="0" locklevel="0" name="user information" ordinalvalue="2" showbar="true" showlabel="true">
+                  <rows>
+                    <row>
+                      <cell id="{db68b5bd-6263-4a64-a789-12e31d0b1922}" ordinalvalue="20013" solutionaction="Removed" />
+                    </row>
+                    <row>
+                      <cell id="{578ae0e2-0c53-799b-1629-e488a406a791}" locklevel="0" ordinalvalue="20013" showlabel="true" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="dfe_currentnumberofcandidates" disabled="false" id="dfe_currentnumberofcandidates" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{2efb6f20-5b31-43e0-b932-805e2fd6bfbf}" IsUserDefined="0" name="addresses" ordinalvalue="3" solutionaction="Modified">
+          <columns>
+            <column id="0" width="100%">
+              <sections>
+                <section id="{0c55f597-e6da-4363-9b40-e383dba991c4}" IsUserDefined="0" name="mailing address" ordinalvalue="0" showbar="true" showlabel="true">
+                  <rows>
+                    <row>
+                      <cell id="{317b1f6c-1286-477a-8de4-9eab27eaabf3}" ordinalvalue="20007" showlabel="false" solutionaction="Modified" />
+                    </row>
+                  </rows>
+                </section>
+                <section id="{52311463-423a-484b-a299-4a2c27031523}" IsUserDefined="0" name="other address" ordinalvalue="1" showbar="true" showlabel="true">
+                  <rows>
+                    <row>
+                      <cell id="{02b3d352-ecbd-4b8d-b03d-0def9d9c624f}" ordinalvalue="20007" showlabel="false" solutionaction="Modified" />
+                    </row>
+                  </rows>
+                </section>
+                <section id="{7171a1ba-38ca-43ed-b699-f624131160e1}" IsUserDefined="0" name="address preference" ordinalvalue="2" showbar="false" showlabel="false">
+                  <rows>
+                    <row>
+                      <cell id="{258483a1-5a12-4938-abeb-2f8aa582ee57}" ordinalvalue="20001" showlabel="false" solutionaction="Modified" />
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab expanded="false" id="{e94e6ac4-12db-bc8c-ec81-8b20c5987655}" IsUserDefined="0" labelid="{87ad6766-6854-4b2d-b1d9-bf5de60f3e83}" locklevel="0" name="tab_recordwall" ordinalvalue="0" showlabel="true" solutionaction="Added" visible="false">
+          <labels>
+            <label description="What's New" languagecode="1033" />
+          </labels>
+          <columns>
+            <column id="0" width="100%">
+              <sections>
+                <section celllabelalignment="Left" celllabelposition="Left" columns="1" id="{ac0addcc-a626-6c98-40ee-b11edac36204}" IsUserDefined="0" labelid="{a0478818-4c12-4692-94b3-a31b5cc8381b}" labelwidth="115" layout="varwidth" locklevel="0" name="tab_recordwall_section_1" ordinalvalue="0" showbar="false" showlabel="false">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell auto="false" colspan="1" id="{be13b312-b6ac-83d7-34e1-e90dc1ecbec7}" labelid="{e50f01a4-1909-4a13-b02e-971d70ede72e}" ordinalvalue="10000" rowspan="15" showlabel="false">
+                        <labels>
+                          <label description="RecordWall" languagecode="1033" />
+                        </labels>
+                        <control classid="{9FDF5F91-88B1-47f4-AD53-C11EFC01A01D}" id="WebResource_RecordWall">
+                          <parameters>
+                            <Url>msdyn_/RecordWall.htm</Url>
+                            <PassParameters>true</PassParameters>
+                            <Security>false</Security>
+                            <Scrolling>auto</Scrolling>
+                            <Border>false</Border>
+                          </parameters>
+                        </control>
+                        <events>
+                          <event application="0" name="onload">
+                            <dependencies />
+                          </event>
+                        </events>
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+          <events>
+            <event active="false" application="false" name="tabstatechange">
+              <Handlers>
+                <Handler enabled="true" functionName="ActivityFeeds.Form.CustomizationUtils.updateRecordWallRenderingState" handlerUniqueId="{9beb6ce6-2666-8033-a406-3d68d44b9592}" libraryName="msdyn_/ActivityFeeds.Form.js" ordinalvalue="0" parameters="" passExecutionContext="true" />
+              </Handlers>
+            </event>
+          </events>
+        </tab>
+        <tab expanded="true" id="{65817281-5dea-1584-cbb0-a86be8aa24d9}" IsUserDefined="0" locklevel="0" name="tab_candidates" ordinalvalue="2" showlabel="true" solutionaction="Added">
+          <labels>
+            <label description="Canidates assigned" languagecode="1033" />
+          </labels>
+          <columns>
+            <column id="0" width="100%">
+              <sections>
+                <section columns="1" id="{2d4382e7-69b4-de8d-c1c9-48ce545a46a3}" IsUserDefined="0" labelwidth="115" layout="varwidth" locklevel="0" name="tab_4_section_1" ordinalvalue="0" showbar="false" showlabel="false">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell auto="false" colspan="1" id="{95e411c8-4159-5a37-349c-847d0399811c}" ordinalvalue="10000" rowspan="12" showlabel="false">
+                        <labels>
+                          <label description="Contacts (Owning User)" languagecode="1033" />
+                        </labels>
+                        <control classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" id="user_candidates" indicationOfSubgrid="true" uniqueid="{d3156c66-c72a-5022-a328-1bad7532b014}">
+                          <parameters>
+                            <ViewId>{701743EE-4467-E911-A984-000D3A233E06}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>contact_owning_user</RelationshipName>
+                            <TargetEntityType>contact</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{0D5D377B-5E7C-47B5-BAB1-A5CB8B4AC105},{701743EE-4467-E911-A984-000D3A233E06}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId>{E365462F-1DB9-46A8-928D-BEAB1A7A2375}</VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>10</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <formLibraries solutionaction="Added">
+        <Library libraryUniqueId="{4181da4c-6d13-ba3c-c859-be404e4ee2e3}" name="msdyn_/ActivityFeeds.Form.js" />
+      </formLibraries>
+      <Navigation solutionaction="Added">
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions solutionaction="Added" />
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

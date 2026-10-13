@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{e89f10f0-eab1-e811-a84e-000d3a2a3148}</savedqueryid>
+    <layoutxml>
+      <grid icon="1" jump="subject" name="resultset" preview="1" select="1">
+        <row id="activityid" name="result">
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="scheduledend" width="150" />
+          <cell name="prioritycode" width="100" />
+          <cell disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="to" width="150" />
+          <cell name="subject" width="150" />
+          <cell disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="description" width="150" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="phonenumber" width="150" />
+        </row>
+        <controlDescriptions />
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch distinct="false" mapping="logical" output-format="xml-platform" version="1.0">
+        <entity name="phonecall">
+          <attribute name="subject" />
+          <attribute name="prioritycode" />
+          <attribute name="phonenumber" />
+          <attribute name="description" />
+          <attribute name="to" />
+          <attribute name="scheduledend" />
+          <order attribute="scheduledend" descending="false" />
+          <order attribute="prioritycode" descending="false" />
+          <filter type="and">
+            <condition attribute="scheduledend" operator="next-seven-days" />
+          </filter>
+          <attribute name="activityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Candidates to call in the next 7 days" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Candidates to call in the next 7 days" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

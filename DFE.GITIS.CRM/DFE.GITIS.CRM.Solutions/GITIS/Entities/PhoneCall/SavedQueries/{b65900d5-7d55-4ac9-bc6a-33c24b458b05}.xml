@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{b65900d5-7d55-4ac9-bc6a-33c24b458b05}</savedqueryid>
+    <queryapi></queryapi>
+    <layoutxml>
+      <grid icon="1" jump="subject" name="resultset" preview="1" select="1">
+        <row id="activityid" name="result">
+          <cell name="from" width="100" />
+          <cell name="to" width="100" />
+          <cell name="subject" width="250" />
+          <cell name="regardingobjectid" width="100" />
+          <cell name="actualend" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch distinct="true" mapping="logical" output-format="xml-platform" version="1.0">
+        <entity name="phonecall">
+          <attribute name="subject" />
+          <attribute name="regardingobjectid" />
+          <attribute name="actualend" />
+          <attribute name="to" />
+          <order attribute="actualend" descending="true" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+          <link-entity alias="aa" from="activityid" name="activityparty" to="activityid">
+            <filter type="and">
+              <condition attribute="participationtypemask" operator="in">
+                <value>2</value>
+                <value>1</value>
+                <value>9</value>
+              </condition>
+              <condition attribute="partyid" operator="eq-userid" />
+            </filter>
+          </link-entity>
+          <attribute name="activityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="My Completed Phone Calls" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

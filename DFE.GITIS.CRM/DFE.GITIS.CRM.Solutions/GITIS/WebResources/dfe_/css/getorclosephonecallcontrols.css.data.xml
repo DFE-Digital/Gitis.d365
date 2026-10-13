@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{df2ac5e4-2a13-e911-a976-000d3a20838a}</WebResourceId>
+  <Name>dfe_/css/getorclosephonecallcontrols.css</Name>
+  <DisplayName>dfe_/css/getorclosephonecallcontrols.css</DisplayName>
+  <Description>This web resource holds the css styliong for the controls on the call agent dashboard and the inbound and outbound phone call forms for the call request and close button styling.,</Description>
+  <LanguageCode>1033</LanguageCode>
+  <WebResourceType>2</WebResourceType>
+  <IntroducedVersion>1.0.0.5</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/dfe_cssgetorclosephonecallcontrolscssDF2AC5E4-2A13-E911-A976-000D3A20838A</FileName>
+</WebResource>

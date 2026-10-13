@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{9fe3b11a-cd15-4490-b2d6-86f1c42f9f00}</savedqueryid>
+    <layoutxml>
+      <grid icon="1" jump="dfe_name" name="resultset" preview="1" select="1">
+        <row id="dfe_topicid" name="result">
+          <cell name="dfe_name" width="300" />
+          <cell name="createdon" width="125" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_sourcechannelvalue" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="dfe_topic">
+          <attribute name="dfe_name" />
+          <attribute name="createdon" />
+          <order attribute="dfe_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="dfe_sourcechannelvalue" />
+          <attribute name="dfe_topicid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.7</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Topics" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

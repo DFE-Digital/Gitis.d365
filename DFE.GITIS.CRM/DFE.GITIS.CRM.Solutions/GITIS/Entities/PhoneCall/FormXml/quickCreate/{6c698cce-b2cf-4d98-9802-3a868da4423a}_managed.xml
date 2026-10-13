@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{6c698cce-b2cf-4d98-9802-3a868da4423a}</formid>
+    <IntroducedVersion>1.0.0.7</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="1920">
+      <tabs>
+        <tab id="{b45b0afe-71d4-410c-a943-2b0c03dd185b}" name="tab_1" showlabel="false">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section columns="1" id="{4202a9dc-1818-4eff-bcfa-08f0c6af0979}" IsUserDefined="0" name="tab_1_column_1_section_1" showbar="false" showlabel="false">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{eb3ca2a0-7e45-a2e7-a251-c6e865cc7b99}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="scheduledstart" disabled="false" id="scheduledstart" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a67e71ba-0a37-a70d-ec5d-c76b1e4be985}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="scheduledend" disabled="false" id="scheduledend" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{283cde9e-e6c6-0855-1335-4331ae069127}" locklevel="0" showlabel="true" visible="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="dfe_appointmentrequired" disabled="false" id="dfe_appointmentrequired" uniqueid="{c325aad4-d844-de01-b703-de905b6869a0}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section columns="1" id="{14c3fc6d-4cac-46f8-9ddc-bf7a5f7aaed1}" IsUserDefined="0" name="tab_1_column_2_section_1" showbar="false" showlabel="false">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{987016d2-c8e2-e190-5597-e277a14c22a4}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{CBFB742C-14E7-4a17-96BB-1A13F7F64AA2}" datafieldname="to" disabled="false" id="to" uniqueid="{81e66622-32aa-a1ec-a126-8b84c2d1d988}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cd29cb2e-9993-bb07-964c-19a939018cba}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="subject" disabled="false" id="subject" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b137c045-6b22-c047-0229-9d4ca5097ea9}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="phonenumber" disabled="false" id="phonenumber" uniqueid="{a963285e-6027-0637-dad3-4ecad339daae}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section columns="1" id="{b7910696-78c6-4165-a14e-099024925c99}" IsUserDefined="0" name="tab_1_column_3_section_1" showbar="false" showlabel="false">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{a5aded74-ee30-d9ab-13c1-c81cd388aa74}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="directioncode" disabled="true" id="directioncode" uniqueid="{4462581b-ed5a-c2d8-264e-a9b5c22c3806}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <controlDescriptions />
+      <formLibraries>
+        <Library libraryUniqueId="{b394da85-1ea0-678c-b346-7dd95ad332d2}" name="dfe_/javascript/utils.js" />
+        <Library libraryUniqueId="{241ee85d-43e6-3669-374d-7037d25e9899}" name="dfe_/javascript/dataservices.js" />
+        <Library libraryUniqueId="{7db25b55-0b89-05c4-2ae8-0d9295996b10}" name="dfe_/javascript/phonecall_quickcreate_agent.js" />
+      </formLibraries>
+      <events>
+        <event active="false" application="false" name="onload">
+          <Handlers>
+            <Handler enabled="true" functionName="DFEPhoneCallAgentQuickCreate.formOnLoad" handlerUniqueId="{c16885e7-d4d5-7d64-8168-a27ddb82106c}" libraryName="dfe_/javascript/phonecall_quickcreate_agent.js" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event active="false" application="false" attribute="to" name="onchange">
+          <Handlers>
+            <Handler enabled="true" functionName="DFEPhoneCallAgentQuickCreate.OnContactChange" handlerUniqueId="{c20eba28-95b1-072b-e8d1-be51116533b1}" libraryName="dfe_/javascript/phonecall_quickcreate_agent.js" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event active="false" application="false" name="onsave">
+          <Handlers>
+            <Handler enabled="true" functionName="DFEPhoneCallAgentQuickCreate.formOnSave" handlerUniqueId="{19c1b104-ba4e-cd72-2428-02927bad177a}" libraryName="dfe_/javascript/phonecall_quickcreate_agent.js" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event active="false" application="false" attribute="phonenumber" name="onchange">
+          <Handlers>
+            <Handler enabled="true" functionName="DFEPhoneCallAgentQuickCreate.ValidatePhoneNumber" handlerUniqueId="{20ae116d-ad83-325c-150a-4b039763230b}" libraryName="dfe_/javascript/phonecall_quickcreate_agent.js" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+      <DisplayConditions Order="1">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Call agent quick create" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

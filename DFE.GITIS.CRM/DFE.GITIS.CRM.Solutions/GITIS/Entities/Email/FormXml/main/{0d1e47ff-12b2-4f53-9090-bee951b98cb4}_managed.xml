@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{0d1e47ff-12b2-4f53-9090-bee951b98cb4}</formid>
+    <IntroducedVersion>6.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="1920" showImage="false" shownavigationbar="true">
+      <tabs>
+        <tab expanded="true" id="{844b5e32-5b0b-a608-9d14-0191e0ee3898}" IsUserDefined="0" locklevel="0" name="Email" ordinalvalue="0" showlabel="false">
+          <columns>
+            <column id="0" width="67%">
+              <sections>
+                <section columns="11" id="{06EADC35-1283-43E0-9EC1-FCEF0A9B9735}" IsUserDefined="0" labelid="{887cea60-f6e3-4d11-a1de-0c8a41f64500}" layout="varwidth" locklevel="0" name="recipient information" ordinalvalue="0" showbar="false" showlabel="false">
+                  <rows>
+                    <row>
+                      <cell auto="false" colspan="2" id="{9257B3A4-703D-4810-B5E1-850CC98EDB99}" labelid="{92036837-5d79-4221-9e14-418402a7c174}" locklevel="0" ordinalvalue="10002" rowspan="1" showlabel="true" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell auto="false" colspan="2" id="{789EB1FB-707A-4EE4-8703-00D497EAB254}" labelid="{25d2432b-9948-4872-9ed3-abf8805ed597}" locklevel="0" ordinalvalue="10003" rowspan="1" showlabel="true" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell auto="false" colspan="2" id="{F8685CC5-23A6-40A1-976A-8231FEDED19C}" labelid="{407162fe-f268-45f0-bec3-d75e3dd73d2f}" locklevel="0" ordinalvalue="10004" rowspan="1" showlabel="true" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell auto="false" colspan="2" id="{BD2B7462-E3A4-4343-B594-B64885E4025B}" labelid="{3c88731d-6445-4ecc-bea4-93643103d1c6}" locklevel="0" ordinalvalue="10005" rowspan="1" showlabel="true" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell auto="false" colspan="2" id="{0F309E61-AC65-4D7B-9A30-0D12B7FA9B9D}" labelid="{ff641871-ca1c-4c26-9089-176ba474446a}" locklevel="0" ordinalvalue="10006" rowspan="1" showlabel="true" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell colspan="2" id="{c84b5147-d6d5-a244-47c5-8135b9b3b238}" locklevel="0" ordinalvalue="10000" showlabel="true" solutionaction="Added">
+                        <labels>
+                          <label description="Date sent" languagecode="1033" />
+                        </labels>
+                        <control classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="senton" disabled="false" id="senton" uniqueid="{ce2d48ca-3417-8198-cbca-b00680771816}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell colspan="2" id="{28a92380-eb86-719e-8382-31b6ad0189a7}" locklevel="0" ordinalvalue="10001" showlabel="true" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="actualend" disabled="true" id="actualend" uniqueid="{dda8dbbb-2ca8-6015-b0a9-0c94183e91d9}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section columns="11" id="{CD014F1A-F427-462C-A5F9-A2E4FED857DA}" IsUserDefined="0" labelid="{458c5f00-3adc-4db9-a581-16c1d26138d4}" layout="varwidth" locklevel="0" name="Regarding information" ordinalvalue="2" showbar="false" showlabel="false">
+                  <rows>
+                    <row>
+                      <cell auto="false" colspan="2" id="{5652933F-B91C-469C-A59D-AF96052D8959}" labelid="{312f8371-405f-4df6-b8c5-7db2349914c2}" locklevel="0" ordinalvalue="10000" rowspan="1" showlabel="true" solutionaction="Modified" visible="false">
+                        <control classid="{F3015350-44A2-4aa0-97B5-00166532B5E9}" datafieldname="regardingobjectid" disabled="false" id="regardingobjectid" solutionaction="Modified" uniqueid="{83e8a3e9-2ae7-cd0d-1587-24cbdd814632}">
+                          <parameters>
+                            <DisableMru solutionaction="Added">false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" colspan="1" id="{a34ac147-c258-4d89-90d1-4623e1a97fb2}" labelid="{42773a96-ad74-4649-978a-6e9d5b854055}" locklevel="0" ordinalvalue="10001" rowspan="1" showlabel="true" solutionaction="Modified" visible="false">
+                        <control classid="{AA987274-CE4E-4271-A803-66164311A958}" datafieldname="actualdurationminutes" disabled="false" id="actualdurationminutes" solutionaction="Modified" uniqueid="{4ae16b32-a56b-74ce-e4eb-2c7b1b0d27c1}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <controlDescriptions solutionaction="Added" />
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Email" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Updated default Email form." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

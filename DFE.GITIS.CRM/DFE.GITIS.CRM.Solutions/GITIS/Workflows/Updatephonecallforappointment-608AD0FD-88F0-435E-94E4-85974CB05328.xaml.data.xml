@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow Name="Update phone call for appointment" WorkflowId="{608ad0fd-88f0-435e-94e4-85974cb05328}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/Updatephonecallforappointment-608AD0FD-88F0-435E-94E4-85974CB05328.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>0</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnUpdateAttributeList>dfe_type,subject,subcategory,statuscode,statecode,scheduledstart,sortdate,slaid,requiredattendees,dfe_requirephonecall,processid,prioritycode,dfe_precallnotes,dfe_postcallnotes,dfe_phonenumber,dfe_phonecall,organizer,optionalattendees,onholdtime,modifiedon,modifiedonbehalfby,modifiedby,location,dfe_leftvoicemail,scheduledend,scheduleddurationminutes,dfe_direction,description,dfe_contactid,category,regardingobjectid,dfe_callfrom,instancetypecode,isalldayevent,activityadditionalparams,actualstart,actualend,actualdurationminutes</TriggerOnUpdateAttributeList>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.0.2</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <PrimaryEntity>Appointment</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName description="Update phone call for appointment" languagecode="1033" />
+  </LocalizedNames>
+</Workflow>

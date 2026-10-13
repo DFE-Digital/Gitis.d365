@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{983dc188-2a05-4cfe-b907-4fbfae8c21f7}</formid>
+    <IntroducedVersion>8.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="{d0bb13a3-e262-4c99-bf47-7707a29e3d4e}" IsUserDefined="0" ordinalvalue="0">
+          <columns>
+            <column id="1" width="75%">
+              <sections>
+                <section columns="111" id="{33ed565f-5e03-43cd-b86b-9dcc4dad7538}" IsUserDefined="0" name="CardHeader" ordinalvalue="0" showbar="false" showlabel="false">
+                  <rows>
+                    <row>
+                      <cell id="{ee020c84-d878-70ea-0ed5-357245663951}" locklevel="0" ordinalvalue="10000" showlabel="true" solutionaction="Removed" />
+                      <cell id="{d4c32299-eb34-c691-c831-74003adaa70a}" locklevel="0" ordinalvalue="20001" showlabel="true" solutionaction="Removed" />
+                      <cell id="{4ed086c3-c48b-2d5e-c1b8-a58a29dab57b}" locklevel="0" ordinalvalue="30002" showlabel="true" solutionaction="Removed" />
+                    </row>
+                    <row>
+                      <cell id="{9a98ccae-e00b-1b1d-a013-a8cd90d2bc72}" locklevel="0" ordinalvalue="10003" showlabel="true" solutionaction="Removed" />
+                      <cell id="{2ba886ad-065d-9cbd-4ba3-da2cc34468b5}" ordinalvalue="20004" showlabel="false" solutionaction="Removed" />
+                      <cell id="{7c72bc09-1135-07b4-6da5-8ca5067ce35e}" ordinalvalue="30005" showlabel="false" solutionaction="Removed" />
+                    </row>
+                    <row>
+                      <cell id="{0a743a6d-5b2c-9aba-be6a-c052ab50c077}" ordinalvalue="10000" showlabel="false" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{7ab45591-b835-e00e-6762-cc26c4432d36}" locklevel="0" ordinalvalue="20001" showlabel="true" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{CBFB742C-14E7-4a17-96BB-1A13F7F64AA2}" datafieldname="from" disabled="false" id="from" />
+                      </cell>
+                      <cell id="{00695749-32b0-4e30-76db-ea2ea2cd01d7}" locklevel="0" ordinalvalue="30002" showlabel="true" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" id="createdon" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section columns="1" id="{d6832f5a-c563-4c8c-a23c-74e15b2b4c06}" IsUserDefined="0" labelwidth="115" layout="varwidth" name="CardDetails" ordinalvalue="1" showbar="false" showlabel="false">
+                  <rows>
+                    <row>
+                      <cell id="{0a01dd96-dce8-e383-109e-8e85c0ca6606}" locklevel="0" ordinalvalue="10003" showlabel="true" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{0e094bb2-70c6-3dd9-58d1-c1c23a74c1ec}" locklevel="0" ordinalvalue="10002" showlabel="true" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="dfe_postcallnotes" disabled="false" id="dfe_postcallnotes" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Phone Call Card form" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Default Phone Call card form." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

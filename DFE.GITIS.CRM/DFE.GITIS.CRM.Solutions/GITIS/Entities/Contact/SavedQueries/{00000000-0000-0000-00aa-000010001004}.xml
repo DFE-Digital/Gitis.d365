@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{00000000-0000-0000-00aa-000010001004}</savedqueryid>
+    <queryapi></queryapi>
+    <layoutxml>
+      <grid icon="1" jump="fullname" name="resultset" preview="1" select="1">
+        <row id="contactid" name="result">
+          <cell name="dfe_urn" width="100" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="firstname" width="150" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="lastname" width="150" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="emailaddress1" width="200" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="address1_telephone1" width="125" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="address1_city" width="150" />
+          <cell name="address1_postalcode" width="100" />
+          <cell name="dfe_ittyear" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" output-format="xml-platform" version="1.0">
+        <entity name="contact">
+          <order attribute="lastname" descending="false" />
+          <order attribute="firstname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="emailaddress1" />
+          <attribute name="lastname" />
+          <attribute name="firstname" />
+          <attribute name="dfe_urn" />
+          <attribute name="address1_postalcode" />
+          <attribute name="address1_city" />
+          <attribute name="address1_telephone1" />
+          <attribute name="dfe_ittyear" />
+          <attribute name="contactid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Contacts" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Active Contacts" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

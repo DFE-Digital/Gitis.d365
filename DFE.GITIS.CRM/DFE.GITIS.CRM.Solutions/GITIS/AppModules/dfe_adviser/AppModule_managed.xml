@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>dfe_adviser</UniqueName>
+  <IntroducedVersion>1.0.0.2</IntroducedVersion>
+  <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents>
+    <AppModuleComponent schemaName="dfe_adviser" type="62" />
+    <AppModuleComponent id="{ab95b05a-d9b1-e811-a84e-000d3a2a3148}" type="60" />
+    <AppModuleComponent id="{3f978ba9-cfb1-e811-a84e-000d3a2a3148}" type="60" />
+    <AppModuleComponent schemaName="dfe_advisertodoitem" type="1" />
+    <AppModuleComponent schemaName="appointment" type="1" />
+    <AppModuleComponent id="{549a8aa3-c349-4ab9-8bac-4873fa9a7a5c}" type="60" />
+    <AppModuleComponent id="{2f3ff1f6-1d2a-e911-a976-000d3a206976}" type="26" />
+    <AppModuleComponent id="{1bc0ff08-cb08-45d6-8fd4-e49e6b49fe91}" type="59" />
+    <AppModuleComponent schemaName="contact" type="1" />
+    <AppModuleComponent id="{1fed44d1-ae68-4a41-bd2b-f13acac4acfa}" type="60" />
+    <AppModuleComponent id="{32cb5198-d5b1-e811-a84e-000d3a2a3148}" type="26" />
+    <AppModuleComponent id="{34466466-c72a-e911-a977-000d3a23443b}" type="26" />
+    <AppModuleComponent id="{949150b6-d0b1-e811-a84e-000d3a2a3148}" type="26" />
+    <AppModuleComponent schemaName="email" type="1" />
+    <AppModuleComponent id="{0d1e47ff-12b2-4f53-9090-bee951b98cb4}" type="60" />
+    <AppModuleComponent id="{cc98cb1f-6552-4fd8-9e2f-39a1cad2f710}" type="26" />
+    <AppModuleComponent id="{2667ca02-5f29-e911-a975-000d3a233b72}" type="26" />
+    <AppModuleComponent id="{69240e27-5f29-e911-a975-000d3a233b72}" type="26" />
+    <AppModuleComponent schemaName="dfe_facebookmessage" type="1" />
+    <AppModuleComponent id="{85c2c61a-6d13-42f6-aa81-910632acd657}" type="26" />
+    <AppModuleComponent id="{d0acfe76-df37-4af7-977c-3470dbca354a}" type="26" />
+    <AppModuleComponent id="{62d4cb50-9f07-4801-b5d8-0c620f3877b5}" type="26" />
+    <AppModuleComponent schemaName="phonecall" type="1" />
+    <AppModuleComponent id="{f668c993-0c4f-4207-8d1b-9126f747b73b}" type="60" />
+    <AppModuleComponent schemaName="dfe_sms" type="1" />
+    <AppModuleComponent id="{cd929fbc-b9f8-4c9b-928a-ddbba3435295}" type="26" />
+    <AppModuleComponent id="{4c74a7f2-00c6-4d56-a650-c08f730774ab}" type="26" />
+    <AppModuleComponent id="{983a349c-1dfa-46f0-9905-8aea6407533c}" type="26" />
+    <AppModuleComponent schemaName="dfe_stage" type="1" />
+    <AppModuleComponent id="{f320d9dd-bc93-4132-808d-8f4a683dea0b}" type="60" />
+    <AppModuleComponent schemaName="task" type="1" />
+    <AppModuleComponent id="{6e752f70-bf1b-456e-b9fc-5a505ebf8b28}" type="60" />
+    <AppModuleComponent id="{33029def-afb2-e811-a84c-000d3a2a37ad}" type="26" />
+    <AppModuleComponent id="{392d145c-edd5-e811-a96f-000d3a233b72}" type="26" />
+    <AppModuleComponent id="{5163f25a-a7b2-e811-a84c-000d3a2a37ad}" type="26" />
+    <AppModuleComponent id="{a0ba31fe-04d6-e811-a96c-000d3a206976}" type="26" />
+    <AppModuleComponent id="{6cf285aa-eb20-4277-925a-3e9735411ff0}" type="26" />
+    <AppModuleComponent id="{39394fa5-2576-e811-a96b-000d3a2065c5}" type="26" />
+    <AppModuleComponent id="{24bc310f-2476-e811-a96b-000d3a2065c5}" type="26" />
+    <AppModuleComponent id="{4acd57aa-3b1b-e911-a976-000d3a206976}" type="26" />
+    <AppModuleComponent id="{c4329725-3b1b-e911-a976-000d3a206976}" type="26" />
+    <AppModuleComponent id="{5de42842-8e1d-e911-a979-000d3a20838a}" type="26" />
+    <AppModuleComponent id="{985c7b57-8e1d-e911-a979-000d3a20838a}" type="26" />
+    <AppModuleComponent schemaName="dfe_teachingsubjectlist" type="1" />
+    <AppModuleComponent id="{548d13cc-54a3-40d5-b5f1-d87bdc880632}" type="60" />
+    <AppModuleComponent schemaName="dfe_whatsappmessage" type="1" />
+    <AppModuleComponent id="{fb13fb92-f258-489b-8cb6-93c581f942f6}" type="26" />
+    <AppModuleComponent id="{675ea5fb-efdb-4db8-8bf8-d71c7c8fa8b8}" type="26" />
+    <AppModuleComponent id="{f05b383b-89f7-442e-b0b8-e9309ca696a7}" type="26" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+    <Role id="{5e94ecdd-4daf-e811-a84e-000d3a2a3148}" />
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+  </AppModuleRoleMaps>
+  <LocalizedNames>
+    <LocalizedName description="1 to 1 Adviser" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="1 to 1 adviser app." languagecode="1033" />
+  </Descriptions>
+</AppModule>

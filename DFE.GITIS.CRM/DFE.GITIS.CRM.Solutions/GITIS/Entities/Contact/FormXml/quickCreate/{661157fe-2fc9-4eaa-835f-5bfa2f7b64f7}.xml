@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{661157fe-2fc9-4eaa-835f-5bfa2f7b64f7}</formid>
+    <IntroducedVersion>6.0.0.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="1900">
+      <tabs>
+        <tab expanded="true" id="{ee019344-2ac2-4ade-b2b8-630ff38801b1}" IsUserDefined="0" locklevel="0" name="tab_1" showlabel="false">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="45%">
+              <sections>
+                <section celllabelalignment="Left" celllabelposition="Top" columns="1" id="{be7e5181-f67d-4fac-9420-ed9e2ac588fd}" IsUserDefined="0" labelwidth="115" locklevel="0" name="tab_1_column_1_section_1" showbar="false" showlabel="false">
+                  <labels>
+                    <label description="Details" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{cc42934a-7770-eace-a535-ca3c4d3e4ca5}" locklevel="0" showlabel="false" visible="false">
+                        <labels>
+                          <label description="Business Card" languagecode="1033" />
+                        </labels>
+                        <control classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="businesscard" disabled="false" id="businesscard" uniqueid="{0758709b-abec-8c87-786a-56116be5a5de}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a2528d42-720c-9931-81ca-784c1881b8c2}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="First Name" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="firstname" disabled="false" id="firstname" uniqueid="{d6ee9a07-998d-12da-9241-3b05c9197ab7}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a6b833e8-225b-4986-c283-067453a7daa2}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Email" languagecode="1033" />
+                        </labels>
+                        <control classid="{ADA2203E-B4CD-49be-9DDF-234642B43B52}" datafieldname="emailaddress1" disabled="false" id="emailaddress1" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3d5a6679-c272-906e-ac77-e4e8a3840a51}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Date of birth" languagecode="1033" />
+                        </labels>
+                        <control classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="birthdate" disabled="false" id="birthdate" uniqueid="{de32647d-7c31-a9d5-722a-1390494a3145}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4c3a6919-9dd4-98c2-b4d9-d477e7b04bc0}" locklevel="0" showlabel="true" visible="false">
+                        <labels>
+                          <label description="Privacy notice" languagecode="1033" />
+                        </labels>
+                        <control classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="dfe_privacynotice" disabled="false" id="dfe_privacynotice" uniqueid="{cc2d0646-94dd-d2d6-ebb6-b31d25350eb1}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7a7e1043-ea62-1a5d-44c8-68757777c3d0}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Last Name" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="lastname" disabled="false" id="lastname" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="45%">
+              <sections>
+                <section celllabelalignment="Left" celllabelposition="Top" columns="1" id="{b5f2a6a1-d1e1-439d-ab76-fbb48f1381d4}" IsUserDefined="0" labelwidth="115" locklevel="0" name="tab_1_column_2_section_1" showbar="false" showlabel="true" visible="false">
+                  <labels>
+                    <label description="Personal Information" languagecode="1033" />
+                  </labels>
+                  <rows></rows>
+                </section>
+              </sections>
+            </column>
+            <column width="10%">
+              <sections>
+                <section celllabelalignment="Left" celllabelposition="Left" columns="1" id="{4e35e9f6-ac81-44cf-b8d6-91149b679634}" IsUserDefined="0" labelwidth="115" locklevel="0" name="tab_1_column_3_section_1" showbar="false" showlabel="false" visible="false">
+                  <labels>
+                    <label description="Address" languagecode="1033" />
+                  </labels>
+                  <rows></rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions FallbackForm="true" Order="2">
+        <Everyone />
+      </DisplayConditions>
+      <events>
+        <event active="true" application="true" name="onload">
+          <InternalHandlers>
+            <Handler enabled="true" functionName="Sales.Contact.Instance.Quick_Form_onload" handlerUniqueId="ba2ec2ae-0dd2-48b1-a22a-3c639a02a3ae" libraryName="Sales/Contact/Contact_main_system_library.js" passExecutionContext="true" />
+          </InternalHandlers>
+        </event>
+        <event active="true" application="true" attribute="businesscard" name="onchange">
+          <InternalHandlers>
+            <Handler enabled="true" functionName="Sales.Contact.Instance.BusinessCard_OnChange" handlerUniqueId="60d3d793-cff2-4a34-951e-d4d6f7ef4609" libraryName="Sales/Contact/Contact_main_system_library.js" passExecutionContext="true" />
+          </InternalHandlers>
+        </event>
+      </events>
+      <clientresources>
+        <internalresources>
+          <clientincludes>
+            <internaljscriptfile src="$webresource:Sales/Contact/Contact_main_system_library.js" />
+          </clientincludes>
+        </internalresources>
+      </clientresources>
+      <controlDescriptions>
+        <controlDescription forControl="{0758709b-abec-8c87-786a-56116be5a5de}">
+          <customControl id="{E0DECE4B-6FC8-4a8f-A065-082708572369}">
+            <parameters>
+              <datafieldname>businesscard</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="Intelligence.BusinessCardReaderControl.BusinessCardReader">
+            <parameters>
+              <value>businesscard</value>
+              <FirstName>firstname</FirstName>
+              <LastName>lastname</LastName>
+              <JobTitle>jobtitle</JobTitle>
+              <MobilePhone>mobilephone</MobilePhone>
+              <BusinessPhone>telephone1</BusinessPhone>
+              <Email>emailaddress1</Email>
+              <Website>websiteurl</Website>
+              <AddressStreet>address1_line1</AddressStreet>
+              <AddressCity>address1_city</AddressCity>
+              <AddressPostalCode>address1_postalcode</AddressPostalCode>
+              <AddressCountry>address1_country</AddressCountry>
+              <AddressState>address1_stateorprovince</AddressState>
+              <AddressPostOfficeBox>address1_postofficebox</AddressPostOfficeBox>
+              <Department>department</Department>
+              <CleanedImage>businesscard</CleanedImage>
+              <AdvancedCustomization>businesscardattributes</AdvancedCustomization>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="Intelligence.BusinessCardReaderControl.BusinessCardReader">
+            <parameters>
+              <value>businesscard</value>
+              <FirstName>firstname</FirstName>
+              <LastName>lastname</LastName>
+              <JobTitle>jobtitle</JobTitle>
+              <MobilePhone>mobilephone</MobilePhone>
+              <BusinessPhone>telephone1</BusinessPhone>
+              <Email>emailaddress1</Email>
+              <Website>websiteurl</Website>
+              <AddressStreet>address1_line1</AddressStreet>
+              <AddressCity>address1_city</AddressCity>
+              <AddressPostalCode>address1_postalcode</AddressPostalCode>
+              <AddressCountry>address1_country</AddressCountry>
+              <AddressState>address1_stateorprovince</AddressState>
+              <AddressPostOfficeBox>address1_postofficebox</AddressPostOfficeBox>
+              <Department>department</Department>
+              <CleanedImage>businesscard</CleanedImage>
+              <AdvancedCustomization>businesscardattributes</AdvancedCustomization>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="Intelligence.BusinessCardReaderControl.BusinessCardReader">
+            <parameters>
+              <value>businesscard</value>
+              <FirstName>firstname</FirstName>
+              <LastName>lastname</LastName>
+              <JobTitle>jobtitle</JobTitle>
+              <MobilePhone>mobilephone</MobilePhone>
+              <BusinessPhone>telephone1</BusinessPhone>
+              <Email>emailaddress1</Email>
+              <Website>websiteurl</Website>
+              <AddressStreet>address1_line1</AddressStreet>
+              <AddressCity>address1_city</AddressCity>
+              <AddressPostalCode>address1_postalcode</AddressPostalCode>
+              <AddressCountry>address1_country</AddressCountry>
+              <AddressState>address1_stateorprovince</AddressState>
+              <AddressPostOfficeBox>address1_postofficebox</AddressPostOfficeBox>
+              <Department>department</Department>
+              <CleanedImage>businesscard</CleanedImage>
+              <AdvancedCustomization>businesscardattributes</AdvancedCustomization>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Contact quick create" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Default quick create form for Contact. &#xA;This form will be used by TPUK Call Agents to capture the initial core details and create a new Contact record for an incoming caller who has not previously registered with the GITIS service and has no pre-existing Contact record in the Database." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

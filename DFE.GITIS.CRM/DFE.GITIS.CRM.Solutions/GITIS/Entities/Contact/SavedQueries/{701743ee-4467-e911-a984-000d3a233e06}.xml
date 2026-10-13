@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{701743ee-4467-e911-a984-000d3a233e06}</savedqueryid>
+    <layoutxml>
+      <grid icon="1" jump="fullname" name="resultset" preview="1" select="1">
+        <row id="contactid" name="result">
+          <cell name="fullname" width="300" />
+          <cell name="dfe_ittyear" width="100" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_preferredteachingsubject01" width="200" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_preferredteachingsubject02" width="200" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_preferredteachingregion01" width="200" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" output-format="xml-platform" version="1.0">
+        <entity name="contact">
+          <attribute name="fullname" />
+          <attribute name="dfe_preferredteachingsubject02" />
+          <attribute name="dfe_preferredteachingsubject01" />
+          <attribute name="dfe_ittyear" />
+          <attribute name="dfe_preferredteachingregion01" />
+          <attribute name="contactid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.7</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Contacts grid for user" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="This is the view used in User form for Call Centre managers" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>
