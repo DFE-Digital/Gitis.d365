@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{7d20adf4-a1ff-42e3-bd4c-7e7900275617}</formid>
+    <IntroducedVersion>1.0.0.5</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="{4e7f6e5e-a176-40b8-9a78-c8ed53e086b2}" IsUserDefined="1" verticallayout="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{4d6fe81f-9560-4270-b2c7-ac5db0c15718}" IsUserDefined="0" showbar="false" showlabel="false">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{2b74822a-5fc7-4d07-a7c4-82ce50474b63}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_name" id="dfe_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{aa819891-0384-b3ea-72c6-b9dc32495065}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Environment Name" languagecode="1033" />
+                        </labels>
+                        <control classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="dfe_environmentname" disabled="false" id="dfe_environmentname" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dd43a80a-3208-2067-ad02-e7a1857400e8}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="TP Workspace Root" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_tpworkspaceroot" disabled="false" id="dfe_tpworkspaceroot" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4b9c5a06-4a05-4ab5-1d95-d05bee0c9e35}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="TP Workspace Dial" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_tpworkspacedial" disabled="false" id="dfe_tpworkspacedial" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4baa153a-e633-d3c3-da36-1ac7003ca8e2}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="TP Workspace Dial prefix" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_tpworkspacedialprefix" disabled="false" id="dfe_tpworkspacedialprefix" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5cd119c7-135d-ee2e-4713-12eed611ac27}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="TP Workspace Hangup" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_tpworkspacehangup" disabled="false" id="dfe_tpworkspacehangup" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3de84168-5252-092e-9ba2-3c63e2c91a94}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="TP Workspace Hold" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_tpworkspacehold" disabled="false" id="dfe_tpworkspacehold" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e6d73896-d5e3-8155-865b-248db3155719}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="TP Workspace Retrieve" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_tpworkspaceretrieve" disabled="false" id="dfe_tpworkspaceretrieve" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{88b75cd1-7ac6-5b4b-2a99-696c33459e67}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="TP Workspace Transfer" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_tpworkspacetransfer" disabled="false" id="dfe_tpworkspacetransfer" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a9b6a995-e10a-18a0-5b76-b7ea5b74b9aa}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="TP Workspace Cancel Transfer" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_tpworkspacecanceltransfer" disabled="false" id="dfe_tpworkspacecanceltransfer" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b78e6464-27a3-2dd2-25a1-3e626857b21c}" locklevel="0" rowspan="6" showlabel="true">
+                        <labels>
+                          <label description="Privacy Policy" languagecode="1033" />
+                        </labels>
+                        <control classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="dfe_privacypolicy" disabled="false" id="dfe_privacypolicy" uniqueid="{9205d812-55c1-6e68-5965-5c8b438da937}" />
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row>
+                      <cell id="{60b8a235-70bd-d420-1166-1292ee690a97}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Max Number of outbound Call Attempts" languagecode="1033" />
+                        </labels>
+                        <control classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="dfe_maxnumberofoutboundcallattempts" disabled="false" id="dfe_maxnumberofoutboundcallattempts" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{414ab4e9-e78c-146c-7b5a-41b2c3cd7563}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Outbound Website Queue Guid" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_outboundwebsitequeueguid" disabled="false" id="dfe_outboundwebsitequeueguid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{381c6c66-79ac-7ea5-0734-845736bb17ea}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Outbound Call Queue Guid" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_outboundcallqueueguid" disabled="false" id="dfe_outboundcallqueueguid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a53cc3c1-4d02-d290-7e6c-03ac3db28c2d}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Callback Request Call Weighting" languagecode="1033" />
+                        </labels>
+                        <control classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="dfe_callbackrequestcallweighting" disabled="false" id="dfe_callbackrequestcallweighting" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{045a2881-3741-d506-369c-9a0ed21954e7}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="UCAS Registration Call Weighting" languagecode="1033" />
+                        </labels>
+                        <control classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="dfe_ucasregistrationcallweighting" disabled="false" id="dfe_ucasregistrationcallweighting" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{51a33ea5-a085-3489-a3e9-04a58ce0dad7}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Web Registration Call Weighting" languagecode="1033" />
+                        </labels>
+                        <control classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="dfe_webregistrationcallweighting" disabled="false" id="dfe_webregistrationcallweighting" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a09a61a2-1d89-0935-963b-908c1d5c4861}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Web Registration EEA Call Weighting" languagecode="1033" />
+                        </labels>
+                        <control classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="dfe_webregistrationeeacallweighting" disabled="false" id="dfe_webregistrationeeacallweighting" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cc819982-6cdb-8d15-8963-54cd2cd083e6}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Website Callback Request Call Weighting" languagecode="1033" />
+                        </labels>
+                        <control classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="dfe_websitecallbackrequestcallweighting" disabled="false" id="dfe_websitecallbackrequestcallweighting" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7e37b34a-d492-b6be-4b82-62469a6017ed}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="RMP Call Weighting" languagecode="1033" />
+                        </labels>
+                        <control classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="dfe_rmpcallweigting" disabled="false" id="dfe_rmpcallweigting" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{802269c8-317a-9419-d0ea-76297206880e}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="RMP EEA Call Weighting" languagecode="1033" />
+                        </labels>
+                        <control classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="dfe_rmpeeacallweigting" disabled="false" id="dfe_rmpeeacallweigting" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b5a2d002-99e8-b8c6-41be-3c2bea6d3ee7}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="SES Call Weighting" languagecode="1033" />
+                        </labels>
+                        <control classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="dfe_sescallweighting" disabled="false" id="dfe_sescallweighting" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{901083e1-7b8c-a14c-7ee7-1de259aa7e45}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="TeachFirst Call Weighting" languagecode="1033" />
+                        </labels>
+                        <control classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="dfe_teachfirstcallweighting" disabled="false" id="dfe_teachfirstcallweighting" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b8d6a7e0-e012-a4a8-20a5-1011b3264cdd}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Summer Campaign Call Weighting" languagecode="1033" />
+                        </labels>
+                        <control classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="dfe_summercampaigncallweighting" disabled="false" id="dfe_summercampaigncallweighting" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4808bb79-a4c1-88e1-83a4-1bb4643e9d56}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Weight Reduction For Followups" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_weightreductionforfollowups" disabled="false" id="dfe_weightreductionforfollowups" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1e41b9ad-b474-cab4-edc2-380e5e3b0aa6}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Outcome codes for followup" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_outcomecodesforfollowup" disabled="false" id="dfe_outcomecodesforfollowup" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{32e6081e-ce89-41d9-047a-bc76c3a4ea4d}" locklevel="0" rowspan="2" showlabel="true">
+                        <labels>
+                          <label description="Talking Points RMP" languagecode="1033" />
+                        </labels>
+                        <control classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="dfe_talkingpointsrmp" disabled="false" id="dfe_talkingpointsrmp" uniqueid="{21b21018-dec6-aa9c-653b-4b3bdbc83e87}" />
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row>
+                      <cell id="{2499cb8e-8dc7-63bb-0462-18b924cc7a6a}" locklevel="0" rowspan="2" showlabel="true">
+                        <labels>
+                          <label description="Talking Points Callback Request" languagecode="1033" />
+                        </labels>
+                        <control classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="dfe_talkingpointscallbackrequest" disabled="false" id="dfe_talkingpointscallbackrequest" uniqueid="{27e4c42e-b283-c4ac-657b-d448ebc8a615}" />
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row>
+                      <cell id="{1617d836-1a27-a419-099e-b3e8b7e7ec90}" locklevel="0" rowspan="2" showlabel="true">
+                        <labels>
+                          <label description="Talking Points Web Reg" languagecode="1033" />
+                        </labels>
+                        <control classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="dfe_talkingpointswebreg" disabled="false" id="dfe_talkingpointswebreg" uniqueid="{0514517b-4672-7713-b3b0-b3d43e245d88}" />
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row>
+                      <cell id="{1342174d-e15c-9516-9375-cb7b1099e993}" locklevel="0" rowspan="2" showlabel="true">
+                        <labels>
+                          <label description="Talking Points UCAS" languagecode="1033" />
+                        </labels>
+                        <control classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="dfe_talkingpointsucas" disabled="false" id="dfe_talkingpointsucas" uniqueid="{91856b2e-e977-a9b9-1a53-08649193824a}" />
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row>
+                      <cell id="{3c0c2b35-b85c-0940-dc7c-5b85ae614306}" locklevel="0" rowspan="2" showlabel="true">
+                        <labels>
+                          <label description="Talking Points TeachFirst" languagecode="1033" />
+                        </labels>
+                        <control classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="dfe_teachfirsttalkingpoints" disabled="false" id="dfe_teachfirsttalkingpoints" uniqueid="{b6712278-2e9c-73d3-0585-0519cb1ec0b7}" />
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row>
+                      <cell id="{a2988093-2c51-0165-683d-225cdad02423}" locklevel="0" rowspan="2" showlabel="true">
+                        <labels>
+                          <label description="Talking Points Website" languagecode="1033" />
+                        </labels>
+                        <control classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="dfe_talkingpointswebsite" disabled="false" id="dfe_talkingpointswebsite" uniqueid="{765a7224-cd0d-d46e-4a88-2e0e6726b352}" />
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row>
+                      <cell id="{5798894b-4921-5191-9b88-75d0e27dd318}" locklevel="0" rowspan="2" showlabel="true">
+                        <labels>
+                          <label description="Talking Points Summer Campaign" languagecode="1033" />
+                        </labels>
+                        <control classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="dfe_talkingpointssummercampaign" disabled="false" id="dfe_talkingpointssummercampaign" uniqueid="{ec097489-eeea-d249-c74e-6e0d4c865268}" />
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row>
+                      <cell id="{c433637d-e0c6-b30d-826a-b8884d1eb7e1}" locklevel="0" rowspan="2" showlabel="true">
+                        <labels>
+                          <label description="Talking Points SES" languagecode="1033" />
+                        </labels>
+                        <control classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="dfe_talkingpointsses" disabled="false" id="dfe_talkingpointsses" uniqueid="{3e6beea1-8739-407b-a459-44445a1d541d}" />
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row>
+                      <cell id="{02e83c56-96a3-5367-556b-32809be4e795}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Outbound Team Id" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_outboundteamid" disabled="false" id="dfe_outboundteamid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c38339ae-6239-0607-1898-36837b77cbee}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Outbound Website Team Id" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_outboundwebsiteteamguid" disabled="false" id="dfe_outboundwebsiteteamguid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{432be835-cd6b-4475-a753-7ad088c47252}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Latest Privacy Policy Id" languagecode="1033" />
+                        </labels>
+                        <control classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="dfe_latestprivacypolicyid" disabled="false" id="dfe_latestprivacypolicyid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4b1bcdeb-a560-1b31-2c9c-90c63186bdd2}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Website Latest Privacy Policy Id" languagecode="1033" />
+                        </labels>
+                        <control classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="dfe_websiteinboundprivacypolicyid" disabled="false" id="dfe_websiteinboundprivacypolicyid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b807ae2c-e801-0740-7b34-062dbd24c020}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Adviser Open Reasons" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_adviseropenreasons" disabled="false" id="dfe_adviseropenreasons" uniqueid="{01814d47-6cb5-c480-0bbe-694e09a132c5}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{51d6e043-a116-ceb5-11ec-47e537b69537}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Adviser Closed Reasons" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_adviserclosedreasons" disabled="false" id="dfe_adviserclosedreasons" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9c552627-4ec8-e499-52a2-37155a74812d}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="SAR Support Email" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_sarsupportemail" disabled="false" id="dfe_sarsupportemail" uniqueid="{72e8a742-d011-3c40-6812-a8eea50403d7}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{870e8051-ab51-4d71-b9e9-79456d73c621}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Gov Notify API Key" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_govnotifyapikey" disabled="false" id="dfe_govnotifyapikey" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{907e07c0-6175-9500-28da-bb90e551b653}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Gov Notify API URL" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="dfe_govnotifyapiurl" disabled="false" id="dfe_govnotifyapiurl" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

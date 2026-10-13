@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset description="The different top level education phases e.g. Primary, Secondary, Further Education etc." localizedName="Education phase" Name="dfe_educationphase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName>Education phase</ExternalTypeName>
+  <displaynames>
+    <displayname description="Education phase" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="The different top level education phases e.g. Primary, Secondary, Further Education etc." languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option Color="#0000ff" ExternalValue="" value="222750007">
+      <labels>
+        <label description="Early years" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750000">
+      <labels>
+        <label description="Primary" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750004">
+      <labels>
+        <label description="Middle" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750001">
+      <labels>
+        <label description="Secondary" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750002">
+      <labels>
+        <label description="Further Education" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750005">
+      <labels>
+        <label description="Higher Education" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750006">
+      <labels>
+        <label description="Teaching adults" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750003">
+      <labels>
+        <label description="Other" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

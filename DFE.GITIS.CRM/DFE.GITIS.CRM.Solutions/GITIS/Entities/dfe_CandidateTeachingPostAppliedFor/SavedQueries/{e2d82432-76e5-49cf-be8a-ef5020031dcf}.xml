@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{e2d82432-76e5-49cf-be8a-ef5020031dcf}</savedqueryid>
+    <layoutxml>
+      <grid icon="1" jump="dfe_name" name="resultset" preview="1" select="1">
+        <row id="dfe_candidateteachingpostappliedforid" name="result">
+          <cell name="dfe_dateapplied" width="100" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_organisationappliedto" width="300" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="statecode" width="125" />
+          <cell disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_notes" width="300" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="dfe_candidateteachingpostappliedfor">
+          <order attribute="dfe_dateapplied" descending="false" />
+          <order attribute="statecode" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="statecode" />
+          <attribute name="dfe_organisationappliedto" />
+          <attribute name="dfe_notes" />
+          <attribute name="dfe_dateapplied" />
+          <attribute name="dfe_candidateteachingpostappliedforid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.6</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Candidate Teaching Posts Applied For" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

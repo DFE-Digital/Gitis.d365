@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset description="The different levels of priority e.g. High, Medium, Low." localizedName="Priority level" Name="dfe_prioritylevel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.2</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Priority level" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="The different levels of priority e.g. High, Medium, Low." languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option Color="#0000ff" ExternalValue="" value="222750000">
+      <labels>
+        <label description="Low" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750001">
+      <labels>
+        <label description="Medium" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750002">
+      <labels>
+        <label description="High" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

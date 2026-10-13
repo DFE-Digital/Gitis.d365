@@ -1,0 +1,180 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../css/getorclosephonecallcontrols.css">
+    <script src="../javascript/jquery-3.3.1.min.js"></script>
+    <script src="../javascript/utils.js"></script>
+    <script src="../javascript/dataservices.js"></script>
+    <script src="../javascript/phonecall_form_outgoing.js"></script>
+    <script>
+
+        //Create a global variable for the cti paths we will retrieve in a later query
+        var config = {};
+        var Xrm = null;
+
+        // in case the document is already rendered
+        if (document.readyState != 'loading') onPageReady();
+        // modern browsersas
+        else if (document.addEventListener) document.addEventListener('DOMContentLoaded', onPageReady);
+        // IE <= 8
+        else document.attachEvent('onreadystatechange', function () {
+            if (document.readyState == 'complete') onPageReady();
+        });
+        function onPageReady() {
+            var utils = dfe_common.utils(parent);
+            var data = dfe_common.data(parent);
+            config = data.getConfigByName("GITIS");
+            if (config) {
+                console.log(config);
+            }
+            else {
+                alert("Error occured to get config data");
+            }
+        }
+
+        function disableButton(buttonId) {
+            //Disables the state of the button for any buttonId passed in and sets the .css class appropriately too
+            document.getElementById(buttonId).disabled = true;
+            document.getElementById(buttonId).classList.remove('button');
+            document.getElementById(buttonId).classList.add('disabledButton');
+        }
+        function enableButton(buttonId) {
+            //Enables the state of the button for any buttonId passed in and sets the .css class appropriately too
+            document.getElementById(buttonId).disabled = false;
+            document.getElementById(buttonId).classList.remove('disabledButton');
+            document.getElementById(buttonId).classList.add('button');
+        }
+
+        //Generate a 5 digit pin to send an email out to candidate for verification
+        function generateCandidatePIN_onClick() {
+            var utils = dfe_common.utils(parent);
+            var randomPin = Math.floor(Math.random() * 90000) + 10000;
+
+            //Set the Pin Code field with random 5 digit number
+            document.getElementById("spnPin").innerText = randomPin;
+
+            SendPinGovNotifyEmail(randomPin);
+        }
+
+        function SendPinGovNotifyEmail(randomPin)
+        // Send generated PIN to Candidate by calling action
+        {
+            var pResponse = document.getElementById("pResponse");
+
+            var currentContactId = parent.Xrm.Page.data.entity.getId();
+            currentContactId = currentContactId.substring(1, currentContactId.length - 1).toLowerCase();
+
+            var email = GetCandidateEmail();
+            var templateId = GetGodvNotifyEmailTemplateId();
+
+
+            if (email == null) {
+                pResponse.innerText = "Unable to send PIN verification email. Candidate doesn't have email";
+                return;
+            }
+
+            var parameters = {};
+            parameters.PostData = '{"email_address":"' + email + '","template_id":"' + templateId + '","personalisation":{"pincode":' + randomPin + '}}';
+
+
+            var req = new XMLHttpRequest();
+            req.open("POST", parent.Xrm.Page.context.getClientUrl() + "/api/data/v9.1/contacts(" + currentContactId + ")/Microsoft.Dynamics.CRM.dfe_SendPINtoGovNotifyEmail", false);
+            req.setRequestHeader("OData-MaxVersion", "4.0");
+            req.setRequestHeader("OData-Version", "4.0");
+            req.setRequestHeader("Accept", "application/json");
+            req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+            req.onreadystatechange = function () {
+                if (this.readyState === 4) {
+                    req.onreadystatechange = null;
+                    if (this.status === 200) {
+                        var results = JSON.parse(this.response);
+                        if (results != null) {
+                            var actionResponse = JSON.parse(results.EmailSendResponse);
+                            if (actionResponse.Success == "True") {
+                                pResponse.innerText = "PIN verification email sent";
+                            }
+                            else {
+                                pResponse.innerText = "Unable to send PIN verification email";
+                            }
+                        }
+                    } else {
+                        pResponse.innerText = "Unable to send PIN verification email";
+                    }
+                }
+            };
+            req.send(JSON.stringify(parameters));
+        }
+
+
+
+        function GetCandidateEmail()
+        // Get contact's email address
+        {
+            var contactEmail = null;
+            var currentContactId = parent.Xrm.Page.data.entity.getId();
+            currentContactId = currentContactId.substring(1, currentContactId.length - 1).toLowerCase();
+
+            var req = new XMLHttpRequest();
+            req.open("GET", parent.Xrm.Page.context.getClientUrl() + "/api/data/v9.1/contacts(" + currentContactId + ")?$select=emailaddress1", false);
+            req.setRequestHeader("OData-MaxVersion", "4.0");
+            req.setRequestHeader("OData-Version", "4.0");
+            req.setRequestHeader("Accept", "application/json");
+            req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+            req.setRequestHeader("Prefer", "odata.include-annotations=\"*\"");
+            req.onreadystatechange = function () {
+                if (this.readyState === 4) {
+                    req.onreadystatechange = null;
+                    if (this.status === 200) {
+                        var result = JSON.parse(this.response);
+                        contactEmail = result["emailaddress1"];
+                    } else {
+                        contactEmail = null;
+                    }
+                }
+            };
+            req.send();
+            return contactEmail;
+        }
+
+        function GetGodvNotifyEmailTemplateId()
+        // Set the template ID according to environments
+        {
+            var clientUrl = parent.Xrm.Page.context.getClientUrl();
+            var templateId = null;
+
+            if (clientUrl.includes("gitis.crm4.dynamics.com")) //Production
+            {
+                // templateId  = ""; //Production template id
+            }
+            else {
+                templateId = "73d601b2-1c4b-4cb1-a441-f15646151558"; // Test template id
+            }
+            return templateId;
+
+        }
+
+    </script>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+</head>
+
+<body style="overflow-wrap: break-word;" onfocusout="parent.setEmailRange();">
+    <div id="GenerateCandidatePIN" class="controlpanel" style="font-family: undefined;">
+        <h3 style="margin: 0; color: #000000;">Generate a Candidate PIN</h3>
+        <p style="font-family: Segoe UI, Arial, sans-serif; font-size: 14px;"></p>
+        <button onclick="generateCandidatePIN_onClick()" style="background-color: #3B79B7; border-color: #3B79B7;" type="button" id="DFE-btn-Closecall" value="Generate PIN" class="button" title="Generate a Candidate PIN.">Send PIN</button>
+    </div>
+    <div id="TextToDisplayPincode" class="controlpanel" style="font-family: Segoe UI, Arial, sans-serif; font-size: 14px;">
+        <p style="font-family: Segoe UI, Arial, sans-serif; font-size: 14px;">The Pin Code is <span id="spnPin" style="font-size:24px"></span> </p>
+        <p id="pResponse" style="font-family: Segoe UI, Arial, sans-serif; font-size: 14px;"></p>
+    </div>
+
+</body>
+</html>

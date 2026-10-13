@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset localizedName="ITT Year" Name="dfe_ittyear" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName>ITT Year</ExternalTypeName>
+  <displaynames>
+    <displayname description="ITT Year" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option Color="#0000ff" ExternalValue="" value="12907">
+      <labels>
+        <label description="2009" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="12908">
+      <labels>
+        <label description="2010" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="12909">
+      <labels>
+        <label description="2011" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="12910">
+      <labels>
+        <label description="2012" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="12911">
+      <labels>
+        <label description="2013" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="12912">
+      <labels>
+        <label description="2014" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="12913">
+      <labels>
+        <label description="2015" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="12914">
+      <labels>
+        <label description="2016" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="12918">
+      <labels>
+        <label description="2017" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="22300">
+      <labels>
+        <label description="2018" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="22301">
+      <labels>
+        <label description="2019" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="22302">
+      <labels>
+        <label description="2020" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="22303">
+      <labels>
+        <label description="2021" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="22304">
+      <labels>
+        <label description="2022" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="22305">
+      <labels>
+        <label description="2023" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="22306">
+      <labels>
+        <label description="2024" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="12917">
+      <labels>
+        <label description="Not sure" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset localizedName="Nationality" Name="dfe_nationality" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName>Nationality</ExternalTypeName>
+  <displaynames>
+    <displayname description="Nationality" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option Color="#0000ff" ExternalValue="" value="222750000">
+      <labels>
+        <label description="American" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750001">
+      <labels>
+        <label description="Australian" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750002">
+      <labels>
+        <label description="Austrian" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750003">
+      <labels>
+        <label description="Bangladeshi" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750004">
+      <labels>
+        <label description="Belgian" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750005">
+      <labels>
+        <label description="Brazilian" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750006">
+      <labels>
+        <label description="British" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750007">
+      <labels>
+        <label description="Bulgarian" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750008">
+      <labels>
+        <label description="Canadian" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750009">
+      <labels>
+        <label description="Chinese" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750010">
+      <labels>
+        <label description="Colombian" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750011">
+      <labels>
+        <label description="Congolese" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750012">
+      <labels>
+        <label description="Cypriot" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750013">
+      <labels>
+        <label description="Dutch" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750014">
+      <labels>
+        <label description="Eritrean" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750015">
+      <labels>
+        <label description="Ethiopian" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750016">
+      <labels>
+        <label description="French" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750017">
+      <labels>
+        <label description="German" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750018">
+      <labels>
+        <label description="Ghanaian" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750019">
+      <labels>
+        <label description="Greek" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750020">
+      <labels>
+        <label description="Hungarian" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750021">
+      <labels>
+        <label description="Indian" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750022">
+      <labels>
+        <label description="Indonesian" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750023">
+      <labels>
+        <label description="Iranian" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750024">
+      <labels>
+        <label description="Irish" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750025">
+      <labels>
+        <label description="Italian" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750026">
+      <labels>
+        <label description="Ivorian" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750027">
+      <labels>
+        <label description="Jamaican" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750028">
+      <labels>
+        <label description="Kazakhstani" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750029">
+      <labels>
+        <label description="Lithuanian" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750030">
+      <labels>
+        <label description="Malaysian" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750031">
+      <labels>
+        <label description="Mauritian" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750032">
+      <labels>
+        <label description="Mexican" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750033">
+      <labels>
+        <label description="Moroccan" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750034">
+      <labels>
+        <label description="New Zealander" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750035">
+      <labels>
+        <label description="Nigerian" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750036">
+      <labels>
+        <label description="Norwegian" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750037">
+      <labels>
+        <label description="Pakistani" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750038">
+      <labels>
+        <label description="Pole or Polish" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750039">
+      <labels>
+        <label description="Portuguese" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750040">
+      <labels>
+        <label description="Romanian" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750041">
+      <labels>
+        <label description="Russian" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750042">
+      <labels>
+        <label description="Saint Lucian" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750043">
+      <labels>
+        <label description="Somali" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750044">
+      <labels>
+        <label description="South African" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750045">
+      <labels>
+        <label description="Spanish" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750046">
+      <labels>
+        <label description="Sri Lankan" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750047">
+      <labels>
+        <label description="Swedish" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750048">
+      <labels>
+        <label description="Swiss" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750049">
+      <labels>
+        <label description="Turkish" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750050">
+      <labels>
+        <label description="Ukrainian" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750051">
+      <labels>
+        <label description="Zimbabwean" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

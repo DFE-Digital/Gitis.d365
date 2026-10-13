@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{8e98e73d-a62e-e911-a977-000d3a23443b}</savedqueryid>
+    <layoutxml>
+      <grid icon="1" jump="dfe_name" name="resultset" preview="1" select="1">
+        <row id="dfe_callbackbookingquotaid" name="result">
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_workingdayname" width="150" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_name" width="150" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_starttime" width="150" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_endtime" width="150" />
+          <cell name="dfe_quota" width="100" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_numberofbookings" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch distinct="false" mapping="logical" output-format="xml-platform" version="1.0">
+        <entity name="dfe_callbackbookingquota">
+          <attribute name="dfe_name" />
+          <attribute name="dfe_workingdayname" />
+          <attribute name="dfe_starttime" />
+          <attribute name="dfe_quota" />
+          <attribute name="dfe_numberofbookings" />
+          <attribute name="dfe_endtime" />
+          <order attribute="dfe_starttime" descending="false" />
+          <filter type="and">
+            <condition attribute="dfe_starttime" operator="next-seven-days" />
+          </filter>
+          <attribute name="dfe_callbackbookingquotaid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.7</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Callback Timeslots for the Next 7 days" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Displays the Active Callback Timeslots for the next 7 days to allow Quota management" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

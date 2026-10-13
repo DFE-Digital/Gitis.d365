@@ -1,0 +1,105 @@
+h3 {
+    font-family: Segoe UI, Tahoma, Arial;
+    font-weight: normal;
+    font-size: 20px;
+    color: #1160B7;
+}
+
+h4 {
+    font-family: Segoe UI, Tahoma, Arial;
+    font-weight: normal;
+    font-size: 13px;
+    color: #1160B7;
+    display: block;
+    margin-block-start: 1.00em;
+    margin-block-end: 1.00em;
+    margin-inline-start: 5px;
+    margin-inline-end: 0px;
+}
+
+.phonepanel {
+    background-color: white;
+}
+
+.phonestatuspanel {
+    width: 98%;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 6px;
+    height: 100px;
+}
+
+.button {
+    width: 105px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 7px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: white; 
+    color: black;
+}
+
+.disabledButton {
+    width: 105px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 7px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.onholdbuttonactive {
+    width: 105px;
+    background-color: crimson;
+    color: white;
+    border: 2px solid crimson;
+    border-radius: 4px;
+    padding: 7px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.onholdbuttonactive:hover {
+        background-color: white;
+        color: crimson;
+}
+.transferbuttonactive {
+    width: 105px;
+    background-color: orangered;
+    color: white;
+    border: 2px solid orangered;
+    border-radius: 4px;
+    padding: 7px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.transferbuttonactive:hover {
+        background-color: white;
+        color: orangered;
+}

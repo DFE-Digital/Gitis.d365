@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModuleSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SiteMapUniqueName>dfe_outbound</SiteMapUniqueName>
+  <SiteMap IntroducedVersion="7.0.0.0">
+    <Area DescriptionResourceId="SitemapDesigner.NewArea" Id="New_Area" IntroducedVersion="7.0.0.0" ResourceId="SitemapDesigner.NewArea" ShowGroups="true">
+      <Titles>
+        <Title LCID="1033" Title="Outbound" />
+      </Titles>
+      <Group DescriptionResourceId="SitemapDesigner.NewGroup" Id="New_Group" IntroducedVersion="7.0.0.0" IsProfile="false" ResourceId="SitemapDesigner.NewGroup" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Outbound" />
+        </Titles>
+        <SubArea AvailableOffline="true" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" DefaultDashboard="8997bf36-ceb4-e811-a84c-000d3a2a343e" DescriptionResourceId="Dashboards_Description" Icon="/_imgs/imagestrips/transparent_spacer.gif" Id="New_SubArea" IntroducedVersion="7.0.0.0" PassParams="false" ResourceId="Homepage_Dashboards" Sku="All,OnPremise,Live,SPLA" Url="/workplace/home_dashboards.aspx">
+          <Titles>
+            <Title LCID="1033" Title="Outbound" />
+          </Titles>
+        </SubArea>
+        <SubArea AvailableOffline="true" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" Entity="task" Icon="/_imgs/imagestrips/transparent_spacer.gif" Id="NewSubArea_f0541149" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Support" />
+          </Titles>
+        </SubArea>
+      </Group>
+    </Area>
+  </SiteMap>
+  <LocalizedNames>
+    <LocalizedName description="Outbound" languagecode="1033" />
+  </LocalizedNames>
+</AppModuleSiteMap>

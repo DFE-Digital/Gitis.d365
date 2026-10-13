@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{1d2a9490-6925-e911-a976-000d3a206976}</savedqueryid>
+    <layoutxml>
+      <grid icon="1" jump="dfe_name" name="resultset" preview="1" select="1">
+        <row id="dfe_calltopicsid" name="result">
+          <cell name="Topic" width="150" />
+          <cell name="Queued_Discussions" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch count="50" mapping="logical" output-format="xml-platform" version="1.0">
+        <entity name="dfe_calltopics">
+          <attribute name="dfe_name" />
+          <order attribute="dfe_name" descending="false" />
+          <attribute name="dfe_calltopicsid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.7</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Outbound Queue Summary" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

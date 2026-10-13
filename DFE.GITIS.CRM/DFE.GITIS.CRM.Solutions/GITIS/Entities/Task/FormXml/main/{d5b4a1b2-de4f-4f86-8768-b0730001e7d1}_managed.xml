@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{d5b4a1b2-de4f-4f86-8768-b0730001e7d1}</formid>
+    <IntroducedVersion>8.0.0.0</IntroducedVersion>
+    <FormPresentation>2</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <DisplayConditions FallbackForm="true" Order="3">
+        <Everyone solutionaction="Removed" />
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" solutionaction="Added" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" solutionaction="Added" />
+      </DisplayConditions>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Task for Interactive experience" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Default Interactive experience Task form." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

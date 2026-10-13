@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset description="Holds the list of Outcome codes to be used at the end of each Incoming call by Call Agents to indicate what happened on the call." localizedName="Call Outcome Codes - Inbound" Name="dfe_calloutcomecodesinbound" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.6</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Call Outcome Codes - Inbound" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="Holds the list of Outcome codes to be used at the end of each Incoming call by Call Agents to indicate what happened on the call." languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option Color="#0000ff" ExternalValue="" value="222750000">
+      <labels>
+        <label description="Success" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750001">
+      <labels>
+        <label description="Anonymous caller" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750002">
+      <labels>
+        <label description="Automated voice at end of the line" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750003">
+      <labels>
+        <label description="Barred number" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750004">
+      <labels>
+        <label description="Candidate hung up during call" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750005">
+      <labels>
+        <label description="Cut off during call" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750006">
+      <labels>
+        <label description="Dial tone" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750007">
+      <labels>
+        <label description="Hoax call - adult" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750008">
+      <labels>
+        <label description="Hoax call - child" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750009">
+      <labels>
+        <label description="Line test" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750010">
+      <labels>
+        <label description="Mid call transfer" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750011">
+      <labels>
+        <label description="No contact on end of the line" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750012">
+      <labels>
+        <label description="Obscene call" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750013">
+      <labels>
+        <label description="Third party enquiring on candidate's behalf" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750014">
+      <labels>
+        <label description="Unclear phone line - finished call early" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option Color="#0000ff" ExternalValue="" value="222750015">
+      <labels>
+        <label description="Wrong number" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

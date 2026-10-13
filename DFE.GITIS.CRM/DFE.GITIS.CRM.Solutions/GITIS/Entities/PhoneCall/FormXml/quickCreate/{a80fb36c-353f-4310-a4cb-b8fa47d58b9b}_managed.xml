@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{a80fb36c-353f-4310-a4cb-b8fa47d58b9b}</formid>
+    <IntroducedVersion>9.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="{ddbec6c0-c9d7-49b0-b066-37452cc224d0}" name="PhoneCall_Tab_1" ordinalvalue="0" showlabel="false">
+          <columns>
+            <column id="0" width="33%">
+              <sections>
+                <section columns="1" id="{d31b733c-2d1b-020b-4335-ea510c673378}" IsUserDefined="0" name="PhoneCall_Description" ordinalvalue="0" showbar="false" showlabel="true">
+                  <rows>
+                    <row>
+                      <cell id="{405658c7-633b-44f6-91ba-038b9baf4a41}" locklevel="0" ordinalvalue="10003" showlabel="true" solutionaction="Modified">
+                        <labels>
+                          <label description="Call from" languagecode="1033" solutionaction="Added" />
+                        </labels>
+                        <control classid="{CBFB742C-14E7-4a17-96BB-1A13F7F64AA2}" datafieldname="from" disabled="false" id="from" solutionaction="Modified" uniqueid="{8e138e8e-a9db-8b87-908e-2461334559cb}">
+                          <parameters solutionaction="Added">
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{efa00b37-8e3e-4229-8331-47dc1f3615be}" ordinalvalue="10002" solutionaction="Modified">
+                        <labels>
+                          <label description="Candidate to call" languagecode="1033" solutionaction="Added" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0729f3f9-8ce3-43b2-8e3c-067927071477}" locklevel="0" ordinalvalue="10004" showlabel="true" solutionaction="Modified">
+                        <control classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="directioncode" disabled="false" id="directioncode" solutionaction="Modified" uniqueid="{5492983d-00ad-9823-ec70-803e3358155e}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column id="1" width="33%">
+              <sections>
+                <section columns="1" id="{d31b733c-2d1b-020b-4335-ea510c673377}" IsUserDefined="0" name="PhoneCall_Description_2" ordinalvalue="0" showbar="false" showlabel="true">
+                  <rows>
+                    <row>
+                      <cell id="{6965d7bf-c0ea-4bbb-90ad-7f3415df1bab}" ordinalvalue="10000">
+                        <labels>
+                          <label description="Phone number" languagecode="1033" solutionaction="Added" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7474f28a-c24c-44a6-bd4e-b648d5d1acab}" ordinalvalue="10002">
+                        <labels>
+                          <label description="Scheduled duration" languagecode="1033" solutionaction="Added" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column id="2" width="33%">
+              <sections>
+                <section columns="1" id="{d31b733c-2d1b-020b-4335-ea510c673376}" IsUserDefined="0" name="PhoneCall_Description_3" ordinalvalue="0" showbar="false" showlabel="true">
+                  <rows>
+                    <row>
+                      <cell id="{a74f621f-b15c-4ffa-890f-6a20e9746998}" ordinalvalue="10000">
+                        <labels>
+                          <label description="Call start date and time" languagecode="1033" solutionaction="Added" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <controlDescriptions solutionaction="Added" />
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Phone call quick create form." languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Phone call quick create form." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

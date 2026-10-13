@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{6e47949e-8d77-4f99-8de2-aa6e88d88967}</formid>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="{33a0d7b6-0cd9-427c-a98a-c18fec20d773}" IsUserDefined="0" name="general" ordinalvalue="0" verticallayout="true">
+          <columns>
+            <column id="0" width="100%">
+              <sections>
+                <section id="{e7baaf74-9464-4dde-b6df-dbce21e223b4}" IsUserDefined="0" name="information" ordinalvalue="0" showbar="false" showlabel="false">
+                  <rows>
+                    <row>
+                      <cell id="{A9C5C061-196A-4816-AE42-1AC66E3EDD30}" ordinalvalue="20001" solutionaction="Removed" />
+                    </row>
+                    <row>
+                      <cell id="{C2DAAFBA-4D15-4af1-A48A-8D7491481CEE}" ordinalvalue="20003" solutionaction="Removed" />
+                    </row>
+                    <row>
+                      <cell id="{A50581C3-0C1E-4278-9C14-E34A92F91503}" ordinalvalue="20005" showlabel="false" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{420b94a4-3a10-9d1d-9347-aad6c7114905}" locklevel="0" ordinalvalue="20001" showlabel="true" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="dfe_callweighting" disabled="false" id="dfe_callweighting" uniqueid="{864a2549-de2a-6bb4-8c8c-3b1b82a0e1b9}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{497731c9-0868-1ca8-6314-80ade5e4d431}" locklevel="0" ordinalvalue="20003" showlabel="true" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="dfe_scheduledstarttime" disabled="false" id="dfe_scheduledstarttime" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation solutionaction="Added">
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

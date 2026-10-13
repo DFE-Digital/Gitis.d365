@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{54c7cd37-a502-e911-a971-000d3a206976}</savedqueryid>
+    <layoutxml>
+      <grid icon="1" jump="fullname" name="resultset" preview="1" select="1">
+        <row id="systemuserid" name="result">
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="fullname" width="200" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_currentnumberofcandidates" width="200" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch distinct="true" mapping="logical" output-format="xml-platform" version="1.0">
+        <entity name="systemuser">
+          <attribute name="fullname" />
+          <order attribute="fullname" descending="false" />
+          <filter type="and">
+            <condition attribute="isdisabled" operator="eq" value="0" />
+          </filter>
+          <link-entity from="systemuserid" intersect="true" name="systemuserroles" to="systemuserid" visible="false">
+            <link-entity alias="aa" from="roleid" name="role" to="roleid">
+              <filter type="and">
+                <condition attribute="name" operator="eq" value="GITIS - TPUK - One to One Advisor" />
+              </filter>
+            </link-entity>
+          </link-entity>
+          <attribute name="dfe_currentnumberofcandidates" />
+          <attribute name="systemuserid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.6</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active advisers" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

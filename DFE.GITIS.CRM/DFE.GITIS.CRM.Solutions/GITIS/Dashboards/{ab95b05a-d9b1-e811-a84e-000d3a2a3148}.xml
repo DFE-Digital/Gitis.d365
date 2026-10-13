@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LocalizedNames>
+    <LocalizedName description="Adviser dashboard" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="Dashboard for 1 to 1 advisors" languagecode="1033" />
+  </Descriptions>
+  <FormId>{ab95b05a-d9b1-e811-a84e-000d3a2a3148}</FormId>
+  <IsCustomizable>1</IsCustomizable>
+  <IsDefault>0</IsDefault>
+  <FormXml>
+    <forms type="dashboard">
+      <form>
+        <tabs>
+          <tab id="{53e0ac5d-64b8-4a87-a86b-d9555ab86b58}" showlabel="false" verticallayout="true">
+            <labels>
+              <label description="Tab" languagecode="1033" />
+            </labels>
+            <columns>
+              <column width="100%">
+                <sections>
+                  <section columns="1111" id="{ff8205ef-3bf2-48fb-badc-47c3dca72226}" showbar="false" showlabel="false">
+                    <labels>
+                      <label description="Section" languagecode="1033" />
+                    </labels>
+                    <rows>
+                      <row>
+                        <cell auto="false" colspan="4" id="{670bc556-0a57-2bc6-2d2e-aa06e47b7a58}" rowspan="12" showlabel="false">
+                          <labels>
+                            <label description="Emails" languagecode="1033" />
+                          </labels>
+                          <control classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" id="EmailMessages" indicationOfSubgrid="true" uniqueid="{ba0c5ddc-e54e-a939-7239-a69c60e89513}">
+                            <parameters>
+                              <ViewId>{2667CA02-5F29-E911-A975-000D3A233B72}</ViewId>
+                              <IsUserView>false</IsUserView>
+                              <RelationshipName />
+                              <TargetEntityType>email</TargetEntityType>
+                              <AutoExpand>Fixed</AutoExpand>
+                              <EnableQuickFind>true</EnableQuickFind>
+                              <EnableViewPicker>true</EnableViewPicker>
+                              <ViewIds>{2667CA02-5F29-E911-A975-000D3A233B72},{69240E27-5F29-E911-A975-000D3A233B72}</ViewIds>
+                              <EnableJumpBar>false</EnableJumpBar>
+                              <ChartGridMode>Grid</ChartGridMode>
+                              <VisualizationId>{1EC1872A-23DE-4294-9D7F-1B76272A5FD5}</VisualizationId>
+                              <IsUserChart>false</IsUserChart>
+                              <EnableChartPicker>false</EnableChartPicker>
+                              <RecordsPerPage>8</RecordsPerPage>
+                              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                            </parameters>
+                          </control>
+                        </cell>
+                      </row>
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row>
+                        <cell auto="false" colspan="4" id="{a0e3c550-1d97-d5ce-3c98-0d000a294ab5}" rowspan="9" showlabel="true">
+                          <labels>
+                            <label description="Candidates I have not yet contacted" languagecode="1033" />
+                          </labels>
+                          <control classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" id="Component1694747" indicationOfSubgrid="true" uniqueid="{39437b0a-28d5-9d85-44b1-eab1b3386e50}">
+                            <parameters>
+                              <ViewId>{32CB5198-D5B1-E811-A84E-000D3A2A3148}</ViewId>
+                              <IsUserView>false</IsUserView>
+                              <RelationshipName />
+                              <TargetEntityType>contact</TargetEntityType>
+                              <AutoExpand>Fixed</AutoExpand>
+                              <EnableQuickFind>false</EnableQuickFind>
+                              <EnableViewPicker>false</EnableViewPicker>
+                              <ViewIds>{32CB5198-D5B1-E811-A84E-000D3A2A3148}</ViewIds>
+                              <EnableJumpBar>false</EnableJumpBar>
+                              <ChartGridMode>Grid</ChartGridMode>
+                              <VisualizationId>{E365462F-1DB9-46A8-928D-BEAB1A7A2375}</VisualizationId>
+                              <IsUserChart>false</IsUserChart>
+                              <EnableChartPicker>false</EnableChartPicker>
+                              <RecordsPerPage>6</RecordsPerPage>
+                              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                            </parameters>
+                          </control>
+                        </cell>
+                      </row>
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row>
+                        <cell auto="false" colspan="4" id="{70035d33-3ece-55ab-a800-e3b67b37a7dd}" rowspan="12" showlabel="false">
+                          <labels>
+                            <label description="Adviser to-do items" languagecode="1033" />
+                          </labels>
+                          <control classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" id="Component4675165" indicationOfSubgrid="true" uniqueid="{0e7addce-7e59-e675-7cc8-77a1d5abb7a5}">
+                            <parameters>
+                              <ViewId>{F9779219-C436-E911-A976-000D3A233B72}</ViewId>
+                              <IsUserView>false</IsUserView>
+                              <RelationshipName />
+                              <TargetEntityType>dfe_advisertodoitem</TargetEntityType>
+                              <AutoExpand>Fixed</AutoExpand>
+                              <EnableQuickFind>false</EnableQuickFind>
+                              <EnableViewPicker>true</EnableViewPicker>
+                              <ViewIds>{CD5E133C-C336-E911-A976-000D3A233B72},{1CEA5896-69AC-4C27-8EE5-FC03134F7ABA},{F9779219-C436-E911-A976-000D3A233B72},{7468B1B2-C336-E911-A976-000D3A233B72}</ViewIds>
+                              <EnableJumpBar>false</EnableJumpBar>
+                              <ChartGridMode>Grid</ChartGridMode>
+                              <VisualizationId />
+                              <IsUserChart>false</IsUserChart>
+                              <EnableChartPicker>false</EnableChartPicker>
+                              <RecordsPerPage>9</RecordsPerPage>
+                              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                            </parameters>
+                          </control>
+                        </cell>
+                      </row>
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row>
+                        <cell auto="false" colspan="4" id="{19a68626-82b3-5587-1648-95155995e3e8}" rowspan="9" showlabel="false">
+                          <labels>
+                            <label description="Tasks" languagecode="1033" />
+                          </labels>
+                          <control classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" id="Component4584862" indicationOfSubgrid="true" uniqueid="{da4d57e7-15a0-508c-987b-3927be5e3767}">
+                            <parameters>
+                              <ViewId>{985C7B57-8E1D-E911-A979-000D3A20838A}</ViewId>
+                              <IsUserView>false</IsUserView>
+                              <RelationshipName />
+                              <TargetEntityType>task</TargetEntityType>
+                              <AutoExpand>Fixed</AutoExpand>
+                              <EnableQuickFind>false</EnableQuickFind>
+                              <EnableViewPicker>true</EnableViewPicker>
+                              <ViewIds>{5DE42842-8E1D-E911-A979-000D3A20838A},{985C7B57-8E1D-E911-A979-000D3A20838A}</ViewIds>
+                              <EnableJumpBar>false</EnableJumpBar>
+                              <ChartGridMode>Grid</ChartGridMode>
+                              <VisualizationId>{9E6A8B06-6D14-46E6-BBF5-95C388C6EB7A}</VisualizationId>
+                              <IsUserChart>false</IsUserChart>
+                              <EnableChartPicker>false</EnableChartPicker>
+                              <RecordsPerPage>6</RecordsPerPage>
+                              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                            </parameters>
+                          </control>
+                        </cell>
+                      </row>
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                    </rows>
+                  </section>
+                </sections>
+              </column>
+            </columns>
+          </tab>
+        </tabs>
+        <controlDescriptions />
+        <DisplayConditions>
+          <Role Id="{5E94ECDD-4DAF-E811-A84E-000D3A2A3148}" />
+          <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+          <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+        </DisplayConditions>
+      </form>
+    </forms>
+  </FormXml>
+  <IntroducedVersion>1.0.0.1</IntroducedVersion>
+  <IsTabletEnabled>1</IsTabletEnabled>
+</Dashboard>

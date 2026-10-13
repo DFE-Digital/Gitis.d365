@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{dcb472ae-d8f7-e811-a97c-000d3a233e06}</WebResourceId>
+  <Name>dfe_/html/phoneprivacypolicy.html</Name>
+  <DisplayName>dfe_/html/phoneprivacypolicy.html</DisplayName>
+  <WebResourceType>1</WebResourceType>
+  <IntroducedVersion>1.0.0.4</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/dfe_htmlphoneprivacypolicyhtmlDCB472AE-D8F7-E811-A97C-000D3A233E06</FileName>
+</WebResource>

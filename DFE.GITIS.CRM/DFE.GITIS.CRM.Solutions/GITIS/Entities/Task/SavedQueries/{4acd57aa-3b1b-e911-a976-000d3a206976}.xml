@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{4acd57aa-3b1b-e911-a976-000d3a206976}</savedqueryid>
+    <layoutxml>
+      <grid icon="1" jump="subject" name="resultset" preview="1" select="1">
+        <row id="activityid" name="result">
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="subject" width="200" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="createdon" width="125" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_datecompleted" width="125" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_adviser" width="125" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_callagent" width="125" />
+          <cell name="statuscode" width="100" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="regardingobjectid" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch distinct="false" mapping="logical" output-format="xml-platform" version="1.0">
+        <entity name="task">
+          <attribute name="subject" />
+          <attribute name="statuscode" />
+          <attribute name="createdon" />
+          <attribute name="regardingobjectid" />
+          <attribute name="dfe_datecompleted" />
+          <attribute name="dfe_adviser" />
+          <attribute name="dfe_callagent" />
+          <order attribute="dfe_datecompleted" descending="false" />
+          <filter type="and">
+            <condition attribute="ownerid" operator="eq" uiname="Support" uitype="team" value="{7E77912E-F822-E911-A97F-000D3A233E06}" />
+            <condition attribute="statuscode" operator="eq" value="4" />
+          </filter>
+          <attribute name="activityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.7</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Support tasks (completed items)" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

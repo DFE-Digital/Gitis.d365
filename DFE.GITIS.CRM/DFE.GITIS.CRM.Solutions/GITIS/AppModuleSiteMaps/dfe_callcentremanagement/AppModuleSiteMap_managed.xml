@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModuleSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SiteMapUniqueName>dfe_callcentremanagement</SiteMapUniqueName>
+  <SiteMap IntroducedVersion="7.0.0.0">
+    <Area DescriptionResourceId="SitemapDesigner.NewArea" Id="dfe_callcenter_area" IntroducedVersion="7.0.0.0" ResourceId="SitemapDesigner.NewArea" ShowGroups="true">
+      <Titles>
+        <Title LCID="1033" Title="Home" />
+      </Titles>
+      <Group DescriptionResourceId="SitemapDesigner.NewGroup" Id="dfe_callcentre_group" IntroducedVersion="7.0.0.0" IsProfile="false" ResourceId="SitemapDesigner.NewGroup" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Call Centre Management" />
+        </Titles>
+        <SubArea AvailableOffline="true" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" Entity="queueitem" Icon="/_imgs/imagestrips/transparent_spacer.gif" Id="NewSubArea_abdf2621" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Outbound phone call queue items" />
+          </Titles>
+        </SubArea>
+        <SubArea AvailableOffline="true" Client="Web" DefaultDashboard="93efc4bc-6932-42ff-9a4d-39786ca1f577" DescriptionResourceId="Dashboards_Description" Icon="/_imgs/imagestrips/transparent_spacer.gif" Id="NewSubArea_232b347d" PassParams="false" ResourceId="Homepage_Dashboards" Sku="All,OnPremise,Live,SPLA" ToolTipResourseId="Dashboards_ToolTip" Url="/workplace/home_dashboards.aspx">
+          <Titles>
+            <Title LCID="1033" Title="Outbound call queue" />
+          </Titles>
+        </SubArea>
+        <SubArea AvailableOffline="true" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" Entity="dfe_callbackbookingquota" Icon="/_imgs/imagestrips/transparent_spacer.gif" Id="NewSubArea_bd8f93c" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Manage Callback Quota" />
+          </Titles>
+        </SubArea>
+        <SubArea AvailableOffline="true" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" DefaultDashboard="1872b642-7a03-e911-a974-000d3a20838a" Icon="/_imgs/imagestrips/transparent_spacer.gif" Id="NewSubArea_3071f003" PassParams="false" ResourceId="SitemapDesigner.NewSubArea" Sku="All,OnPremise,Live,SPLA" Url="/workplace/home_dashboards.aspx">
+          <Titles>
+            <Title LCID="1033" Title="1 to 1 adviser management" />
+          </Titles>
+        </SubArea>
+        <SubArea AvailableOffline="true" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" Entity="team" Icon="/_imgs/imagestrips/transparent_spacer.gif" Id="NewSubArea_5d1e955f" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Manage TPUK teams" />
+          </Titles>
+        </SubArea>
+        <SubArea AvailableOffline="true" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" DefaultDashboard="5300e01b-7da5-ea11-a812-000d3a44afcc" DescriptionResourceId="Dashboards_Description" Icon="/_imgs/imagestrips/transparent_spacer.gif" Id="NewSubArea_cbe3687f" PassParams="false" ResourceId="Homepage_Dashboards" Sku="All,OnPremise,Live,SPLA" Url="/workplace/home_dashboards.aspx">
+          <Titles>
+            <Title LCID="1033" Title="EEA transfer dashboard" />
+          </Titles>
+        </SubArea>
+      </Group>
+    </Area>
+  </SiteMap>
+  <LocalizedNames>
+    <LocalizedName description="Call Centre Management" languagecode="1033" />
+  </LocalizedNames>
+</AppModuleSiteMap>

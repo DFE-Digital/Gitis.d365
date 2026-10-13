@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LocalizedNames>
+    <LocalizedName description="My candidates" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="Candidate lists for 1 to 1 advisers." languagecode="1033" />
+  </Descriptions>
+  <FormId>{3f978ba9-cfb1-e811-a84e-000d3a2a3148}</FormId>
+  <IsCustomizable>1</IsCustomizable>
+  <IsDefault>0</IsDefault>
+  <FormXml>
+    <forms type="dashboard">
+      <form>
+        <tabs>
+          <tab id="{34158943-aaeb-41ac-b608-9bfe63dd1972}" showlabel="false" verticallayout="true">
+            <labels>
+              <label description="Tab" languagecode="1033" />
+            </labels>
+            <columns>
+              <column width="100%">
+                <sections>
+                  <section columns="1111" id="{95b95fdc-9ef8-4063-8bda-874a375e5728}" showbar="false" showlabel="false">
+                    <labels>
+                      <label description="Section" languagecode="1033" />
+                    </labels>
+                    <rows>
+                      <row>
+                        <cell auto="false" colspan="4" id="{3019121f-be90-4d37-bb4c-4cded37ddaee}" rowspan="18" showlabel="true">
+                          <labels>
+                            <label description="All my candidates" languagecode="1033" />
+                          </labels>
+                          <control classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" id="Component732e6cc" indicationOfSubgrid="true" uniqueid="{47a6249a-a690-a8b4-31c4-a530b9b35101}">
+                            <parameters>
+                              <TargetEntityType>contact</TargetEntityType>
+                              <ChartGridMode>Grid</ChartGridMode>
+                              <EnableQuickFind>false</EnableQuickFind>
+                              <EnableViewPicker>true</EnableViewPicker>
+                              <EnableJumpBar>true</EnableJumpBar>
+                              <RecordsPerPage>14</RecordsPerPage>
+                              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                              <ViewId>{949150B6-D0B1-E811-A84E-000D3A2A3148}</ViewId>
+                              <IsUserView>false</IsUserView>
+                              <ViewIds>{34466466-C72A-E911-A977-000D3A23443B},{949150B6-D0B1-E811-A84E-000D3A2A3148}</ViewIds>
+                              <AutoExpand>Fixed</AutoExpand>
+                              <VisualizationId>{E365462F-1DB9-46A8-928D-BEAB1A7A2375}</VisualizationId>
+                              <IsUserChart>false</IsUserChart>
+                              <EnableChartPicker>false</EnableChartPicker>
+                              <RelationshipName />
+                            </parameters>
+                          </control>
+                        </cell>
+                      </row>
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                    </rows>
+                  </section>
+                </sections>
+              </column>
+            </columns>
+          </tab>
+        </tabs>
+        <controlDescriptions />
+        <DisplayConditions>
+          <Role Id="{5E94ECDD-4DAF-E811-A84E-000D3A2A3148}" />
+          <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+          <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+        </DisplayConditions>
+      </form>
+    </forms>
+  </FormXml>
+  <IntroducedVersion>1.0.0.1</IntroducedVersion>
+  <IsTabletEnabled>0</IsTabletEnabled>
+</Dashboard>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{51002e55-3021-47c3-a26c-c5b479b0dd17}</savedqueryid>
+    <layoutxml>
+      <grid icon="1" jump="subject" name="resultset" preview="1" select="1">
+        <row id="activityid" name="result">
+          <cell name="subject" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="dfe_othermessage">
+          <attribute name="activityid" />
+          <attribute name="subject" />
+          <attribute name="createdon" />
+          <order attribute="subject" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="in">
+              <value>1</value>
+              <value>2</value>
+            </condition>
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.7</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Closed Other Messages" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

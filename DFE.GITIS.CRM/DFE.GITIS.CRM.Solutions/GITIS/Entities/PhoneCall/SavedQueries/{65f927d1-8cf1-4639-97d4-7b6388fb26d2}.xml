@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{65f927d1-8cf1-4639-97d4-7b6388fb26d2}</savedqueryid>
+    <queryapi></queryapi>
+    <layoutxml>
+      <grid icon="1" jump="subject" name="resultset" preview="1" select="1">
+        <row id="activityid" name="result">
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="scheduledend" width="150" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="prioritycode" width="125" />
+          <cell name="to" width="100" />
+          <cell name="subject" width="250" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch distinct="true" mapping="logical" output-format="xml-platform" version="1.0">
+        <entity name="phonecall">
+          <attribute name="subject" />
+          <attribute name="to" />
+          <attribute name="prioritycode" />
+          <attribute name="scheduledend" />
+          <order attribute="scheduledend" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <link-entity alias="aa" from="activityid" name="activityparty" to="activityid">
+            <filter type="and">
+              <condition attribute="participationtypemask" operator="in">
+                <value>2</value>
+                <value>1</value>
+                <value>9</value>
+              </condition>
+              <condition attribute="partyid" operator="eq-userid" />
+            </filter>
+          </link-entity>
+          <attribute name="activityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="My Phone Calls" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="My Phone Calls" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

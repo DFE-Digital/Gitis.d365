@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LocalizedNames>
+    <LocalizedName description="1 to 1 adviser management" languagecode="1033" />
+  </LocalizedNames>
+  <FormId>{1872b642-7a03-e911-a974-000d3a20838a}</FormId>
+  <IsCustomizable>1</IsCustomizable>
+  <IsDefault>0</IsDefault>
+  <FormXml>
+    <forms type="dashboard">
+      <form>
+        <tabs>
+          <tab expanded="true" id="{3fcdbd7a-a73b-4927-9b89-c5cab02933b0}" locklevel="0" name="{3fcdbd7a-a73b-4927-9b89-c5cab02933b0}" showlabel="false" verticallayout="true">
+            <labels>
+              <label description="Tab" languagecode="1033" />
+            </labels>
+            <columns>
+              <column width="100%">
+                <sections>
+                  <section columns="111" id="{bb47d304-f5ec-461a-8716-af3bc9badd2f}" labelwidth="130" locklevel="0" name="{bb47d304-f5ec-461a-8716-af3bc9badd2f}" showbar="false" showlabel="false">
+                    <labels>
+                      <label description="Section" languagecode="1033" />
+                    </labels>
+                    <rows>
+                      <row>
+                        <cell auto="false" colspan="3" id="{82d1aa0d-4f61-49d2-8975-67c89c3ca5df}" rowspan="12" showlabel="true">
+                          <labels>
+                            <label description="Candidates waiting to be assigned to an adviser" languagecode="1033" />
+                          </labels>
+                          <control classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" id="Componenta26cd77" indicationOfSubgrid="true" uniqueid="{4b2bc623-d851-ea53-cd9c-c65ee2768eb9}">
+                            <parameters>
+                              <TargetEntityType>contact</TargetEntityType>
+                              <ChartGridMode>Grid</ChartGridMode>
+                              <EnableQuickFind>true</EnableQuickFind>
+                              <EnableViewPicker>false</EnableViewPicker>
+                              <EnableJumpBar>true</EnableJumpBar>
+                              <RecordsPerPage>8</RecordsPerPage>
+                              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                              <ViewId>{FB16CCFD-A802-E911-A971-000D3A206976}</ViewId>
+                              <IsUserView>false</IsUserView>
+                              <ViewIds>{0D5D377B-5E7C-47B5-BAB1-A5CB8B4AC105}</ViewIds>
+                              <AutoExpand>Fixed</AutoExpand>
+                              <VisualizationId>{E365462F-1DB9-46A8-928D-BEAB1A7A2375}</VisualizationId>
+                              <IsUserChart>false</IsUserChart>
+                              <EnableChartPicker>false</EnableChartPicker>
+                              <RelationshipName />
+                            </parameters>
+                          </control>
+                        </cell>
+                      </row>
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                    </rows>
+                  </section>
+                </sections>
+              </column>
+            </columns>
+          </tab>
+          <tab expanded="true" id="{8992ad44-6150-4af2-a663-360b22ae810b}" locklevel="0" name="{8992ad44-6150-4af2-a663-360b22ae810b}" showlabel="false" verticallayout="true">
+            <labels>
+              <label description="Tab" languagecode="1033" />
+            </labels>
+            <columns>
+              <column width="100%">
+                <sections>
+                  <section columns="111" id="{42257811-d439-4680-91d6-933ce4e0d1c3}" showbar="false" showlabel="false">
+                    <labels>
+                      <label description="Section" languagecode="1033" />
+                    </labels>
+                    <rows>
+                      <row>
+                        <cell auto="false" colspan="3" id="{42abf4b8-c600-4291-9b13-14f66fe1699a}" rowspan="15" showlabel="true">
+                          <labels>
+                            <label description="List of 1-to-1 advisers" languagecode="1033" />
+                          </labels>
+                          <control classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" id="Componente841d26" indicationOfSubgrid="true" uniqueid="{daa40e70-c11c-0ec5-c961-24452a95da40}">
+                            <parameters>
+                              <TargetEntityType>systemuser</TargetEntityType>
+                              <ChartGridMode>Grid</ChartGridMode>
+                              <EnableQuickFind>true</EnableQuickFind>
+                              <EnableViewPicker>false</EnableViewPicker>
+                              <EnableJumpBar>true</EnableJumpBar>
+                              <RecordsPerPage>11</RecordsPerPage>
+                              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                              <ViewId>{54C7CD37-A502-E911-A971-000D3A206976}</ViewId>
+                              <IsUserView>false</IsUserView>
+                              <ViewIds>{00000000-0000-0000-00AA-000010001019}</ViewIds>
+                              <AutoExpand>Fixed</AutoExpand>
+                              <VisualizationId />
+                              <IsUserChart>false</IsUserChart>
+                              <EnableChartPicker>false</EnableChartPicker>
+                              <RelationshipName />
+                            </parameters>
+                          </control>
+                        </cell>
+                      </row>
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row>
+                        <cell auto="false" colspan="3" id="{de1e33d5-1d33-4cc4-bed9-689950be2d29}" rowspan="12" showlabel="true">
+                          <labels>
+                            <label description="Candidates assigned to an adviser" languagecode="1033" />
+                          </labels>
+                          <control classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" id="Component6268552" indicationOfSubgrid="true" uniqueid="{09e1ed02-b5d4-5d46-dc9c-46e043927d99}">
+                            <parameters>
+                              <ViewId>{A3C5A0D7-B739-E911-A978-000D3A23443B}</ViewId>
+                              <IsUserView>false</IsUserView>
+                              <RelationshipName />
+                              <TargetEntityType>contact</TargetEntityType>
+                              <AutoExpand>Fixed</AutoExpand>
+                              <EnableQuickFind>true</EnableQuickFind>
+                              <EnableViewPicker>false</EnableViewPicker>
+                              <ViewIds />
+                              <EnableJumpBar>true</EnableJumpBar>
+                              <ChartGridMode>Grid</ChartGridMode>
+                              <VisualizationId>{E365462F-1DB9-46A8-928D-BEAB1A7A2375}</VisualizationId>
+                              <IsUserChart>false</IsUserChart>
+                              <EnableChartPicker>false</EnableChartPicker>
+                              <RecordsPerPage>8</RecordsPerPage>
+                              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                            </parameters>
+                          </control>
+                        </cell>
+                      </row>
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                    </rows>
+                  </section>
+                </sections>
+              </column>
+            </columns>
+          </tab>
+        </tabs>
+        <controlDescriptions />
+        <DisplayConditions>
+          <Role Id="{8ED19131-4EAF-E811-A84E-000D3A2A3148}" />
+          <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+          <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+        </DisplayConditions>
+      </form>
+    </forms>
+  </FormXml>
+  <IntroducedVersion>1.0.0.2</IntroducedVersion>
+  <IsTabletEnabled>0</IsTabletEnabled>
+</Dashboard>

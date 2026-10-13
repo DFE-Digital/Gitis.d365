@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{ef78e010-e6f7-e811-a97c-000d3a233e06}</WebResourceId>
+  <Name>dfe_/html/phonecalloutgoingpanel.html</Name>
+  <DisplayName>dfe_/html/phonecalloutgoingpanel.html</DisplayName>
+  <WebResourceType>1</WebResourceType>
+  <IntroducedVersion>1.0.0.4</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/dfe_htmlphonecalloutgoingpanelhtmlEF78E010-E6F7-E811-A97C-000D3A233E06</FileName>
+</WebResource>

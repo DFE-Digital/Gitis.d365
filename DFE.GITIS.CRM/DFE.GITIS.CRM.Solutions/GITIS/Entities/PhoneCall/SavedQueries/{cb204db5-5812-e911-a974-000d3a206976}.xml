@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{cb204db5-5812-e911-a974-000d3a206976}</savedqueryid>
+    <layoutxml>
+      <grid icon="1" jump="subject" name="resultset" preview="1" select="1">
+        <row id="activityid" name="result">
+          <cell disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="to" width="200" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="scheduledstart" width="125" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_callweighting" width="125" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_callattemptnumber" width="150" />
+          <cell disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_talkingpoints" width="300" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch distinct="false" mapping="logical" output-format="xml-platform" version="1.0">
+        <entity name="phonecall">
+          <attribute name="scheduledstart" />
+          <attribute name="dfe_callweighting" />
+          <attribute name="dfe_callattemptnumber" />
+          <attribute name="createdon" />
+          <attribute name="to" />
+          <attribute name="dfe_talkingpoints" />
+          <order attribute="dfe_callweighting" descending="true" />
+          <order attribute="createdon" descending="false" />
+          <filter type="and">
+            <filter type="and">
+              <condition attribute="ownerid" operator="eq-userid" />
+              <condition attribute="statecode" operator="eq" value="0" />
+              <condition attribute="directioncode" operator="eq" value="1" />
+            </filter>
+          </filter>
+          <attribute name="activityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.7</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="My Outbound calls to make" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A view of the Outbound phone calls assigned to a Call Agent that are due to be made as soon as possible using TP Workspace." languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

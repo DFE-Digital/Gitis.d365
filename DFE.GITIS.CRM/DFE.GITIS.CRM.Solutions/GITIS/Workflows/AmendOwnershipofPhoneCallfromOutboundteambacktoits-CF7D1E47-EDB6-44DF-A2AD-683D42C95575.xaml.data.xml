@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow Name="Amend Ownership of Phone Call from Outbound team back to its Original Creator" WorkflowId="{cf7d1e47-edb6-44df-a2ad-683d42c95575}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/AmendOwnershipofPhoneCallfromOutboundteambacktoits-CF7D1E47-EDB6-44DF-A2AD-683D42C95575.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>0</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>1</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <PrimaryEntity>PhoneCall</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName description="Amend Ownership of Phone Call from Outbound team back to its Original Creator" languagecode="1033" />
+  </LocalizedNames>
+</Workflow>

@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{6e752f70-bf1b-456e-b9fc-5a505ebf8b28}</formid>
+    <IntroducedVersion>1.0.0.7</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="1920" showImage="false" shownavigationbar="true">
+      <ancestor id="{16654191-19AD-48CA-9E46-C4B4FBDAD76F}" />
+      <hiddencontrols>
+        <data classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" datafieldname="modifiedby" id="modifiedby" />
+      </hiddencontrols>
+      <tabs>
+        <tab expanded="true" id="{ADFD103B-691E-4A92-B4CF-F844B645A1F7}" IsUserDefined="0" labelid="{4fca20e6-7319-4c56-8fbc-79e8959d5734}" locklevel="0" name="TASK_TAB" showlabel="true" verticallayout="true">
+          <labels>
+            <label description="MAIN" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section celllabelalignment="Left" celllabelposition="Top" columns="1" id="{EBB3C46D-5E9B-4EBB-A9E4-B8C25D364BB3}" IsUserDefined="0" labelid="{2aaa6e8c-773e-4d13-abcc-591326375d57}" labelwidth="115" layout="varwidth" locklevel="0" name="TASK" showbar="false" showlabel="false">
+                  <labels>
+                    <label description="TASK" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{bc4bd34b-6a7b-b22e-7290-85c09cc6363b}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="true" id="statuscode" uniqueid="{0d608b47-7774-d0c5-4ab5-0cd079788385}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5014d69c-eb23-167e-bc60-8747e7a39d2a}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Date created" languagecode="1033" />
+                        </labels>
+                        <control classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="true" id="createdon" uniqueid="{aa5255b6-d608-33ac-4823-b5063ea117e4}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c118ab14-993e-c296-23a5-b4936227968a}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="dfe_datecompleted" disabled="true" id="dfe_datecompleted" uniqueid="{749446ec-b54d-e2ea-6dbd-17e29e98930e}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell colspan="1" id="{E1DB7569-03E5-4B12-A5C0-4E875D1163D8}" labelid="{bf03c3d2-9fb6-4ca1-bf55-9d601bf0d64c}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Regarding candidate" languagecode="1033" />
+                        </labels>
+                        <control classid="{F3015350-44A2-4aa0-97B5-00166532B5E9}" datafieldname="regardingobjectid" disabled="false" id="regardingobjectid" uniqueid="{b286eeb7-41bc-c7e3-0212-abc79975c341}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c35d5361-ede8-8529-7d34-8a550159d304}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="dfe_adviser" disabled="true" id="dfe_adviser" uniqueid="{c378a7d8-dcde-d2ce-7362-2ed379816441}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{E88CA999-0B16-4AE9-B6A9-9EDC840D42D8}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b5bdddc9-4111-6982-b791-c294b614ce07}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="dfe_callagent" disabled="false" id="dfe_callagent" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell colspan="1" id="{5FD2BE87-C1CF-41A6-9AD9-4D273733422E}" labelid="{38bccf71-125f-4579-a4bf-5ba3bedaeca2}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Task title" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="subject" disabled="false" id="subject" uniqueid="{3b3e2c7b-021b-bcd4-1bc7-bcc3bda1ca46}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{488a6616-7e97-29bb-3b83-ecd42487acd1}" labelid="{c5af784b-d974-4d23-81dd-eabf15a16c4c}" locklevel="0" rowspan="3" showlabel="true">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="description" disabled="false" id="description" uniqueid="{9caa93de-c590-0c98-ad9d-a71908dc1408}" />
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row>
+                      <cell id="{0045a2cb-e8a2-c560-729c-6028e93e40c2}" locklevel="0" rowspan="3" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="dfe_callagentoutcomenotes" disabled="true" id="dfe_callagentoutcomenotes" uniqueid="{bae65c1c-1b32-6ba5-11d9-8953774c1da7}" />
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row>
+                      <cell id="{4cb8e068-a241-d98a-4cdc-a607dabc2aa6}" locklevel="0" rowspan="3" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="dfe_adviseroutcomenotes" disabled="false" id="dfe_adviseroutcomenotes" uniqueid="{997ba053-9ca6-5a9c-9375-ebb50a8919bb}" />
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header celllabelposition="Top" columns="1111" id="{D7EF0A4A-7B76-4B39-A2E0-4207EC3C8C2D}" labelwidth="115">
+        <rows>
+          <row>
+            <cell id="{5b09425c-ed73-8507-064d-2044ba4a369c}" labelid="{a80e55c4-85c9-4d8f-97cd-7885025b13c3}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{59BF22C1-8C1D-4235-8516-4647EDEAE36C}" labelid="{08328fbe-9d6b-4af9-a4cc-16bca5956ea6}" locklevel="1" showlabel="true" visible="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+              <control classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="true" id="header_ownerid" uniqueid="{8e792712-0365-c033-dabe-4cd8e7909726}">
+                <parameters>
+                  <AutoResolve>true</AutoResolve>
+                  <DisableMru>false</DisableMru>
+                </parameters>
+              </control>
+            </cell>
+            <cell id="{1a2d5dea-c728-8393-cb21-095b4e147c69}" labelid="{b9655327-68ce-406f-b457-7dbfb1e1097b}" locklevel="1" showlabel="true">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+              <control classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="true" id="header_statecode" uniqueid="{3c13a00e-7910-2541-4366-7e8653e77401}" />
+            </cell>
+            <cell id="{5121e9ac-c0c5-273d-6352-de1e3177ae10}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <events>
+        <event active="true" application="true" name="onload">
+          <InternalHandlers>
+            <Handler enabled="true" functionName="Activities.Task.Form_onload" handlerUniqueId="516bea27-d455-43f4-968f-1e372977fc93" libraryName="Activities/SystemLibraries/Task_main_system_library.js" parameters="" passExecutionContext="true" />
+          </InternalHandlers>
+          <Handlers>
+            <Handler enabled="true" functionName="DFETaskForm.formOnLoad" handlerUniqueId="{b6e433c9-5386-c974-4599-668b534eec55}" libraryName="dfe_/javascript/task_form_adviser.js" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+      <clientresources>
+        <internalresources>
+          <clientincludes>
+            <internaljscriptfile src="$webresource:Activities/SystemLibraries/Task_main_system_library.js" />
+          </clientincludes>
+        </internalresources>
+      </clientresources>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <formLibraries>
+        <Library libraryUniqueId="{c0b5aa69-d946-60b8-776a-5c2335353320}" name="dfe_/javascript/utils.js" />
+        <Library libraryUniqueId="{52a24600-d7eb-50c4-e21b-48d1bd890c63}" name="dfe_/javascript/dataservices.js" />
+        <Library libraryUniqueId="{4cda3c46-6979-98c0-4dec-0a84ce745128}" name="dfe_/javascript/task_form_adviser.js" />
+      </formLibraries>
+      <DisplayConditions FallbackForm="true" Order="5">
+        <Role Id="{5E94ECDD-4DAF-E811-A84E-000D3A2A3148}" />
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Tasks for Advisers" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="The default to-do item form for editing." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

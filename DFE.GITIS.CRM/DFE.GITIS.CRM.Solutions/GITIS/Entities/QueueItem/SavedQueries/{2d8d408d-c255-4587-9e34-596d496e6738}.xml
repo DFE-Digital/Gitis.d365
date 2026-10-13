@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{2d8d408d-c255-4587-9e34-596d496e6738}</savedqueryid>
+    <queryapi></queryapi>
+    <layoutxml>
+      <grid icon="1" jump="title" name="queueitems" preview="1" select="1">
+        <row id="objectid" multiobjectidfield="objecttypecode" name="queueitem">
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="title" width="300" />
+          <cell name="enteredon" width="140" />
+          <cell name="objecttypecode" width="100" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="queueid" width="125" />
+          <cell name="workerid" width="150" />
+          <cell disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="a_4316c41d114e453ea121d9302d95d6f4.to" width="200" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_callweighting" width="150" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_scheduledstarttime" width="150" />
+          <cell ishidden="1" name="queueitemid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch distinct="false" mapping="logical">
+        <entity name="queueitem">
+          <attribute name="enteredon" />
+          <attribute name="objecttypecode" />
+          <attribute name="queueid" />
+          <attribute name="workerid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <order attribute="dfe_callweighting" descending="true" />
+          <order attribute="enteredon" descending="false" />
+          <attribute name="title" />
+          <link-entity alias="a_4316c41d114e453ea121d9302d95d6f4" from="activityid" link-type="outer" name="phonecall" to="objectid" visible="false">
+            <attribute name="to" />
+          </link-entity>
+          <attribute name="dfe_callweighting" />
+          <attribute name="dfe_scheduledstarttime" />
+          <attribute name="objectid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Items" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

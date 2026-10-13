@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{81a89014-442c-44ad-9725-4077426a7fee}</formid>
+    <IntroducedVersion>8.0.0.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="{153cb31e-465b-4622-991b-f815888ac6cc}" name="tab_1" ordinalvalue="0" showlabel="false">
+          <columns>
+            <column id="0" width="100%">
+              <sections>
+                <section columns="1" id="{746f0c87-ed94-4832-bd86-2f64ee22f7a7}" IsUserDefined="0" name="tab_1_column_1_section_1" ordinalvalue="0" showbar="false" showlabel="true">
+                  <rows>
+                    <row>
+                      <cell id="{c83c29de-e51e-2003-bb6a-55728327445c}" locklevel="0" ordinalvalue="10001" showlabel="true">
+                        <control classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="scheduledend" disabled="false" id="scheduledend" solutionaction="Modified" uniqueid="{3e5bcaa0-317d-2d85-528a-bba00da33229}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Task Reference Panel" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form that displays Reference Panel of Task." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

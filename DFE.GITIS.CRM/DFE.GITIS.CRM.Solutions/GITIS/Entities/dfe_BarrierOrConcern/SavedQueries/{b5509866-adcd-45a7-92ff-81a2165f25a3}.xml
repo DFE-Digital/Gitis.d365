@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{b5509866-adcd-45a7-92ff-81a2165f25a3}</savedqueryid>
+    <layoutxml>
+      <grid icon="1" jump="dfe_name" name="resultset" preview="1" select="1">
+        <row id="dfe_barrierorconcernid" name="result">
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_type" width="300" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_otherbarrierorconcern" width="150" />
+          <cell name="dfe_level" width="100" />
+          <cell disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_notes" width="300" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="dfe_barrierorconcern">
+          <order attribute="dfe_type" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="dfe_otherbarrierorconcern" />
+          <attribute name="dfe_notes" />
+          <attribute name="dfe_level" />
+          <attribute name="dfe_type" />
+          <attribute name="dfe_barrierorconcernid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.6</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Barriers or Concerns" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

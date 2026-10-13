@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{22bc9b0e-555d-4e56-9421-cc039a4a5c71}</formid>
+    <IntroducedVersion>1.0.0.7</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="400">
+      <tabs>
+        <tab id="{fa1a1306-11c3-40ef-ac1e-99e622576090}" IsUserDefined="0">
+          <labels>
+            <label description="Card" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="25%">
+              <sections>
+                <section columns="1" id="{c6dd6b6d-307e-41ab-a453-628dfaf0bbd2}" IsUserDefined="0" name="Color Strip" showbar="false" showlabel="false">
+                  <labels>
+                    <label description="Color Strip" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b24871ac-166b-9595-dda8-e7a25e29c366}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="75%">
+              <sections>
+                <section columns="111" id="{5f822c48-8011-413d-9723-cf89df126ecb}" IsUserDefined="0" name="CardHeader" showbar="false" showlabel="false">
+                  <labels>
+                    <label description="Header" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{59ea613e-67e4-dd41-4041-3a02b6911646}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{CBFB742C-14E7-4a17-96BB-1A13F7F64AA2}" datafieldname="from" disabled="false" id="from" />
+                      </cell>
+                      <cell id="{16917d3c-3dd0-6d52-38bc-3841470ab1ad}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" id="createdon" />
+                      </cell>
+                      <cell id="{b079e8c5-8b42-0019-8a56-819413139415}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{CBFB742C-14E7-4a17-96BB-1A13F7F64AA2}" datafieldname="to" disabled="false" id="to" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section columns="1" id="{03cef3e2-4281-490e-870a-e3ea97f3fdd1}" IsUserDefined="0" labelwidth="115" layout="varwidth" name="CardDetails" showbar="false" showlabel="false">
+                  <labels>
+                    <label description="Details" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{94cb28dc-e727-e64e-2b98-4c5cb7666c19}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="directioncode" disabled="false" id="directioncode" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5cc76513-365d-0101-231d-5668b716026e}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="subject" disabled="false" id="subject" uniqueid="{db96bad8-6433-3e4c-c87c-5506b66c9762}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7d87d422-d463-a149-59d3-47e8b5472b36}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{6F3FB987-393B-4d2d-859F-9D0F0349B6AD}" datafieldname="description" disabled="false" id="description" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ce42a777-bec0-d1a9-e952-a67644429831}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{F3015350-44A2-4aa0-97B5-00166532B5E9}" datafieldname="regardingobjectid" disabled="false" id="regardingobjectid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section columns="1111" id="{e7c2fbce-f422-4cd7-b28a-bc90d3b8741d}" IsUserDefined="0" name="CardFooter" showbar="false" showlabel="false">
+                  <labels>
+                    <label description="Footer" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{61e26485-a958-0c1c-06c4-61e8decac631}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" id="ownerid" />
+                      </cell>
+                      <cell id="{6b76a08d-2d48-394c-ac47-2c814d42b38c}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{3ac50ae1-6775-4792-962f-7f63a3797d1f}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{f1e14901-9c6b-46ef-af2f-c00fb046f40f}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="1">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Email card for timeline" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

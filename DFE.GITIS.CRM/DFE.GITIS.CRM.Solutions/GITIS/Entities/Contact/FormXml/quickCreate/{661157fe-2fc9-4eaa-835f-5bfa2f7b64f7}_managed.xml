@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{661157fe-2fc9-4eaa-835f-5bfa2f7b64f7}</formid>
+    <IntroducedVersion>6.0.0.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="1900">
+      <tabs>
+        <tab expanded="true" id="{ee019344-2ac2-4ade-b2b8-630ff38801b1}" IsUserDefined="0" locklevel="0" name="tab_1" ordinalvalue="0" showlabel="false" solutionaction="Modified">
+          <columns>
+            <column id="0" solutionaction="Modified" width="45%">
+              <sections>
+                <section celllabelalignment="Left" celllabelposition="Top" columns="1" id="{be7e5181-f67d-4fac-9420-ed9e2ac588fd}" IsUserDefined="0" labelwidth="115" locklevel="0" name="tab_1_column_1_section_1" ordinalvalue="0" showbar="false" showlabel="false" solutionaction="Modified">
+                  <rows>
+                    <row>
+                      <cell id="{a2528d42-720c-9931-81ca-784c1881b8c2}" locklevel="0" ordinalvalue="10001" showlabel="true">
+                        <control classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="firstname" disabled="false" id="firstname" solutionaction="Modified" uniqueid="{d6ee9a07-998d-12da-9241-3b05c9197ab7}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7a7e1043-ea62-1a5d-44c8-68757777c3d0}" locklevel="0" ordinalvalue="10005" showlabel="true" solutionaction="Modified" />
+                    </row>
+                    <row>
+                      <cell id="{c7039214-3590-a99c-cce7-e18a7895d74e}" locklevel="0" ordinalvalue="10003" showlabel="true" solutionaction="Removed" />
+                    </row>
+                    <row>
+                      <cell id="{64cb3028-1866-28da-8268-c5487ce86317}" locklevel="0" ordinalvalue="10004" showlabel="true" solutionaction="Removed" />
+                    </row>
+                    <row>
+                      <cell id="{a6b833e8-225b-4986-c283-067453a7daa2}" locklevel="0" ordinalvalue="10002" showlabel="true" solutionaction="Added">
+                        <labels>
+                          <label description="Email" languagecode="1033" />
+                        </labels>
+                        <control classid="{ADA2203E-B4CD-49be-9DDF-234642B43B52}" datafieldname="emailaddress1" disabled="false" id="emailaddress1" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3d5a6679-c272-906e-ac77-e4e8a3840a51}" locklevel="0" ordinalvalue="10003" showlabel="true" solutionaction="Added">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="birthdate" disabled="false" id="birthdate" uniqueid="{de32647d-7c31-a9d5-722a-1390494a3145}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4c3a6919-9dd4-98c2-b4d9-d477e7b04bc0}" locklevel="0" ordinalvalue="10004" showlabel="true" solutionaction="Added" visible="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="dfe_privacynotice" disabled="false" id="dfe_privacynotice" uniqueid="{cc2d0646-94dd-d2d6-ebb6-b31d25350eb1}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column id="1" solutionaction="Modified" width="45%">
+              <sections>
+                <section celllabelalignment="Left" celllabelposition="Top" columns="1" id="{b5f2a6a1-d1e1-439d-ab76-fbb48f1381d4}" IsUserDefined="0" labelwidth="115" locklevel="0" name="tab_1_column_2_section_1" ordinalvalue="0" showbar="false" showlabel="true" solutionaction="Modified" visible="false">
+                  <labels>
+                    <label description="Personal Information" languagecode="1033" solutionaction="Modified" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{a6b833e8-225b-4986-c283-067453a7daa2}" locklevel="0" ordinalvalue="10000" showlabel="true" solutionaction="Removed" />
+                    </row>
+                    <row>
+                      <cell id="{192e5ab2-2129-ee55-cd56-2846649cbe47}" locklevel="0" ordinalvalue="10001" showlabel="true" solutionaction="Removed" />
+                    </row>
+                    <row>
+                      <cell id="{d5a423e7-3536-2052-4e49-5d4b3ce1c0ae}" locklevel="0" ordinalvalue="10002" showlabel="true" solutionaction="Removed" />
+                    </row>
+                    <row>
+                      <cell id="{abb75da6-8727-e2a0-dccb-9ce591c107b7}" locklevel="0" ordinalvalue="10003" rowspan="1" showlabel="true" solutionaction="Removed" />
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column id="2" solutionaction="Modified" width="10%">
+              <sections>
+                <section celllabelalignment="Left" celllabelposition="Left" columns="1" id="{4e35e9f6-ac81-44cf-b8d6-91149b679634}" IsUserDefined="0" labelwidth="115" locklevel="0" name="tab_1_column_3_section_1" ordinalvalue="0" showbar="false" showlabel="false" solutionaction="Modified" visible="false">
+                  <rows>
+                    <row>
+                      <cell id="{9E47DA5C-45B2-4D9B-8C83-2633E2FB68A5}" locklevel="0" ordinalvalue="10000" showlabel="true" solutionaction="Removed" />
+                    </row>
+                    <row>
+                      <cell id="{67473FA2-07D2-485B-BC63-7B05D02D5230}" locklevel="0" ordinalvalue="10001" showlabel="true" solutionaction="Removed" />
+                    </row>
+                    <row>
+                      <cell id="{F43497C8-73CC-4853-9736-964446900C81}" locklevel="0" ordinalvalue="10002" showlabel="true" solutionaction="Removed" />
+                    </row>
+                    <row>
+                      <cell id="{2AC67B8F-6335-4448-9E85-1601793BF072}" locklevel="0" ordinalvalue="10003" showlabel="true" solutionaction="Removed" />
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Contact quick create" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Default quick create form for Contact. &#xA;This form will be used by TPUK Call Agents to capture the initial core details and create a new Contact record for an incoming caller who has not previously registered with the GITIS service and has no pre-existing Contact record in the Database." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- file name should only contain alpha-numeric characters and underscore -->
+<!-- format: <fileNamePrefix>CustomerJourneyDesignerTileConfig.xml> -->
+<LibraryTile>
+	<!-- mandatory -->
+	<!-- icon: CSS class defining your tile icon-->
+	<!-- fontFamily: CSS class defining font-family for your icon-->
+	<!-- cssFileName: your CSS file name in CRM-->
+	<Definition icon="dfe_SMSTile" fontFamily="dfe_SMSTileSymbolFont" cssFileName="dfe_SMSCustomerJourneyDesignerTileConfig.css" />
+	<!-- mandatory -->
+	<ChannelProperties>
+		<!-- mandatory -->
+		<EntityType>msdyncrm_contentsettings</EntityType>
+		<EntitySetName>msdyncrm_contentsettingses</EntitySetName>
+		<TitleFieldName>Send an SMS message</TitleFieldName>
+		<ComplianceField>dfe_optoutsms</ComplianceField>
+		<!-- mandatory -->
+		<!-- Lookup view id for your entity-->
+		<LookupViewId>739E1B8D-06E4-4EA2-A528-31CE2C4EA46A</LookupViewId>
+		<!--Quick view form id for your entity -->
+		<QuickViewFormId>C9AFAA11-BCC3-489D-96A5-879628FF7178</QuickViewFormId>
+	</ChannelProperties>
+	<!-- optional -->
+	<ResponseTypes>
+		<ResponseType id="created">
+			<Labels>
+				<!-- Labels should always have a Label for 1033 -->
+				<Label locId="1033">Created</Label>
+			</Labels>
+		</ResponseType>
+			<ResponseType id="outOfTimeBounds">
+			<Labels>
+				<!-- Labels should always have a Label for 1033 -->
+				<Label locId="1033">Outside of time boundary</Label>
+			</Labels>
+		</ResponseType>
+	<ResponseType id="invalidNumber">
+			<Labels>
+				<!-- Labels should always have a Label for 1033 -->
+				<Label locId="1033">Invalid Number</Label>
+			</Labels>
+		</ResponseType>
+	<ResponseType id="duplicate">
+			<Labels>
+				<!-- Labels should always have a Label for 1033 -->
+				<Label locId="1033">Duplicate</Label>
+			</Labels>
+	</ResponseType>
+	<ResponseType id="failed">
+			<Labels>
+				<!-- Labels should always have a Label for 1033 -->
+				<Label locId="1033">Failed</Label>
+			</Labels>
+		</ResponseType>
+		<ResponseType id="delivered">
+			<Labels>
+				<!-- Labels should always have a Label for 1033 -->
+				<Label locId="1033">Delivered</Label>
+			</Labels>
+		</ResponseType>
+		<ResponseType id="keyword" custom="True">
+			<!-- there should be only one response type with attribute custom=true -->
+			<Labels>
+				<!-- Labels should always have a Label for 1033 -->
+				<Label locId="1033">Keyword match</Label>
+			</Labels>
+		</ResponseType>
+	</ResponseTypes>
+	<!-- mandatory -->
+	<Labels>
+		<!-- Labels should always have a Label for 1033 -->
+		<Label locId="1033">Send an SMS message</Label>
+	</Labels>
+	<!-- mandatory -->
+	<Tooltips>
+		<!-- Tooltips should always have a tooltip for 1033 -->
+		<!-- mandatory -->
+		<Tooltip locId="1033">This tile sends a SMS to the contact.</Tooltip>
+	</Tooltips>
+</LibraryTile>

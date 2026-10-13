@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{33029def-afb2-e811-a84c-000d3a2a37ad}</savedqueryid>
+    <layoutxml>
+      <grid icon="1" jump="subject" name="resultset" preview="1" select="1">
+        <row id="activityid" name="result">
+          <cell name="prioritycode" width="100" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="scheduledend" width="125" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="subject" width="300" />
+          <cell disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="description" width="300" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="regardingobjectid" width="150" />
+          <cell imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch distinct="false" mapping="logical" output-format="xml-platform" version="1.0">
+        <entity name="task">
+          <attribute name="subject" />
+          <attribute name="description" />
+          <attribute name="scheduledend" />
+          <attribute name="regardingobjectid" />
+          <order attribute="scheduledend" descending="false" />
+          <order attribute="regardingobjectid" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+            <condition attribute="ownerid" operator="eq-userid" />
+          </filter>
+          <attribute name="createdon" />
+          <attribute name="prioritycode" />
+          <attribute name="activityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Adviser to-do: all time (completed items)" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Completed to-do items for all time - for a 1-to-1 advisor." languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

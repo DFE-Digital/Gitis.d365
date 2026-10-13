@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{88679f54-511f-4053-8422-1982ea8eb296}</savedqueryid>
+    <layoutxml>
+      <grid icon="1" jump="dfe_name" name="resultset" preview="1" select="1">
+        <row id="dfe_marketingconfigid" name="result">
+          <cell name="dfe_name" width="300" />
+          <cell name="createdon" width="125" />
+          <cell disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_commitlinkblock" width="150" />
+          <cell disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_footerpart1" width="150" />
+          <cell disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_footerpart2" width="150" />
+          <cell disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_footerpart3" width="150" />
+          <cell disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_headerpart1" width="150" />
+          <cell disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" name="dfe_telephonelink" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="dfe_marketingconfig">
+          <attribute name="dfe_name" />
+          <attribute name="createdon" />
+          <order attribute="dfe_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="dfe_headerpart1" />
+          <attribute name="dfe_footerpart2" />
+          <attribute name="dfe_footerpart1" />
+          <attribute name="dfe_commitlinkblock" />
+          <attribute name="dfe_footerpart3" />
+          <attribute name="dfe_telephonelink" />
+          <attribute name="dfe_marketingconfigid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.7</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Marketing Configs" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
