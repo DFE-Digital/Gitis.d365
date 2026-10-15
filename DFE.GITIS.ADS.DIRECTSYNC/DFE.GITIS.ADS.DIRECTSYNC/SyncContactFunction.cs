@@ -20,7 +20,7 @@ namespace DFE.GITIS.ADS.DIRECTSYNC
 
         [Function(nameof(DIRECTSYNC.SyncContactFunction))]
         public async Task Run(
-            [ServiceBusTrigger("crm-contact-sync", Connection = "Endpoint=sb://gitisadsmarketing-pr.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=*****")]
+            [ServiceBusTrigger("crm-contact-sync", Connection = "ServiceBusConnection")]
             ServiceBusReceivedMessage message,
             ServiceBusMessageActions messageActions)
         {
